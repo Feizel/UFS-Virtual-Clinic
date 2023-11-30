@@ -34,6 +34,7 @@
                 android:layout_width="10dp"
                 android:layout_height="10dp"
                 android:src="@drawable/dot_active"
+                android:contentDescription="Active dot"
                 android:layout_marginEnd="8dp" />
 
             <ImageView
@@ -41,6 +42,7 @@
                 android:layout_width="10dp"
                 android:layout_height="10dp"
                 android:src="@drawable/dot_inactive"
+                android:contentDescription="Inactive dot"
                 android:layout_marginEnd="8dp" />
 
             <ImageView
@@ -48,6 +50,7 @@
                 android:layout_width="10dp"
                 android:layout_height="10dp"
                 android:src="@drawable/dot_inactive"
+                android:contentDescription="Inactive dot"
                 android:layout_marginEnd="8dp" />
 
 
@@ -68,10 +71,10 @@
             android:layout_marginStart="44dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="44dp"
-            android:text="Easily Book Appointments"
+            android:text="@string/appoint_label"
             android:textAlignment="center"
             android:textColor="@color/blue"
-            android:textSize="32dp"
+            android:textSize="32sp"
             android:textStyle="bold" />
 
         <TextView
@@ -85,9 +88,9 @@
             android:layout_marginEnd="18dp"
             android:layout_marginBottom="18dp"
             android:alpha="0.9"
-            android:text="@string/appoinments_onB1"
+            android:text="@string/appointments_onB1"
             android:textAlignment="center"
-            android:textSize="18dp" />
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/btnSkipTour"
@@ -99,7 +102,7 @@
             android:text="@string/skip_tour"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:backgroundTint="@color/blue"/>
 
@@ -113,7 +116,7 @@
             android:fontFamily="sans-serif"
             android:text="@string/next"
             android:textColor="@color/blue"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:gravity="end"
             android:backgroundTint="@android:color/transparent"/>

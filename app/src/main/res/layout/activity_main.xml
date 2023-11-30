@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -37,8 +36,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="184dp"
-        android:src="@drawable/logo"/>
-
+        android:src="@drawable/logo"
+        android:contentDescription="@string/ufs_logo"/>
 
     <Button
         android:id="@+id/btnLogInMain"
@@ -48,7 +47,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="143dp"
         android:backgroundTint="@color/blue"
-        android:text="@string/login"
+        android:text="@string/login_btn"
         android:textColor="@color/white"/>
 
     <Button
@@ -59,7 +58,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="89dp"
         android:backgroundTint="@color/white"
-        android:text="@string/staff"
+        android:text="@string/continue_staff"
         android:textColor="@color/red"/>
 
 
