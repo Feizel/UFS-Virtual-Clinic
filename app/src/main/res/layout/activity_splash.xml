@@ -5,16 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Splash"
-    android:background="@drawable/background">
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/imgLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="151dp"
-        android:src="@drawable/logo" />
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo3"
+        android:contentDescription="@string/ufs_logo"
+        android:layout_margin="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/idPBLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/blue" />
 
 
 

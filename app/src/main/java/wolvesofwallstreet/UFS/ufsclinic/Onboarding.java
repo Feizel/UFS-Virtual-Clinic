@@ -8,17 +8,29 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.ViewSwitcher;
 
 public class Onboarding extends AppCompatActivity {
     private ImageSwitcher imgSwitcher;
     private Button btnSkipTour, btnNext;
-    private int[] onboardingImages = {
+    private static final int[] onboardingImages = {
             R.drawable.onb1,
             R.drawable.onb2,
             R.drawable.onb3
     };
+    private static final String[] onboardingLabels = {
+            String.valueOf(R.string.appoint_label),
+            String.valueOf(R.string.appoint_label2),
+            String.valueOf(R.string.appoint_label3)
+    };
+    private static final String[] onboardingTexts = {
+            String.valueOf(R.string.appointments_onB1),
+            String.valueOf(R.string.appointments_onB2),
+            String.valueOf(R.string.appointments_onB3)
+    };
     private int currentIndex = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,12 +49,12 @@ public class Onboarding extends AppCompatActivity {
             }
         });
 
+        updateImageAndText();
+
         btnSkipTour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Onboarding.this, MainActivity.class);
-                startActivity(intent);
-                finish();
+                navigateToMain();
             }
         });
 
@@ -50,8 +62,40 @@ public class Onboarding extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 currentIndex = (currentIndex + 1) % onboardingImages.length;
-                imgSwitcher.setImageResource(onboardingImages[currentIndex]);
+                updateImageAndText();
             }
         });
     }
+
+    private void updateImageAndText() {
+        imgSwitcher.setImageResource(onboardingImages[currentIndex]);
+        // Adjust this based on your actual TextView ID
+
+        TextView txtAppointments = findViewById(R.id.txtAppointments);
+        txtAppointments.setText(onboardingTexts[currentIndex]);
+
+        // If it's the last image, navigate to the login screen
+        if (currentIndex == onboardingImages.length - 1) {
+            btnNext.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    navigateToLogin();
+                }
+            });
+            btnNext.setText("Go to Login");
+        }
+    }
+
+    private void navigateToMain() {
+        Intent intent = new Intent(Onboarding.this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    private void navigateToLogin() {
+        Intent intent = new Intent(Onboarding.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }
+

@@ -36,7 +36,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="184dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/logo3"
         android:contentDescription="@string/ufs_logo"/>
 
     <Button
