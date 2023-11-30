@@ -16,7 +16,7 @@
         <ImageSwitcher
             android:id="@+id/imgSwitcherONB"
             android:layout_width="340dp"
-            android:layout_height="240dp"
+            android:layout_height="300dp"
             android:layout_gravity="center"
             android:layout_marginStart="22dp"
             android:layout_marginTop="22dp"
@@ -24,6 +24,7 @@
             android:layout_marginBottom="22dp" />
 
         <LinearLayout
+            android:id="@+id/dotsLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imgSwitcherONB"
@@ -98,7 +99,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtAppointments"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="46dp"
             android:text="@string/skip_tour"
             android:textAlignment="center"
             android:textColor="@color/white"
@@ -112,13 +113,14 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/btnSkipTour"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
             android:fontFamily="sans-serif"
             android:text="@string/next"
             android:textColor="@color/blue"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:gravity="end"
+            android:alpha="0.9"
+            android:textAlignment="textEnd"
+            android:layout_alignParentEnd="true"
             android:backgroundTint="@android:color/transparent"/>
 
     </RelativeLayout>
