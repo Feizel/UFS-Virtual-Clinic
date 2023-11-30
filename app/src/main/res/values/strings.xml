@@ -21,6 +21,14 @@
     <string name="appointments_onB1">Effortlessly schedule your clinic appointments at your convenience.
         Say goodbye to long queues and hello to hassle-free bookings.
     </string>
+    <string name="appoint_label2">Access Health Information</string>
+    <string name="appointments_onB2">Get a wealth of information to help you make well-informed decisions
+        about your health. Stay informed about health topics, tips, and more.
+    </string>
+    <string name="appoint_label3">Mobile Health Companion</string>
+    <string name="appointments_onB3">Take your health with you wherever you go. Track your well-being and
+        receive important health notifications, appointment reminders &amp; general tips.
+    </string>
     <string name="title_activity_forgot_password">ForgotPassword</string>
 
     //Misc
