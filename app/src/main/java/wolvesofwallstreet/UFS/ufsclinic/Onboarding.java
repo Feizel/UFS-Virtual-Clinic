@@ -19,15 +19,15 @@ public class Onboarding extends AppCompatActivity {
             R.drawable.onb2,
             R.drawable.onb3
     };
-    private static final String[] onboardingLabels = {
-            String.valueOf(R.string.appoint_label),
-            String.valueOf(R.string.appoint_label2),
-            String.valueOf(R.string.appoint_label3)
+    private static final int[] onboardingLabels = {
+            R.string.appoint_label,
+            R.string.appoint_label2,
+            R.string.appoint_label3
     };
-    private static final String[] onboardingTexts = {
-            String.valueOf(R.string.appointments_onB1),
-            String.valueOf(R.string.appointments_onB2),
-            String.valueOf(R.string.appointments_onB3)
+    private static final int[] onboardingTexts = {
+            R.string.appointments_onB1,
+            R.string.appointments_onB2,
+            R.string.appointments_onB3
     };
     private int currentIndex = 0;
 
@@ -69,10 +69,12 @@ public class Onboarding extends AppCompatActivity {
 
     private void updateImageAndText() {
         imgSwitcher.setImageResource(onboardingImages[currentIndex]);
-        // Adjust this based on your actual TextView ID
+
+        TextView lblAppointments = findViewById(R.id.lblAppointments);
+        lblAppointments.setText(getString(onboardingLabels[currentIndex]));
 
         TextView txtAppointments = findViewById(R.id.txtAppointments);
-        txtAppointments.setText(onboardingTexts[currentIndex]);
+        txtAppointments.setText(getString(onboardingTexts[currentIndex]));
 
         // If it's the last image, navigate to the login screen
         if (currentIndex == onboardingImages.length - 1) {
@@ -98,4 +100,3 @@ public class Onboarding extends AppCompatActivity {
         finish();
     }
 }
-
