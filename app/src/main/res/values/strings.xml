@@ -1,20 +1,31 @@
 <resources>
+    //Splash Screen
     <string name="app_name">UFS CLINIC</string>
     <string name="top_header_main">Welcome to</string>
     <string name="below_header_main">UFS Virtual Clinic</string>
-    <string name="login">Login</string>
-    <string name="staff">Continue As Stuff</string>
+
+    //Login Screen
     <string name="top_header_login">Welcome Back</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
     <string name="forgot_password">Forgot Password?</string>
-    <string name="title_activity_database_helper">DatabaseHelper</string>
-    <!-- Strings used for fragments for navigation -->
+    <string name="login_btn">Login</string>
+    <string name="external_users">External Users</string>
+    <string name="continue_staff">Continue As Stuff</string>
+
+    //Onboarding Screen
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="skip_tour">Skip Tour</string>
-    <string name="appoinments_onB1">Effortlessly schedule your clinic appointments at your convenience.
+    <string name="appoint_label">Easily Book Appointments</string>
+    <string name="appointments_onB1">Effortlessly schedule your clinic appointments at your convenience.
         Say goodbye to long queues and hello to hassle-free bookings.
     </string>
     <string name="title_activity_forgot_password">ForgotPassword</string>
+
+    //Misc
+    <string name="title_activity_database_helper">DatabaseHelper</string>
+    <string name="ufs_logo">UFS Logo</string>
+    <string name="first_fragment_label">Remove Me</string>
+    <string name="second_fragment_label">Remove Me</string>
 </resources>

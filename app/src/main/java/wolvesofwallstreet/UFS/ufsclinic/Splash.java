@@ -32,7 +32,7 @@ public class Splash extends Activity
             @Override
             public void run()
             {
-                Intent intent = new Intent(Splash.this, LoginPage.class);
+                Intent intent = new Intent(Splash.this, Onboarding.class);
                 startActivity(intent);
                 finish();
             }

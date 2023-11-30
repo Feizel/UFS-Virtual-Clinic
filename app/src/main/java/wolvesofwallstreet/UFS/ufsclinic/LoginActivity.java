@@ -11,15 +11,15 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class LoginPage extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
     private Button btnLogin, btnContinue, btnForgotPassword;
     private TextView txtEmail, txtPassword;
-    private DatabaseHelper dbHelper = new DatabaseHelper(this);
+    private final DatabaseHelper dbHelper = new DatabaseHelper(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_page);
+        setContentView(R.layout.activity_login);
 
         btnLogin = findViewById(R.id.btnLogin);
         txtEmail = findViewById(R.id.txtEmail);
@@ -34,15 +34,15 @@ public class LoginPage extends AppCompatActivity {
                 String sPassword = txtPassword.getText().toString();
 
                 if (sEmail.isEmpty()) {
-                    Toast.makeText(LoginPage.this, "Please enter your email address", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Please enter your email address", Toast.LENGTH_SHORT).show();
                 } else if (sPassword.isEmpty()) {
-                    Toast.makeText(LoginPage.this, "Please enter your password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Please enter your password", Toast.LENGTH_SHORT).show();
                 } else {
                     boolean loginSuccessful = login(sEmail, sPassword);
                     if (loginSuccessful) {
-                        Toast.makeText(LoginPage.this, "Login Successful!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
                     } else {
-                        Toast.makeText(LoginPage.this, "Login Failed! Invalid Credentials", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Login Failed! Invalid Credentials", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
@@ -51,7 +51,7 @@ public class LoginPage extends AppCompatActivity {
         btnForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginPage.this, ForgotPassword.class);
+                Intent intent = new Intent(LoginActivity.this, Onboarding.class);
                 startActivity(intent);
                 finish();
             }
@@ -60,7 +60,7 @@ public class LoginPage extends AppCompatActivity {
         btnContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginPage.this, Splash.class);
+                Intent intent = new Intent(LoginActivity.this, Splash.class);
                 startActivity(intent);
                 finish();
             }
