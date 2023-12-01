@@ -52,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
         btnForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, Onboarding.class);
+                Intent intent = new Intent(LoginActivity.this, Dashboard.class);
                 startActivity(intent);
                 finish();
             }
@@ -68,7 +68,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void navigateToDashboard() {
-        Intent toDashboard = new Intent(this, DashboardFragment.class);
+        Intent toDashboard = new Intent(this, Dashboard.class);
         startActivity(toDashboard);
         finish();
     }
