@@ -7,10 +7,12 @@
     //Login Screen
     <string name="top_header_login">Welcome Back</string>
     <string name="hint_email">Email</string>
+    <string name="hint_student_email">Student Email</string>
     <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="login_btn">Login</string>
-    <string name="external_users">External Users</string>
+    <string name="sign_up">Sign Up</string>
     <string name="continue_staff">Continue As Stuff</string>
 
     //Onboarding Screen
