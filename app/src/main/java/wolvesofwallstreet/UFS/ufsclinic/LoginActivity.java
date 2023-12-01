@@ -41,6 +41,7 @@ public class LoginActivity extends AppCompatActivity {
                     boolean loginSuccessful = login(sEmail, sPassword);
                     if (loginSuccessful) {
                         Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
+                        navigateToDashboard();
                     } else {
                         Toast.makeText(LoginActivity.this, "Login Failed! Invalid Credentials", Toast.LENGTH_SHORT).show();
                     }
@@ -51,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
         btnForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, Onboarding.class);
+                Intent intent = new Intent(LoginActivity.this, Dashboard.class);
                 startActivity(intent);
                 finish();
             }
@@ -60,12 +61,16 @@ public class LoginActivity extends AppCompatActivity {
         btnContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, Splash.class);
-                startActivity(intent);
-                finish();
+                navigateToDashboard();
             }
         });
 
+    }
+
+    private void navigateToDashboard() {
+        Intent toDashboard = new Intent(this, Dashboard.class);
+        startActivity(toDashboard);
+        finish();
     }
 
     private boolean login(String sEmail, String sPassword) {
