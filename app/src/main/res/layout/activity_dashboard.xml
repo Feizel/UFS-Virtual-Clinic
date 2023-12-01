@@ -302,17 +302,6 @@
 
             </ScrollView>
 
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/add_fab"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end|bottom"
-                android:backgroundTint="@color/green"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="70dp"
-                android:src="@drawable/add_button" />
-
         </LinearLayout>
 
     </LinearLayout>
@@ -345,7 +334,6 @@
         app:itemIconTint="@color/search_bg"
         app:itemTextColor="@color/search_text"/>
 
-    <?xml version="1.0" encoding="utf-8"?>
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

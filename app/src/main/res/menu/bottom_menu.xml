@@ -8,7 +8,7 @@
         android:icon="@drawable/icon_home"/>
 
     <item
-        android:id="@+id/shorts"
+        android:id="@+id/appointments"
         android:title="Appointments"
         android:icon="@drawable/icon_calender"
         />
@@ -17,11 +17,11 @@
         android:title=""/>
 
     <item
-        android:id="@+id/subscriptions"
+        android:id="@+id/notifications"
         android:title="Notifications"
         android:icon="@drawable/icon_notifications" />
     <item
-        android:id="@+id/library"
+        android:id="@+id/settings"
         android:title="Settings"
         android:icon="@drawable/icon_settings" />
 

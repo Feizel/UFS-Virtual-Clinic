@@ -1,6 +1,6 @@
 <resources>
     //Splash Screen
-    <string name="app_name">UFS CLINIC</string>
+    <string name="main_app_name">UFS CLINIC</string>
     <string name="top_header_main">Welcome to</string>
     <string name="below_header_main">UFS Virtual Clinic</string>
 
@@ -41,6 +41,11 @@
     <string name="health_tips">Health Tips</string>
     <string name="campaign">Campaign</string>
     <string name="student_counselling">Student\n Counselling \n&amp; \nDevelopment</string>
+
+    //Navigation View
+    <string name="app_name">Navigation Drawer</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
 
     //SETTINGS
     <string name="student_name">Nthabiseng</string>
