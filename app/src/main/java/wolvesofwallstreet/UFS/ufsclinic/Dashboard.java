@@ -36,8 +36,8 @@ public class Dashboard extends AppCompatActivity {
         addFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToSetAppointmentsFrag = new Intent(Dashboard.this, AppointmentsFragment.class);
-                startActivity(goToSetAppointmentsFrag);
+//                Intent goToSetAppointmentsFrag = new Intent(Dashboard.this, Appointments.class);
+//                startActivity(goToSetAppointmentsFrag);
             }
         });
 
