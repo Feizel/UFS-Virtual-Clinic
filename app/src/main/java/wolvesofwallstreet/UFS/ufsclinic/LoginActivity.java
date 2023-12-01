@@ -68,7 +68,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void navigateToDashboard() {
-        Intent toDashboard = new Intent(this, Dashboard.class);
+        Intent toDashboard = new Intent(this, Onboarding.class);
         startActivity(toDashboard);
         finish();
     }

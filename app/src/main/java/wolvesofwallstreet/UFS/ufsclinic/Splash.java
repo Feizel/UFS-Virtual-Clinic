@@ -23,7 +23,7 @@ public class Splash extends Activity {
         imgLogo.setAnimation(logInAnimation);
 
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(Splash.this, Onboarding.class);
+            Intent intent = new Intent(Splash.this, MainActivity.class);
             startActivity(intent);
             finish();
         }, TIME);

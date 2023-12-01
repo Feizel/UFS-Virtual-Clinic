@@ -114,18 +114,18 @@ public class Onboarding extends AppCompatActivity {
                     navigateToLogin();
                 }
             });
-            btnNext.setText("Login");
+            btnNext.setText("Enter");
         }
     }
 
     private void navigateToMain() {
-        Intent intent = new Intent(Onboarding.this, MainActivity.class);
+        Intent intent = new Intent(Onboarding.this, Dashboard.class);
         startActivity(intent);
         finish();
     }
 
     private void navigateToLogin() {
-        Intent intent = new Intent(Onboarding.this, LoginActivity.class);
+        Intent intent = new Intent(Onboarding.this, Dashboard.class);
         startActivity(intent);
         finish();
     }

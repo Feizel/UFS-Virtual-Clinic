@@ -1,17 +1,330 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/white"
     tools:context=".SettingsFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
+        android:layout_marginVertical="4dp"
         android:layout_height="match_parent"
-        android:text="Settings"
-        android:gravity="center"
-        android:textSize="38sp"
-        android:textColor="@color/blue"/>
+        android:fillViewport="true"
+        android:scrollbars="none">
 
-</FrameLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:backgroundTint="@color/white"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/lblSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings"
+                    android:textColor="@color/blue"
+                    android:layout_gravity="start"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:padding="12dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:layout_marginTop="16dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardProfilePicture"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_gravity="end|center_horizontal"
+                        app:cardBackgroundColor="@color/white">
+
+                        <ImageView
+                            android:id="@+id/ivProfilePicture"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/avatar" />
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/lblName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Precious"
+                    android:textColor="@color/blue"
+                    android:layout_gravity="center"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:id="@+id/lblEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textColor="@color/grey"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:padding="8dp"/>
+
+            </LinearLayout>
+
+            <!--    ACCOUNT-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:backgroundTint="@color/white"
+                android:gravity="start"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_account"
+                    android:paddingRight="12dp"
+                    android:paddingVertical="12dp"/>
+
+                <TextView
+                    android:id="@+id/lblAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings"
+                    android:textColor="@color/settings"
+                    android:layout_gravity="start"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:padding="12dp"
+                    android:layout_marginEnd="2dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_forward"
+                    android:paddingRight="12dp"
+                    android:paddingVertical="12dp"
+                    android:layout_gravity="end"/>
+
+            </LinearLayout>
+
+            <!--    NOTIFICATIONS-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:backgroundTint="@color/white"
+                android:gravity="start"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_notifications"
+                    android:paddingRight="12dp"
+                    android:paddingVertical="12dp"/>
+
+                <TextView
+                    android:id="@+id/lblNotifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notifs"
+                    android:textColor="@color/settings"
+                    android:layout_gravity="start"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:padding="12dp"
+                    android:layout_marginEnd="1dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_forward"
+                    android:paddingRight="12dp"
+                    android:paddingVertical="12dp"
+                    android:layout_gravity="end"/>
+
+            </LinearLayout>
+
+            <!--    APPEARANCE-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:backgroundTint="@color/white"
+                android:gravity="start"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_appearnce"
+                    android:paddingRight="12dp"
+                    android:paddingVertical="12dp"/>
+
+                <TextView
+                    android:id="@+id/lblAppearance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/appearance"
+                    android:textColor="@color/settings"
+                    android:layout_gravity="start"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:padding="12dp"
+                    android:layout_marginEnd="2dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_forward"
+                    android:paddingRight="12dp"
+                    android:paddingVertical="12dp"
+                    android:layout_gravity="end"/>
+
+            </LinearLayout>
+
+            <!--    PRIVACY & SECURITY-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:backgroundTint="@color/white"
+                android:gravity="start"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_privacy"
+                    android:paddingRight="12dp"
+                    android:paddingVertical="12dp"/>
+
+                <TextView
+                    android:id="@+id/lblPrivacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacy"
+                    android:textColor="@color/settings"
+                    android:layout_gravity="start"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:padding="12dp"
+                    android:layout_marginEnd="2dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_forward"
+                    android:paddingRight="12dp"
+                    android:paddingVertical="12dp"
+                    android:layout_gravity="end"/>
+
+            </LinearLayout>
+
+            <!--    SOUND-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:backgroundTint="@color/white"
+                android:gravity="start"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_sound"
+                    android:paddingRight="12dp"
+                    android:paddingVertical="12dp"/>
+
+                <TextView
+                    android:id="@+id/lblSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sound"
+                    android:textColor="@color/settings"
+                    android:layout_gravity="start"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:padding="12dp"
+                    android:layout_marginEnd="2dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_forward"
+                    android:paddingRight="12dp"
+                    android:paddingVertical="12dp"
+                    android:layout_gravity="end"/>
+
+            </LinearLayout>
+
+            <!--    LANGUAGE-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:backgroundTint="@color/white"
+                android:gravity="start"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_language"
+                    android:paddingRight="12dp"
+                    android:paddingVertical="12dp"/>
+
+                <TextView
+                    android:id="@+id/lblLangauge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/language"
+                    android:textColor="@color/settings"
+                    android:layout_gravity="start"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:padding="12dp"
+                    android:layout_marginEnd="2dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_forward"
+                    android:paddingRight="12dp"
+                    android:paddingVertical="12dp"
+                    android:layout_gravity="end"/>
+
+            </LinearLayout>
+        </TableLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
