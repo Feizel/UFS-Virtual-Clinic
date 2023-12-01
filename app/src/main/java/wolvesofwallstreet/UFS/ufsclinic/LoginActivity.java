@@ -1,19 +1,27 @@
 package wolvesofwallstreet.UFS.ufsclinic;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+
 public class LoginActivity extends AppCompatActivity {
+    private FirebaseAuth auth;
     private Button btnLogin, btnContinue, btnForgotPassword;
-    private TextView txtEmail, txtPassword;
+    private TextView loginEmail, loginPassword, signupRedirectText;
     private final DatabaseHelper dbHelper = new DatabaseHelper(this);
 
     @Override
@@ -21,31 +29,53 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        auth = FirebaseAuth.getInstance();
         btnLogin = findViewById(R.id.btnLogin);
-        txtEmail = findViewById(R.id.txtEmail);
-        txtPassword = findViewById(R.id.txtPassword);
+        loginEmail = findViewById(R.id.loginEmail);
+        loginPassword = findViewById(R.id.loginPassword);
         btnForgotPassword = findViewById(R.id.btnForgotPassword);
+        signupRedirectText = findViewById(R.id.signupRedirectText);
         btnContinue = findViewById(R.id.btnContinue);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String sEmail = txtEmail.getText().toString();
-                String sPassword = txtPassword.getText().toString();
+                String email = loginEmail.getText().toString();
+                String pass = loginPassword.getText().toString();
 
-                if (sEmail.isEmpty()) {
-                    Toast.makeText(LoginActivity.this, "Please enter your email address", Toast.LENGTH_SHORT).show();
-                } else if (sPassword.isEmpty()) {
-                    Toast.makeText(LoginActivity.this, "Please enter your password", Toast.LENGTH_SHORT).show();
-                } else {
-                    boolean loginSuccessful = login(sEmail, sPassword);
-                    if (loginSuccessful) {
-                        Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
-                        navigateToDashboard();
+                if(!email.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                    if (!pass.isEmpty()) {
+                        auth.signInWithEmailAndPassword(email, pass)
+                                .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                                    @Override
+                                    public void onSuccess(AuthResult authResult) {
+                                        Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                                        startActivity(new Intent(LoginActivity.this, Dashboard.class ));
+                                        finish();
+
+                                    }
+                                }).addOnFailureListener(new OnFailureListener() {
+                                    @Override
+                                    public void onFailure(@NonNull Exception e) {
+                                        Toast.makeText(LoginActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
+                                    }
+                                });
                     } else {
-                        Toast.makeText(LoginActivity.this, "Login Failed! Invalid Credentials", Toast.LENGTH_SHORT).show();
+                        loginPassword.setError("Password cannot be empty");
                     }
+
+                } else if (email.isEmpty()) {
+                    loginEmail.setError("Email cannot be empty");
+                } else {
+                    loginEmail.setError("Please enter a valid email");
                 }
+            }
+        });
+
+        signupRedirectText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this, SignUp.class));
             }
         });
 
@@ -64,11 +94,23 @@ public class LoginActivity extends AppCompatActivity {
                 navigateToDashboard();
             }
         });
+        signupRedirectText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navigateToSignUp();
+            }
+        });
 
     }
 
+    private void navigateToSignUp() {
+        Intent toSignUp = new Intent(this, SignUp.class);
+        startActivity(toSignUp);
+        finish();
+    }
+
     private void navigateToDashboard() {
-        Intent toDashboard = new Intent(this, Dashboard.class);
+        Intent toDashboard = new Intent(this, Onboarding.class);
         startActivity(toDashboard);
         finish();
     }

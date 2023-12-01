@@ -363,7 +363,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
-            android:src="@drawable/icon_add"
+            android:src="@drawable/add_button"
             app:layout_anchor="@id/bottomAppBar"
             app:maxImageSize="40dp"
             android:id="@+id/fab"

@@ -91,15 +91,6 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
-        // Add click listener to the FAB
-        addFab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                Intent goToSetAppointmentsFrag = new Intent(Dashboard.this, Appointments.class);
-//                startActivity(goToSetAppointmentsFrag);
-            }
-        });
-
         // Add click listener to the search icon
         iconSearch.setOnClickListener(new View.OnClickListener() {
             @Override
