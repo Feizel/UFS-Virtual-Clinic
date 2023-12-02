@@ -35,15 +35,26 @@
                 android:backgroundTint="@color/white"
                 android:layout_marginBottom="0dp">
 
-                <TextView
-                    android:id="@+id/lblGreet"
+                <!-- Hamburger icon -->
+                <ImageView
+                    android:id="@+id/toolbar_menu_icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/student_greeting"
-                    android:textColor="@color/blue"
-                    android:layout_gravity="center"
-                    android:textSize="32sp"
-                    android:textStyle="bold" />
+                    android:src="@drawable/icon_hamburger_menu"
+                    android:contentDescription="Menu"
+                    android:layout_gravity="start"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"/>
+
+<!--                <TextView-->
+<!--                    android:id="@+id/lblGreet"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/student_greeting"-->
+<!--                    android:textColor="@color/blue"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:textSize="32sp"-->
+<!--                    android:textStyle="bold" />-->
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardProfilePicture"
@@ -324,6 +335,7 @@
             android:layout_height="match_parent"
             android:id="@+id/frame_layout"/>
     </LinearLayout>
+
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

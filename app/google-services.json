@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "256934463649",
+    "project_id": "ufsclinic",
+    "storage_bucket": "ufsclinic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256934463649:android:e4b0941c73d2b9708988e0",
+        "android_client_info": {
+          "package_name": "wolvesofwallstreet.UFS.ufsclinic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDDomme0gp_lWXKbl2P2yYxAddMU0iZME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

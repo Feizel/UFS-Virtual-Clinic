@@ -19,6 +19,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -29,7 +30,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 
 public class Dashboard extends AppCompatActivity {
-    ImageView iconSearch, iconMic;
+    ImageView iconSearch, iconMic, toolbar_hamburger_menu;
     EditText editTxtSearch;
     FloatingActionButton addFab;
     DrawerLayout drawerLayout;
@@ -40,6 +41,7 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
+        toolbar_hamburger_menu = findViewById(R.id.toolbar_menu_icon);
         iconSearch = findViewById(R.id.iconSearch);
         iconMic = findViewById(R.id.iconMic);
         editTxtSearch = findViewById(R.id.editTxtSearch);
@@ -91,6 +93,13 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
+        toolbar_hamburger_menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onMenuIconClick(view);
+            }
+        });
+
         // Add click listener to the search icon
         iconSearch.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -108,6 +117,11 @@ public class Dashboard extends AppCompatActivity {
         });
 
         // Add your additional logic and event listeners here
+    }
+
+    public void onMenuIconClick(View view) {
+        DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
+        drawerLayout.openDrawer(GravityCompat.START);
     }
 
     //Outside onCreate()
