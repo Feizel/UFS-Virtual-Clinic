@@ -10,6 +10,7 @@ import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ViewSwitcher;
 
 public class Onboarding extends AppCompatActivity {
@@ -114,7 +115,7 @@ public class Onboarding extends AppCompatActivity {
                     navigateToLogin();
                 }
             });
-            btnNext.setText("Enter");
+            btnNext.setText("Proceed");
         }
     }
 
@@ -122,6 +123,7 @@ public class Onboarding extends AppCompatActivity {
         Intent intent = new Intent(Onboarding.this, Dashboard.class);
         startActivity(intent);
         finish();
+        Toast.makeText(this, "Going To Dashboard", Toast.LENGTH_SHORT).show();
     }
 
     private void navigateToLogin() {

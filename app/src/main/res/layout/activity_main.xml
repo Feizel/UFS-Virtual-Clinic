@@ -58,7 +58,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="89dp"
         android:backgroundTint="@color/white"
-        android:text="@string/continue_staff"
+        android:text="@string/sign_up"
         android:textColor="@color/red"/>
 
 
