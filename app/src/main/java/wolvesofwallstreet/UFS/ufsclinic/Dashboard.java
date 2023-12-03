@@ -32,6 +32,7 @@ import com.google.android.material.navigation.NavigationView;
 public class Dashboard extends AppCompatActivity {
     ImageView iconSearch, iconMic, toolbar_hamburger_menu;
     EditText editTxtSearch;
+    CardView ailmentsCard;
     FloatingActionButton addFab;
     DrawerLayout drawerLayout;
     BottomNavigationView bottomNavigationView;

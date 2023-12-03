@@ -1,6 +1,6 @@
 <resources>
     //Splash Screen
-<!--    <string name="main_app_name">UFS CLINIC</string>-->
+    <!--    <string name="main_app_name">UFS CLINIC</string>-->
     <string name="top_header_main">Welcome to</string>
     <string name="below_header_main">UFS Virtual Clinic</string>
 
@@ -43,6 +43,16 @@
     <string name="health_tips">Health Tips</string>
     <string name="campaign">Campaign</string>
     <string name="student_counselling">Student\n Counselling \n&amp; \nDevelopment</string>
+
+    //Services
+    <string name="service_description">Students and staff can make use of the following services that are available on campus:</string>
+    <string name="minor_ailments">Minor ailments</string>
+    <string name="chronic_medication">Chronic medication</string>
+    <string name="screenings">Screenings</string>
+    <string name="women_health">Women\’s health</string>
+    <string name="mens_health">Men\'s health</string>
+    <string name="helpline">Helpline</string>
+    <string name="clinic_staff">Clinic Staff</string>
 
     //Navigation View
     <string name="app_name">Navigation Drawer</string>
