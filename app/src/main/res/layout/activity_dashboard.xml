@@ -277,6 +277,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
+                            android:id="@+id/medicineCard"
                             android:layout_weight="1"
                             app:cardElevation="20dp"
                             app:cardCornerRadius="20dp">
@@ -319,6 +320,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
                             android:layout_weight="1"
+                            android:id="@+id/screeningsCard"
                             app:cardElevation="20dp"
                             app:cardCornerRadius="20dp">
                             <RelativeLayout
@@ -347,6 +349,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
+                            android:id="@+id/women_healthCard"
                             android:layout_weight="1"
                             app:cardElevation="20dp"
                             app:cardCornerRadius="20dp">
@@ -388,6 +391,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
+                            android:id="@+id/men_healthCard"
                             android:layout_weight="1"
                             app:cardElevation="20dp"
                             app:cardCornerRadius="20dp">
@@ -417,6 +421,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
+                            android:id="@+id/helplineCard"
                             android:layout_weight="1"
                             app:cardElevation="20dp"
                             app:cardCornerRadius="20dp">

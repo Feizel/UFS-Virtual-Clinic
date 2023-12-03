@@ -32,7 +32,7 @@ import com.google.android.material.navigation.NavigationView;
 public class Dashboard extends AppCompatActivity {
     ImageView iconSearch, iconMic, toolbar_hamburger_menu;
     EditText editTxtSearch;
-    CardView ailmentsCard;
+    CardView ailmentsCard, medicineCard, screeningsCard, women_healthCard, men_healthCard, helplineCard;
     FloatingActionButton addFab;
     DrawerLayout drawerLayout;
     BottomNavigationView bottomNavigationView;
@@ -47,6 +47,13 @@ public class Dashboard extends AppCompatActivity {
         iconMic = findViewById(R.id.iconMic);
         editTxtSearch = findViewById(R.id.editTxtSearch);
 
+        ailmentsCard = findViewById(R.id.ailmentsCard);
+        medicineCard = findViewById(R.id.medicineCard);
+        screeningsCard = findViewById(R.id.screeningsCard);
+        women_healthCard = findViewById(R.id.women_healthCard);
+        men_healthCard = findViewById(R.id.men_healthCard);
+        helplineCard = findViewById(R.id.helplineCard);
+
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         addFab = findViewById(R.id.fab);
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -55,6 +62,58 @@ public class Dashboard extends AppCompatActivity {
         toolbar.setVisibility(View.GONE);
 
         // Event Listeners & Logic
+
+        //Services
+        ailmentsCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToAilments = new Intent(Dashboard.this, minor_ailments.class);
+                startActivity(goToAilments);
+            }
+        });
+        medicineCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToMedicine = new Intent(Dashboard.this, chronic_medication.class);
+                startActivity(goToMedicine);
+            }
+        });
+        screeningsCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToScreenings = new Intent(Dashboard.this, screenings.class);
+                startActivity(goToScreenings);
+            }
+        });
+        medicineCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToMedicine = new Intent(Dashboard.this, chronic_medication.class);
+                startActivity(goToMedicine);
+            }
+        });
+        women_healthCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToWomenHealth = new Intent(Dashboard.this, women_health.class);
+                startActivity(goToWomenHealth);
+            }
+        });
+        men_healthCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToMenHealth = new Intent(Dashboard.this, men_health.class);
+                startActivity(goToMenHealth);
+            }
+        });
+        helplineCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToHelpline = new Intent(Dashboard.this, helpline.class);
+                startActivity(goToHelpline);
+            }
+        });
+
         setSupportActionBar(toolbar);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open_nav, R.string.close_nav);
         drawerLayout.addDrawerListener(toggle);
