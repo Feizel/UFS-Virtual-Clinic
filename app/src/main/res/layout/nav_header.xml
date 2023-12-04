@@ -3,8 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="190dp"
-    android:gravity="bottom"
+    android:layout_height="240dp"
+    android:gravity="center|start"
     android:padding="16dp"
     android:background="@drawable/headerbkg"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
@@ -12,7 +12,8 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ufs_logo"/>
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/ufs_logo_transparent"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -21,6 +22,7 @@
         android:textSize="24sp"
         android:textColor="@color/white"
         android:textStyle="bold"
+        android:layout_marginBottom="4dp"
         android:paddingTop="4dp"/>
 
     <TextView
@@ -32,5 +34,6 @@
         android:paddingTop="4dp"
         android:paddingBottom="4dp"
         android:layout_marginBottom="16dp"/>
+
 
 </LinearLayout>
