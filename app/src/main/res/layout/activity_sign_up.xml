@@ -25,6 +25,13 @@
             android:padding="24dp"
             android:background="@color/white">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ufs_logo_transparent"
+                android:padding="20dp"
+                android:contentDescription="ufs logo"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -273,7 +273,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/appointments_history"
                     android:textColor="@color/blue"
-                    android:textSize="24sp"
+                    android:textSize="22sp"
                     android:textStyle="bold"
                     android:padding="8dp"/>
             </LinearLayout>

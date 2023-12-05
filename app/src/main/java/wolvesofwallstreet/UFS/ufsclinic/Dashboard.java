@@ -233,6 +233,9 @@ public class Dashboard extends AppCompatActivity {
                 dialog.dismiss();
                 Toast.makeText(Dashboard.this,"Select available date & time slot",Toast.LENGTH_SHORT).show();
 
+                Intent booNewAppointment = new Intent(Dashboard.this, BookAppointment.class);
+                startActivity(booNewAppointment);
+
             }
         });
 
