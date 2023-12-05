@@ -24,6 +24,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -32,6 +33,7 @@ import com.google.android.material.navigation.NavigationView;
 import java.util.Objects;
 
 public class Dashboard extends AppCompatActivity {
+    ViewPager viewPager;
     ImageView iconSearch, iconMic, toolbar_hamburger_menu;
     EditText editTxtSearch;
     CardView ailmentsCard, medicineCard, screeningsCard, women_healthCard, men_healthCard, helplineCard;
@@ -48,6 +50,13 @@ public class Dashboard extends AppCompatActivity {
         iconSearch = findViewById(R.id.iconSearch);
         iconMic = findViewById(R.id.iconMic);
         editTxtSearch = findViewById(R.id.editTxtSearch);
+
+        //ViewPager
+        viewPager = (ViewPager) findViewById(R.id.viewPager);
+
+        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
+
+        viewPager.setAdapter(viewPagerAdapter);
 
         ailmentsCard = findViewById(R.id.ailmentsCard);
         medicineCard = findViewById(R.id.medicineCard);
