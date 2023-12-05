@@ -18,7 +18,6 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/createText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAlignment="viewStart"
@@ -27,21 +26,22 @@
             android:textColor="@color/blue"
             android:layout_marginStart="12dp"
             android:layout_marginTop="5dp"
-            android:textSize="25dp" />
+            android:textSize="25sp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/cancel_button"
-            android:layout_marginLeft="180dp"
+            android:layout_marginStart="180dp"
             android:layout_marginTop="8dp"
+            android:layout_gravity="center"
             android:id="@+id/cancelButton"/>
 
     </LinearLayout>
 
 
     <LinearLayout
-        android:id="@+id/layoutVideo"
+        android:id="@+id/newBooking"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -51,20 +51,24 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icon_add"/>
+            android:src="@drawable/icon_add"
+            android:layout_gravity="center"/>
 
-        <TextView
+        <Button
+            android:id="@+id/btnNewBooking"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Book a new appointment"
             android:textColor="@color/blue"
-            android:layout_marginLeft="30dp"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="0dp"
+            android:paddingStart="24dp"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/layoutShorts"
+        android:id="@+id/viewAppointments"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -74,15 +78,19 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icon_view"/>
+            android:src="@drawable/icon_view"
+            android:layout_gravity="center"/>
 
-        <TextView
+        <Button
+            android:id="@+id/btnViewAppointmentsHistory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="View appointments"
             android:textColor="@color/blue"
-            android:layout_marginLeft="30dp"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="0dp"
+            android:paddingStart="24dp"/>
 
     </LinearLayout>
 
@@ -100,15 +108,19 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icon_cancel"/>
+            android:src="@drawable/icon_cancel"
+            android:layout_gravity="center"/>
 
-        <TextView
+        <Button
+            android:id="@+id/btnCancelAppointments"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cancel Appointments"
             android:textColor="@color/blue"
-            android:layout_marginLeft="30dp"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="0dp"
+            android:paddingStart="24dp"/>
 
     </LinearLayout>
 

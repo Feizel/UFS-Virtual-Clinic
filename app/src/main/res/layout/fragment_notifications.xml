@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="20dp"
     android:background="@color/white"
-    tools:context=".AppointmentsFragment">
+    tools:context=".NotificationsFragment">
 
     <!-- Header -->
     <TextView
@@ -16,9 +16,11 @@
         android:layout_height="wrap_content"
         android:text="@string/notifs_label"
         android:textColor="@color/blue"
-        android:textSize="32sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:drawableStart="@drawable/arrow_back"
+        android:drawablePadding="18dp"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
