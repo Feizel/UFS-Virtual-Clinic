@@ -9,6 +9,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
@@ -210,37 +211,40 @@ public class Dashboard extends AppCompatActivity {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.bottomsheetlayout);
 
-        LinearLayout videoLayout = dialog.findViewById(R.id.layoutVideo);
-        LinearLayout shortsLayout = dialog.findViewById(R.id.layoutShorts);
-        LinearLayout liveLayout = dialog.findViewById(R.id.layoutLive);
+//        LinearLayout newBooking = dialog.findViewById(R.id.layoutVideo);
+        Button newBooking = dialog.findViewById(R.id.btnNewBooking);
+        Button viewAppointments = dialog.findViewById(R.id.btnViewAppointmentsHistory);
         ImageView cancelButton = dialog.findViewById(R.id.cancelButton);
 
-        videoLayout.setOnClickListener(new View.OnClickListener() {
+//        videoLayout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                dialog.dismiss();
+//                Toast.makeText(Dashboard.this,"Upload a Video is clicked",Toast.LENGTH_SHORT).show();
+//
+//            }
+//        });
+
+        newBooking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 dialog.dismiss();
-                Toast.makeText(Dashboard.this,"Upload a Video is clicked",Toast.LENGTH_SHORT).show();
+                Toast.makeText(Dashboard.this,"Select available date & time slot",Toast.LENGTH_SHORT).show();
 
             }
         });
 
-        shortsLayout.setOnClickListener(new View.OnClickListener() {
+        viewAppointments.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                dialog.dismiss();
-                Toast.makeText(Dashboard.this,"Create a short is Clicked",Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
-        liveLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                Intent goToAppointmentHistory = new Intent(Dashboard.this, AppointmentsFragment.class);
+                startActivity(goToAppointmentHistory);
 
                 dialog.dismiss();
-                Toast.makeText(Dashboard.this,"Go live is Clicked",Toast.LENGTH_SHORT).show();
+                Toast.makeText(Dashboard.this,"Going to appointment history",Toast.LENGTH_SHORT).show();
 
             }
         });

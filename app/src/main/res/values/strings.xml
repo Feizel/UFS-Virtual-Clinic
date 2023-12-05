@@ -44,6 +44,38 @@
     <string name="campaign">Campaign</string>
     <string name="student_counselling">Student\n Counselling \n&amp; \nDevelopment</string>
 
+    //Appointments
+    <string name="upcomimg_appointments">Upcoming Appointments</string>
+    <string name="appointments_history">Appointment History</string>
+
+    //Conditions
+    <string name="nurse_unavailable">Nurse Unavailable</string>
+    <string name="nurse_available">Nurse Available</string>
+
+    <string name="campus_clinic">Campus Clinic</string>
+    <string name="vc">Vaccination Centre</string>
+
+    <string name="flu_checkup">Flu Checkup</string>
+    <string name="symptom_assessment">Symptom Assessment</string>
+    <string name="rapid_flu_test">Rapid Flu Testing</string>
+    <string name="prescription">Prescription or Recovery Recommendtions</string>
+
+    <string name="health_consultation">Health Consultation</string>
+    <string name="vaccination">Vaccination</string>
+    <string name="vaccination_history">Vaccination History</string>
+
+    <string name="allergy">Allergy Reaction</string>
+
+    <string name="physical_exam">Physical Examination</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="body_mass_index">Body Mass Index</string>
+    <string name="heart_rate">Heart Rate Assessment</string>
+
+    <string name="sexual_health">Sexual Health Consultation</string>
+    <string name="std_test">STD/STI Testing</string>
+    <string name="contraceptives">Contraception Counseling</string>
+    <string name="circumcision">Male Circumcision</string>
+
     //Caraousel
     <string name="sliderText1">UFS Molecular Virology group researching rotavirus vaccines for Africa
         as part of international consortium</string>
