@@ -12,11 +12,8 @@
 
     <!-- Your existing dashboard content here -->
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:orientation="vertical"
         android:padding="20dp"
         android:background="@color/white"
@@ -122,10 +119,16 @@
                         android:layout_marginTop="30dp"
                         android:textColor="@color/green"/>
 
-                    <ImageSwitcher
-                        android:id="@+id/imgSwitcherHome"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp" />
+<!--                    <ImageSwitcher-->
+<!--                        android:id="@+id/imgSwitcherHome"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="150dp" />-->
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="8dp"/>
 
                     <!--CAROUSEL-->
                 <LinearLayout
@@ -264,13 +267,15 @@
                                     android:layout_marginTop="10dp"
                                     android:layout_centerHorizontal="true"
                                     android:layout_below="@+id/ailmentsImage"/>
+
                                 <ImageView
-                                    android:layout_width="70dp"
-                                    android:layout_height="70dp"
                                     android:id="@+id/ailmentsImage"
-                                    android:src="@drawable/minor_ailments"
+                                    android:layout_width="70dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerHorizontal="true"
                                     android:layout_marginTop="15dp"
-                                    android:layout_centerHorizontal="true"/>
+                                    android:src="@drawable/minor_ailments"
+                                    android:contentDescription="minor ailments"/>
                             </RelativeLayout>
                         </androidx.cardview.widget.CardView>
                         <androidx.cardview.widget.CardView
@@ -300,7 +305,8 @@
                                     android:id="@+id/medicationImage"
                                     android:src="@drawable/chronic_medication"
                                     android:layout_marginTop="15dp"
-                                    android:layout_centerHorizontal="true"/>
+                                    android:layout_centerHorizontal="true"
+                                    android:contentDescription="chronic medication"/>
                             </RelativeLayout>
                         </androidx.cardview.widget.CardView>
                     </LinearLayout>
@@ -342,7 +348,8 @@
                                     android:id="@+id/screeningsImage"
                                     android:src="@drawable/screenings"
                                     android:layout_marginTop="15dp"
-                                    android:layout_centerHorizontal="true"/>
+                                    android:layout_centerHorizontal="true"
+                                    android:contentDescription="screenings"/>
                             </RelativeLayout>
                         </androidx.cardview.widget.CardView>
                         <androidx.cardview.widget.CardView
@@ -372,7 +379,8 @@
                                     android:id="@+id/women_healthImage"
                                     android:src="@drawable/womens_health"
                                     android:layout_marginTop="15dp"
-                                    android:layout_centerHorizontal="true"/>
+                                    android:layout_centerHorizontal="true"
+                                    android:contentDescription="wowmens health"/>
                             </RelativeLayout>
                         </androidx.cardview.widget.CardView>
                     </LinearLayout>
@@ -414,7 +422,8 @@
                                     android:id="@+id/mens_healthImage"
                                     android:src="@drawable/mens_health"
                                     android:layout_marginTop="15dp"
-                                    android:layout_centerHorizontal="true"/>
+                                    android:layout_centerHorizontal="true"
+                                    android:contentDescription="mens health"/>
                             </RelativeLayout>
                         </androidx.cardview.widget.CardView>
                         <androidx.cardview.widget.CardView
@@ -444,11 +453,24 @@
                                     android:id="@+id/helplineImage"
                                     android:src="@drawable/helpline"
                                     android:layout_marginTop="15dp"
-                                    android:layout_centerHorizontal="true"/>
+                                    android:layout_centerHorizontal="true"
+                                    android:contentDescription="helpline"/>
                             </RelativeLayout>
                         </androidx.cardview.widget.CardView>
                     </LinearLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:id="@+id/supporServices"
+                    android:text="@string/support_ervices"
+                    android:textSize="24sp"
+                    android:textColor="@color/blue"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
 
 
                 <!-- HEALTH TIPS-->
@@ -479,7 +501,8 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/brain"
                         android:layout_marginStart="60dp"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:contentDescription="brain"/>
                 </LinearLayout>
 
                 <!-- CAMPAIGN -->
@@ -510,7 +533,8 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/peepstanding"
                         android:layout_marginStart="60dp"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:contentDescription="person"/>
                 </LinearLayout>
 
                 <!-- CAMPAIGN -->
@@ -540,7 +564,8 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/peepstanding"
                         android:layout_marginStart="60dp"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:contentDescription="person"/>
                 </LinearLayout>
 
             </TableLayout>
@@ -609,6 +634,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:src="@drawable/add_button"
+            android:contentDescription="add button"
             app:layout_anchor="@id/bottomAppBar"
             app:maxImageSize="40dp"
             android:id="@+id/fab"

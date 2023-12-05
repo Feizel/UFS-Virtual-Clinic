@@ -7,7 +7,7 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/logo3"
-        android:label="UFS CLINIC"
+        android:label="Kovsie Health"
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.Material3.Dark.NoActionBar"
         tools:targetApi="31">

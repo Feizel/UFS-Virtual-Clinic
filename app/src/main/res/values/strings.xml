@@ -44,6 +44,14 @@
     <string name="campaign">Campaign</string>
     <string name="student_counselling">Student\n Counselling \n&amp; \nDevelopment</string>
 
+    //Caraousel
+    <string name="sliderText1">UFS Molecular Virology group researching rotavirus vaccines for Africa
+        as part of international consortium</string>
+    <string name="sliderText2">UFS set to celebrate new graduates during December graduation ceremonies</string>
+    <string name="sliderText3">UFS declares zero-tolerance against gender-based violence</string>
+    <string name="sliderText4">UFS assists foreign-trained doctors to prepare for their OSCE board exams</string>
+    <string name="sliderText5">16 Days of Activism: The role of universities in transcending from activism to action</string>
+
     //Services
     <string name="service_description">Students and staff can make use of the following services that are available on campus:</string>
     <string name="minor_ailments">Minor ailments</string>
@@ -53,6 +61,7 @@
     <string name="mens_health">Men\'s health</string>
     <string name="helpline">Helpline</string>
     <string name="clinic_staff">Clinic Staff</string>
+    <string name="support_ervices">Support Services</string>
 
     //Navigation View
     <string name="app_name">Navigation Drawer</string>
