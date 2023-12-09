@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dropdown_background.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#66449842" /> <!-- Green color when pressed -->
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <!-- Default background color when not pressed -->
+            <solid android:color="@color/search_bg" />
+        </shape>
+    </item>
+</selector>

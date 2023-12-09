@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Onboarding">
+    tools:context=".Onboarding"
+    android:background="@color/white">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -62,7 +63,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="16dp">
 
         <TextView
@@ -93,35 +94,44 @@
             android:textAlignment="center"
             android:textSize="18sp" />
 
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+
         <Button
             android:id="@+id/btnSkipTour"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txtAppointments"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="46dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:padding="16dp"
+            android:drawableEnd="@drawable/arrow_skip_tour"
+            android:drawablePadding="16dp"
+            android:backgroundTint="@color/blue"
             android:text="@string/skip_tour"
             android:textAlignment="center"
-            android:textColor="@color/white"
+            android:textColor="@color/blue"
             android:textSize="16sp"
-            android:textStyle="bold"
-            android:backgroundTint="@color/blue"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnNext"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btnSkipTour"
-            android:layout_marginTop="8dp"
-            android:fontFamily="sans-serif"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:padding="16dp"
+            android:backgroundTint="@android:color/transparent"
             android:text="@string/next"
+            android:textAlignment="textEnd"
             android:textColor="@color/blue"
             android:textSize="16sp"
-            android:textStyle="bold"
-            android:alpha="0.9"
-            android:textAlignment="textEnd"
-            android:layout_alignParentEnd="true"
-            android:backgroundTint="@android:color/transparent"/>
+            android:textStyle="bold" />
 
     </RelativeLayout>
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/red"/> <!-- Full red color when selected -->
+            <corners android:radius="0dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:color="@color/red" android:width="2dp"/> <!-- Red outline with 2dp width when not selected -->
+            <corners android:radius="0dp"/>
+        </shape>
+    </item>
+</selector>
