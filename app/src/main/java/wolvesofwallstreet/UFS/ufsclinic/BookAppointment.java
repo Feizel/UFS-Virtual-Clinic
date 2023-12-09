@@ -5,14 +5,11 @@ import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.TimePicker;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -51,10 +48,10 @@ public class BookAppointment extends AppCompatActivity {
         dateEditText.setOnClickListener(view -> showDatePicker());
         timeEditText.setOnClickListener(view -> showTimePicker());
 
-        Button bookAppointmentButton = findViewById(R.id.sign_up);
+        Button bookAppointmentButton = findViewById(R.id.bookAppointment );
         bookAppointmentButton.setOnClickListener(view -> showConfirmationDialog());
 
-        Button contactUsButton = findViewById(R.id.ConactUs);
+        Button contactUsButton = findViewById(R.id.getHelp);
         contactUsButton.setOnClickListener(view -> contactUs());
     }
 

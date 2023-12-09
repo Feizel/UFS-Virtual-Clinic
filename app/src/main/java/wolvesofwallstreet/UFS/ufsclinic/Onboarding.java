@@ -5,10 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewSwitcher;
@@ -17,6 +18,8 @@ public class Onboarding extends AppCompatActivity {
     private ImageSwitcher imgSwitcher;
     private ImageView dot1, dot2, dot3;
     private Button btnSkipTour, btnNext;
+
+    Animation animIn, animOut;
     private static final int[] onboardingImages = {
             R.drawable.onb1,
             R.drawable.onb2,
@@ -48,6 +51,13 @@ public class Onboarding extends AppCompatActivity {
         dot3 = findViewById(R.id.dot3);
 
         updateDots();
+
+        // Set animations for ImageSwitcher
+        animIn = AnimationUtils.loadAnimation(this, android.R.anim.fade_in);
+        animOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
+
+        imgSwitcher.setInAnimation(animIn);
+        imgSwitcher.setOutAnimation(animOut);
 
         imgSwitcher.setFactory(new ViewSwitcher.ViewFactory() {
             @Override
@@ -97,6 +107,14 @@ public class Onboarding extends AppCompatActivity {
         }
     }
     private void updateImageAndText() {
+        // Create fade-in and fade-out animations
+        animIn = AnimationUtils.loadAnimation(this, android.R.anim.fade_in);
+        animOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
+
+        // Set animations for ImageSwitcher
+        imgSwitcher.setInAnimation(animIn);
+        imgSwitcher.setOutAnimation(animOut);
+
         imgSwitcher.setImageResource(onboardingImages[currentIndex]);
 
         TextView lblAppointments = findViewById(R.id.lblAppointments);
@@ -104,6 +122,11 @@ public class Onboarding extends AppCompatActivity {
 
         TextView txtAppointments = findViewById(R.id.txtAppointments);
         txtAppointments.setText(getString(onboardingTexts[currentIndex]));
+
+        // Start animations
+        imgSwitcher.startAnimation(animIn);
+        lblAppointments.startAnimation(animIn);
+        txtAppointments.startAnimation(animOut);
 
         updateDots();
 

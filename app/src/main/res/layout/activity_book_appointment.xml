@@ -3,10 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="20dp"
     android:background="@color/white"
-    tools:context=".AppointmentsFragment">
+    tools:context=".BookAppointment">
 
     <!-- Header -->
     <LinearLayout
@@ -14,7 +15,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="start"
-        android:layout_marginTop="8dp">
+        android:layout_marginTop="8dp"
+        android:padding="16dp">
 
         <ImageButton
             android:id="@+id/backButton"
@@ -40,13 +42,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
             android:layout_marginTop="24dp"
             android:orientation="vertical">
 
@@ -77,17 +75,206 @@
                 android:textStyle="italic"
                 android:gravity="center"/>
 
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/minor_ailments" />
+
+                        <TextView
+                            android:layout_width="64dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/minor_ailments"
+                            android:textAlignment="center"
+                            android:textColor="#7E7E7E"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/chronic_medication" />
+
+                        <TextView
+                            android:layout_width="64dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/chronic_medication"
+                            android:textAlignment="center"
+                            android:textColor="#7E7E7E"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/screenings" />
+
+                        <TextView
+                            android:layout_width="64dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/screenings"
+                            android:textAlignment="center"
+                            android:textColor="#7E7E7E"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/womens_health" />
+
+                        <TextView
+                            android:layout_width="64dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/women_health"
+                            android:textAlignment="center"
+                            android:textColor="#7E7E7E"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/mens_health" />
+
+                        <TextView
+                            android:layout_width="64dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mens_health"
+                            android:textAlignment="center"
+                            android:textColor="#7E7E7E"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/protect" />
+
+                        <TextView
+                            android:layout_width="64dp"
+                            android:layout_height="wrap_content"
+                            android:text="Vaccination"
+                            android:textAlignment="center"
+                            android:textColor="#7E7E7E"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/first_aid" />
+
+                        <TextView
+                            android:layout_width="64dp"
+                            android:layout_height="wrap_content"
+                            android:text="Injuries"
+                            android:textAlignment="center"
+                            android:textColor="#7E7E7E"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+<!--            Sickness section-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select condition:"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:paddingStart="36dp"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <ImageButton
                     android:id="@+id/iconSickness"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="8dp"
                     android:src="@drawable/icon_sickness"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginTop="8dp"
                     android:background="?android:attr/selectableItemBackground"/>
 
 
@@ -99,10 +286,64 @@
                     android:hint="Select Condition"
                     android:background="@android:drawable/btn_dropdown"
                     android:layout_marginEnd="8dp"
-                    android:layout_marginStart="8dp"
                     android:layout_marginBottom="8dp"/>
 
             </LinearLayout>
+
+<!--            Severity-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How serious are your symptoms? \nSelect severity:"
+                    android:textSize="16sp"
+                    android:gravity="start"
+                    android:paddingStart="36dp"/>
+
+                <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:id="@+id/toggleGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mild"
+                        app:backgroundTint="@drawable/button_toggle_background"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Moderate"
+                        app:backgroundTint="@drawable/button_toggle_background"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Severe"
+                        app:backgroundTint="@drawable/button_toggle_background"
+                        app:cornerRadius="0dp"/>
+                </com.google.android.material.button.MaterialButtonToggleGroup>
+            </LinearLayout>
+
+<!--            Date-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Date:"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:paddingStart="36dp"
+                android:layout_marginTop="8dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -110,29 +351,35 @@
 
                 <ImageButton
                     android:id="@+id/iconCalendar"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="8dp"
                     android:src="@drawable/icon_calendar"
-                    android:layout_below="@id/iconSickness"
-                    android:layout_marginTop="8dp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:layout_marginEnd="8dp"/>
+                    android:background="?android:attr/selectableItemBackground"/>
 
                 <EditText
                     android:id="@+id/dateEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/iconCalendar"
                     android:layout_marginTop="8dp"
                     android:hint="Select Date"
                     android:background="@android:drawable/btn_dropdown"
                     android:layout_marginEnd="8dp"
-                    android:layout_marginStart="8dp"
                     android:layout_marginBottom="8dp"
-                    android:inputType="none"
-                    android:focusable="false"/>
+                    android:inputType="date"/>
 
             </LinearLayout>
+
+<!--            Time-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Time:"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:paddingStart="36dp"
+                android:layout_marginTop="8dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -140,73 +387,54 @@
 
                 <ImageButton
                     android:id="@+id/iconTime"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="8dp"
                     android:src="@drawable/icon_time"
-                    android:layout_below="@id/iconCalendar"
-                    android:layout_marginTop="8dp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:layout_marginEnd="8dp"/>
+                    android:background="?android:attr/selectableItemBackground"/>
 
                 <EditText
                     android:id="@+id/timeEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/iconTime"
                     android:layout_marginTop="8dp"
                     android:hint="Select Time"
                     android:background="@android:drawable/btn_dropdown"
                     android:layout_marginEnd="8dp"
-                    android:layout_marginStart="8dp"
                     android:layout_marginBottom="8dp"
-                    android:inputType="none"
-                    android:focusable="false"/>
+                    android:inputType="time"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="16dp"
+                android:gravity="center"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/bookAppointment"
+                    app:icon="@drawable/icon_calendar"
+                    app:iconGravity="textEnd"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                    android:layout_marginTop="14dp"
+                    android:text="Book Appointment"
+                    android:letterSpacing="0.1"/>
 
-                    <Button
-                        android:id="@+id/sign_up"
-                        android:layout_width="210dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="32dp"
-                        android:layout_marginBottom="4dp"
-                        android:text="Book Appointment"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:backgroundTint="@color/green"/>
-
-                    <Button
-                        android:id="@+id/ConactUs"
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="4dp"
-                        android:layout_marginBottom="12dp"
-                        android:text="Contact Us"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:backgroundTint="@color/red"/>
-
-                </LinearLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/getHelp"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    app:icon="@drawable/icon_contact_us"
+                    app:iconGravity="textEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:letterSpacing="0.1"
+                    android:text="GET HELP"
+                    app:strokeColor="@color/black"
+                    app:strokeWidth="1dp" />
 
             </LinearLayout>
 
