@@ -35,7 +35,7 @@
             android:textColor="@color/blue"
             android:textSize="32sp"
             android:textStyle="bold"
-            android:paddingLeft="10dp"/>
+            android:paddingStart="10dp"/>
     </LinearLayout>
 
     <ScrollView
@@ -85,7 +85,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="8dp">
+                    android:padding="8dp"
+                    android:background="#F9F9F9">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -421,6 +422,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="14dp"
                     android:text="Book Appointment"
+                    android:backgroundTint="@color/md_tertiary"
                     android:letterSpacing="0.1"/>
 
                 <com.google.android.material.button.MaterialButton
@@ -433,7 +435,8 @@
                     android:layout_marginTop="14dp"
                     android:letterSpacing="0.1"
                     android:text="GET HELP"
-                    app:strokeColor="@color/black"
+                    android:textColor="@color/md_onTertiaryContainer"
+                    app:strokeColor="@color/md_onTertiaryContainer"
                     app:strokeWidth="1dp" />
 
             </LinearLayout>

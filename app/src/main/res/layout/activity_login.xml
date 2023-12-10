@@ -36,62 +36,71 @@
         android:src="@drawable/lifesavers_bust"
         android:contentDescription="Mask wearing student illustration"/>
 
+    <!--            Student Email-->
     <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:id="@+id/inputLayoutEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:paddingHorizontal="25dp"
-        app:boxStrokeColor="@color/black"
-        android:textColorHint="@color/black"
-        app:hintTextColor="@color/black"
-        >
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="18dp"
+        android:paddingHorizontal="8dp"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        app:endIconMode="clear_text"
+        app:helperText="Required*"
+        app:helperTextTextColor="#F44336"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/icon_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/loginEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_email"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/black"
-             />
+            android:maxLength="20"
+            tools:ignore="TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
-
+<!--    Password-->
     <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:id="@+id/txtInputLayoutPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="25dp"
-        android:paddingTop="10dp"
-        app:boxStrokeColor="@color/black"
-        app:passwordToggleEnabled="true"
-        app:passwordToggleTint="@color/black"
-        android:textColorHint="@color/black"
-        app:hintTextColor="@color/black"
-        >
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="18dp"
+        android:paddingHorizontal="8dp"
+        android:hint="Password"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textinputLayout"
+        app:startIconDrawable="@drawable/icon_password">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/loginPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_password"
-            android:textColor="@color/black"
             android:inputType="textPassword"
-            />
+            android:maxLength="20"
+            tools:ignore="TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnForgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:textAllCaps="false"
+        android:layout_marginEnd="18dp"
         android:layout_gravity="end"
         android:layout_marginTop="2dp"
-        android:padding="0dp"
         android:text="@string/forgot_password"
-        android:textColor="@color/red"
-        android:backgroundTint="@android:color/transparent"/>
+        android:textColor="@color/red"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnLogin"
@@ -99,7 +108,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="25dp"
         android:layout_marginTop="30dp"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/md_onPrimaryContainer"
         android:text="@string/login_btn"
         android:textColor="@color/white" />
 
@@ -110,22 +119,22 @@
         android:layout_marginTop="16dp"
         android:orientation="horizontal">
 
-        <TextView
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/signupRedirectText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_marginStart="10dp"
-            android:backgroundTint="@android:color/transparent"
             android:text="@string/sign_up"
             android:textColor="@color/black"
             android:textSize="12sp"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnContinue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_marginStart="10dp"
-            android:backgroundTint="@android:color/transparent"
             android:text="@string/continue_staff"
             android:textColor="@color/green"
             android:textSize="12sp"/>

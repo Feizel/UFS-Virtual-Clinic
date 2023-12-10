@@ -37,14 +37,6 @@
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"/>
 
-            <!-- Profile picture -->
-<!--            <ImageView-->
-<!--                android:id="@+id/ivProfilePicture"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:src="@drawable/icon_notifications"-->
-<!--                android:contentDescription="notifications"-->
-<!--                android:outlineAmbientShadowColor="@color/blue"/>-->
         </LinearLayout>
 
         <ScrollView
