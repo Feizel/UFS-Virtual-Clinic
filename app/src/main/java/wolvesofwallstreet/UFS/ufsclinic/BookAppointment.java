@@ -17,8 +17,7 @@ import java.util.Calendar;
 
 public class BookAppointment extends AppCompatActivity {
     private AutoCompleteTextView conditionDropdown;
-    private EditText dateEditText;
-    private EditText timeEditText;
+    private EditText dateEditText, timeEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
