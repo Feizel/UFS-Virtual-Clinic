@@ -35,12 +35,14 @@ import java.util.Objects;
 
 public class Dashboard extends AppCompatActivity {
     ViewPager viewPager;
+    View dot1, dot2, dot3, dot4;
     ImageView iconSearch, iconMic, toolbar_hamburger_menu;
     EditText editTxtSearch;
     CardView ailmentsCard, medicineCard, screeningsCard, women_healthCard, men_healthCard, helplineCard;
     FloatingActionButton addFab;
     DrawerLayout drawerLayout;
     BottomNavigationView bottomNavigationView;
+    private int currentIndex = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +60,13 @@ public class Dashboard extends AppCompatActivity {
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
 
         viewPager.setAdapter(viewPagerAdapter);
+
+        dot1 = findViewById(R.id.dot1);
+        dot2 = findViewById(R.id.dot2);
+        dot3 = findViewById(R.id.dot3);
+        dot4 = findViewById(R.id.dot4);
+
+        updateDots();
 
         ailmentsCard = findViewById(R.id.ailmentsCard);
         medicineCard = findViewById(R.id.medicineCard);
@@ -190,6 +199,26 @@ public class Dashboard extends AppCompatActivity {
         });
 
         // Add your additional logic and event listeners here
+    }
+    private void updateDots() {
+//        switch (currentIndex) {
+//            case 0:
+//                dot1.setImageResource(R.drawable.dot_active);
+//                dot2.setImageResource(R.drawable.dot_inactive);
+//                dot3.setImageResource(R.drawable.dot_inactive);
+//                break;
+//            case 1:
+//                dot1.setImageResource(R.drawable.dot_inactive);
+//                dot2.setImageResource(R.drawable.dot_active);
+//                dot3.setImageResource(R.drawable.dot_inactive);
+//                break;
+//            case 2:
+//                dot1.setImageResource(R.drawable.dot_inactive);
+//                dot2.setImageResource(R.drawable.dot_inactive);
+//                dot3.setImageResource(R.drawable.dot_active);
+//                break;
+//            default:
+//        }
     }
 
     public void onMenuIconClick(View view) {

@@ -2,7 +2,7 @@
     //Splash Screen
     <!--    <string name="main_app_name">UFS CLINIC</string>-->
     <string name="top_header_main">Welcome to</string>
-    <string name="below_header_main">UFS Virtual Clinic</string>
+    <string name="below_header_main">KOVSIE HEALTH</string>
 
     //Login Screen
     <string name="top_header_login">Welcome Back</string>

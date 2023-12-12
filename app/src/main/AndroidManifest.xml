@@ -18,7 +18,7 @@
             android:name=".screenings"
             android:exported="false"
             android:label="@string/title_activity_screenings"
-            android:theme="@style/Base.Theme.Material3.Dark.NoActionBar" />
+            android:theme="@style/Theme.Material3.Dark.NoActionBar" />
         <activity
             android:name=".helpline"
             android:exported="false" />

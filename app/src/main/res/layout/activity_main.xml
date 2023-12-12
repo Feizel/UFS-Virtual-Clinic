@@ -46,7 +46,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="143dp"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/md_onPrimaryContainer"
         android:text="@string/login_btn"
         android:textColor="@color/white"/>
 
@@ -61,5 +61,14 @@
         android:text="@string/sign_up"
         android:textColor="@color/red"/>
 
+    <Button
+        android:id="@+id/btnGoSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/white"
+        android:text="Splash Screen"
+        android:textColor="@color/red"/>
 
 </RelativeLayout>

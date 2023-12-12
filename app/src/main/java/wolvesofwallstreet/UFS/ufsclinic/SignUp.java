@@ -17,10 +17,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class SignUp extends AppCompatActivity {
-
-    // Declare any other necessary variables.
     private FirebaseAuth auth;
-    private EditText signupEmail, signupPassword;
+    private EditText signupName, signupEmail, signupPassword, signupConfirmPassword, signupPhoneNumber;
     private Button signupButton;
     private TextView loginRedirectText;
 
@@ -32,24 +30,44 @@ public class SignUp extends AppCompatActivity {
 
         //Initialize the FirebaseAuth instance in the onCreate()
         auth = FirebaseAuth.getInstance();
-        signupEmail = findViewById(R.id.txtEmail);
-        signupPassword = findViewById(R.id.txtPassword);
+        signupName = findViewById(R.id.txtInputName);
+        signupEmail = findViewById(R.id.txtInputEmail);
+        signupPassword = findViewById(R.id.txtInputPassword);
+        signupConfirmPassword = findViewById(R.id.txtInputConfirmPassword);
+        signupPhoneNumber = findViewById(R.id.txtinputPhoneNumber);
         signupButton = findViewById(R.id.signup_button);
         loginRedirectText = findViewById(R.id.loginRedirectText);
 
         signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String user = signupEmail.getText().toString().trim();
-                String pass = signupPassword.getText().toString().trim();
 
-                if (user.isEmpty()){
-                    signupEmail.setError("Email cannot be empty");
+                //Get User Input
+                String name = signupName.getText().toString().trim();
+                String email = signupEmail.getText().toString().trim();
+                String pass = signupPassword.getText().toString().trim();
+                String passConfirm = signupConfirmPassword.getText().toString().trim();
+                String phone = signupPhoneNumber.getText().toString().trim();
+
+                // Check if the password and confirm password match
+                if (!pass.equals(passConfirm)) {
+                    signupConfirmPassword.setError("Passwords do not match");
+                    return; // Stop the registration process
                 }
-                if(pass.isEmpty()){
+
+                // Continue with the registration process
+                if(name.isEmpty()){
+                    signupName.setError("Name cannot be empty");
+                } if (email.isEmpty()){
+                    signupEmail.setError("Email cannot be empty");
+                } if(pass.isEmpty()){
                     signupPassword.setError("Password cannot be empty");
+                } if(passConfirm.isEmpty()){
+                    signupConfirmPassword.setError("Password confirmation cannot be empty");
+                } if(phone.isEmpty()){
+                    signupPhoneNumber.setError("Phone Number cannot be empty");
                 } else{
-                    auth.createUserWithEmailAndPassword(user, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
