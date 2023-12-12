@@ -40,7 +40,11 @@
 
     <ScrollView
         android:layout_width="match_parent"
+ Onboarding
         android:layout_height="match_parent">
+
+        android:layout_height="wrap_content">
+ master
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -85,8 +89,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+Onboarding
                     android:padding="8dp"
                     android:background="#F9F9F9">
+ master
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -317,21 +323,33 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Mild"
+ Onboarding
                         app:backgroundTint="@color/red"/>
+
+                        app:backgroundTint="@drawable/button_toggle_background"/>
+ master
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/button2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Moderate"
+ Onboarding
                         app:backgroundTint="@color/material_on_background_disabled"/>
+
+                        app:backgroundTint="@drawable/button_toggle_background"/>
+ master
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/button3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Severe"
+ Onboarding
                         app:backgroundTint="@color/material_on_background_disabled"
+
+                        app:backgroundTint="@drawable/button_toggle_background"
+ master
                         app:cornerRadius="0dp"/>
                 </com.google.android.material.button.MaterialButtonToggleGroup>
             </LinearLayout>
@@ -422,7 +440,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="14dp"
                     android:text="Book Appointment"
+ Onboarding
                     android:backgroundTint="@color/md_tertiary"
+
+ master
                     android:letterSpacing="0.1"/>
 
                 <com.google.android.material.button.MaterialButton
@@ -435,13 +456,22 @@
                     android:layout_marginTop="14dp"
                     android:letterSpacing="0.1"
                     android:text="GET HELP"
+ Onboarding
                     android:textColor="@color/md_onTertiaryContainer"
                     app:strokeColor="@color/md_onTertiaryContainer"
+
+                    app:strokeColor="@color/black"
+ master
                     app:strokeWidth="1dp" />
 
             </LinearLayout>
 
         </LinearLayout>
+ Onboarding
+
+
+    </ScrollView>
+ master
 
     </ScrollView>
 
