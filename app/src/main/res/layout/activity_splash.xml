@@ -1,26 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Splash"
     android:background="#f0f0f0">
 
-    <ImageView
-        android:id="@+id/imgLogo"
+<!--    <ImageView-->
+<!--        android:id="@+id/imgLogo"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:contentDescription="@string/ufs_logo"-->
+<!--        android:src="@drawable/ufs_logo_trans" />-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieUFSLogo"
         android:layout_width="300dp"
         android:layout_height="300dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="ufs_logo_animated.json"
+        app:lottie_loop="false"
+        app:lottie_speed=".3"
         android:layout_centerInParent="true"
-        android:contentDescription="@string/ufs_logo"
-        android:src="@drawable/ufs_logo_trans" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 
-    <com.google.android.material.progressindicator.CircularProgressIndicator
+    <ProgressBar
         android:id="@+id/idPBLoading"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imgLogo"
+        android:layout_below="@id/lottieUFSLogo"
         android:layout_centerInParent="true"
-        android:indeterminateTint="@color/blue" />
+        android:indeterminateTint="@color/black"
+        android:layout_marginTop="22dp"/>
 
 </RelativeLayout>

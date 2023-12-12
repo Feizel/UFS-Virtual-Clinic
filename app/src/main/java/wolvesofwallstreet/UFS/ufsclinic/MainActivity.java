@@ -41,5 +41,15 @@ public class MainActivity extends AppCompatActivity
                 finish();
             }
         });
+
+        Button goToSplash = findViewById(R.id.btnGoSplash);
+        goToSplash.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Dashboard.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 }
