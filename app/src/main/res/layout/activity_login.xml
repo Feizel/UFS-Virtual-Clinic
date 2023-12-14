@@ -107,12 +107,12 @@
         android:paddingStart="18dp"
         android:paddingEnd="18dp">
 
-        <com.google.android.material.radiobutton.MaterialRadioButton
+        <com.google.android.material.checkbox.MaterialCheckBox
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Remember Me"
             android:textAllCaps="false"
-            android:gravity="start"
+            android:layout_marginStart="0dp"
             android:layout_weight="1"/>
 
         <com.google.android.material.button.MaterialButton

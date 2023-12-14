@@ -1,231 +1,248 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:scrollbars="none"
     android:padding="18dp"
     tools:context=".minor_ailments">
 
-    <RelativeLayout
+    <LinearLayout
+        android:id="@+id/layoutBackButton"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/btnBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/arrow_back"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:layout_gravity="center"
-            android:padding="18dp"/>
+            android:padding="18dp"
+            android:backgroundTint="@color/white"/>
+    </LinearLayout>
 
-        <TextView
-            android:id="@+id/minor_ailmentsTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/minor_ailments"
-            android:textSize="36sp"
-            android:layout_marginTop="40dp"
-            android:textColor="@color/blue"
-            android:layout_centerHorizontal="true"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_below="@+id/layoutBackButton">
 
-        <ImageView
-            android:id="@+id/minor_ailmentsImage"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_below="@id/minor_ailmentsTitle"
-            android:src="@drawable/minor_ailments"
-            android:layout_centerHorizontal="true"/>
-
-        <TextView
-            android:id="@+id/minor_ailmentsDesc"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Quick consultations for common health issues like headaches, minor injuries, or stomach troubles. Ideal for addressing small health concerns without a full doctor's appointment."
-            android:textColor="@color/grey"
-            android:textSize="18sp"
-            android:gravity="center"
-            android:layout_below="@+id/minor_ailmentsImage"/>
-
-        <ListView
-            android:id="@+id/listview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/minor_ailmentsDesc"
-            android:scrollbars="none">
-        </ListView>
-
-        <TextView
-            android:id="@+id/txtFooter"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="We also offer expert care for issues affecting the ear, nose, and throat, as well as eye conditions, skin condtions &amp; sexually transmitted diseases."
-            android:textColor="@color/green"
-            android:textSize="18sp"
-            android:gravity="center"
-            android:layout_marginTop="12dp"
-            android:layout_below="@+id/listview"/>
-
-<!--        Ear, Nose-->
-        <TextView
-            android:id="@+id/EarNose"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ear, Nose, and Throat Conditions:"
-            android:textSize="16sp"
-            android:gravity="start"
-            android:paddingStart="18dp"
-            android:layout_marginTop="12dp"
-            android:layout_below="@+id/txtFooter"/>
-
-        <LinearLayout
-            android:id="@+id/layoutEarNose"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_below="@+id/EarNose">
-
-            <ImageView
-                android:id="@+id/Surgeon"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/surgeon"/>
+            android:layout_margin="8dp">
 
             <TextView
-                android:id="@+id/EarNoseDesc"
-                android:layout_width="match_parent"
+                android:id="@+id/minor_ailmentsTitle"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Expert care for issues affecting the ear, nose, and throat, such as ear infections, sinus problems, or sore throats." />
-
-        </LinearLayout>
-
-        <!--        Skin Conditions-->
-        <TextView
-            android:id="@+id/SkinConditions"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Skin Conditions:"
-            android:textSize="16sp"
-            android:gravity="start"
-            android:paddingStart="18dp"
-            android:layout_marginTop="12dp"
-            android:layout_below="@+id/layoutEarNose"/>
-
-        <LinearLayout
-            android:id="@+id/layoutSkin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_below="@+id/SkinConditions">
+                android:text="@string/minor_ailments"
+                android:textSize="36sp"
+                android:textColor="@color/green"
+                android:layout_centerHorizontal="true"/>
 
             <ImageView
-                android:id="@+id/dna"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/dna"/>
+                android:id="@+id/minor_ailmentsImage"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_below="@id/minor_ailmentsTitle"
+                android:src="@drawable/minor_ailments"
+                android:layout_centerHorizontal="true"/>
 
             <TextView
-                android:id="@+id/SkinDesc"
+                android:id="@+id/minor_ailmentsDesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Consultations and treatments for various skin concerns, from rashes and minor irritations to skin infections."/>
-        </LinearLayout>
+                android:text="Quick consultations for common health issues like headaches, minor injuries, or stomach troubles. Ideal for addressing small health concerns without a full doctor's appointment."
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_below="@+id/minor_ailmentsImage"/>
 
-<!--        Sexual Diseases-->
-        <!--        Eye Conditions-->
-        <TextView
-            android:id="@+id/STDs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sexually Transmitted Infections:"
-            android:textSize="16sp"
-            android:gravity="start"
-            android:paddingStart="18dp"
-            android:layout_marginTop="12dp"
-            android:layout_below="@+id/layoutSkin"/>
-
-        <LinearLayout
-            android:id="@+id/layoutSTDs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_below="@+id/STDs">
-
-            <ImageView
-                android:id="@+id/tag"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/tag"/>
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/minor_ailmentsDesc"
+                android:scrollbars="none">
+            </ListView>
 
             <TextView
-                android:id="@+id/STDDesc"
+                android:id="@+id/txtFooter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Confidential testing, diagnosis, and treatment for sexually transmitted infections, ensuring privacy and comprehensive care."
-                android:layout_marginBottom="8dp"/>
-        </LinearLayout>
+                android:text="We also offer expert care for issues affecting the ear, nose, and throat, as well as eye conditions, skin condtions &amp; sexually transmitted diseases."
+                android:textColor="@color/green"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/listview"/>
 
-        <!--        Eye Conditions-->
-        <TextView
-            android:id="@+id/EyeConditions"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Eye Conditions:"
-            android:textSize="16sp"
-            android:gravity="start"
-            android:paddingStart="18dp"
-            android:layout_marginTop="12dp"
-            android:layout_below="@+id/layoutSTDs"/>
+            <!--        Ear, Nose-->
+            <TextView
+                android:id="@+id/EarNose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ear, Nose, and Throat Conditions:"
+                android:textSize="22sp"
+                android:gravity="start"
+                android:paddingStart="18dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/txtFooter"/>
 
-        <LinearLayout
-            android:id="@+id/layoutEye"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_below="@+id/EyeConditions">
+            <LinearLayout
+                android:id="@+id/layoutEarNose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/EarNose">
 
-            <ImageView
-                android:id="@+id/otoscope"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/otoscope"/>
+                <ImageView
+                    android:id="@+id/Surgeon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/surgeon"/>
+
+                <TextView
+                    android:id="@+id/EarNoseDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Expert care for issues affecting the ear, nose, and throat, such as ear infections, sinus problems, or sore throats." />
+
+            </LinearLayout>
+
+            <!--        Skin Conditions-->
+            <TextView
+                android:id="@+id/SkinConditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Skin Conditions:"
+                android:textSize="22sp"
+                android:gravity="start"
+                android:paddingStart="18dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/layoutEarNose"/>
+
+            <LinearLayout
+                android:id="@+id/layoutSkin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/SkinConditions">
+
+                <ImageView
+                    android:id="@+id/dna"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/dna"/>
+
+                <TextView
+                    android:id="@+id/SkinDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Consultations and treatments for various skin concerns, from rashes and minor irritations to skin infections."/>
+            </LinearLayout>
+
+            <!--        Sexual Diseases-->
+            <!--        Eye Conditions-->
+            <TextView
+                android:id="@+id/STDs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sexually Transmitted Infections:"
+                android:textSize="22sp"
+                android:gravity="start"
+                android:paddingStart="18dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/layoutSkin"/>
+
+            <LinearLayout
+                android:id="@+id/layoutSTDs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/STDs">
+
+                <ImageView
+                    android:id="@+id/tag"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/tag"/>
+
+                <TextView
+                    android:id="@+id/STDDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Confidential testing, diagnosis, and treatment for sexually transmitted infections, ensuring privacy and comprehensive care."
+                    android:layout_marginBottom="8dp"/>
+            </LinearLayout>
+
+            <!--        Eye Conditions-->
+            <TextView
+                android:id="@+id/EyeConditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eye Conditions:"
+                android:textSize="22sp"
+                android:gravity="start"
+                android:paddingStart="18dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/layoutSTDs"/>
+
+            <LinearLayout
+                android:id="@+id/layoutEye"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/EyeConditions">
+
+                <ImageView
+                    android:id="@+id/otoscope"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/otoscope"/>
+
+                <TextView
+                    android:id="@+id/EyeDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Services related to eye health, covering issues like red eyes, minor infections, or other non-severe eye conditions."
+                    android:layout_marginBottom="8dp"/>
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/EyeDesc"
+                android:id="@+id/txtBottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="#1B1B1F"
+                android:text="Keep an eye out for our regular health campaigns that will provide you with the necessary information to keep you in good shape."
+                android:layout_below="@+id/layoutEye"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnChronicMeds"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:drawableRight="@drawable/ic_forward"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Services related to eye health, covering issues like red eyes, minor infections, or other non-severe eye conditions."
-                android:layout_marginBottom="8dp"/>
-        </LinearLayout>
+                android:text="@string/chronic_medication"
+                android:gravity="center"
+                android:layout_marginTop="18dp"
+                android:layout_below="@+id/txtBottom"/>
 
-        <TextView
-            android:id="@+id/txtBottom"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="12dp"
-            android:gravity="center"
-            android:textSize="14sp"
-            android:textColor="#1B1B1F"
-            android:text="Keep an eye out for our regular health campaigns that will provide you with the necessary information to keep you in good shape."
-            android:layout_below="@+id/layoutEye"/>
+        </RelativeLayout>
+    </ScrollView>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnChronicMeds"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:drawableRight="@drawable/ic_forward"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/chronic_medication"
-            android:gravity="center"
-            android:layout_marginTop="18dp"
-            android:layout_below="@+id/txtBottom"/>
 
-    </RelativeLayout>
 
-</ScrollView>
+</RelativeLayout>
