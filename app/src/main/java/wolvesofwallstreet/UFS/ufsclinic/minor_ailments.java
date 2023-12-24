@@ -28,9 +28,7 @@ public class minor_ailments extends AppCompatActivity {
             "Confidential testing, diagnosis, and treatment for sexually transmitted infections, ensuring privacy and comprehensive care."
     };
 
-    int Images1[] = {R.drawable.lungs, R.drawable.oxygen, R.drawable.pills};
-    int Images2[] = {R.drawable.swab_test, R.drawable.surgeon, R.drawable.tooth};
-    int Images3[] = {R.drawable.blood_drops, R.drawable.transfusion, R.drawable.mens_health};
+    int Images1[] = {R.drawable.tooth, R.drawable.oxygen, R.drawable.broken_bone};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +49,6 @@ public class minor_ailments extends AppCompatActivity {
             }
         });
     }
-
     class CustomerAdapter extends BaseAdapter {
 
         @Override
@@ -71,7 +68,7 @@ public class minor_ailments extends AppCompatActivity {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            convertView = getLayoutInflater().inflate(R.layout.customlistviewlayout, null);
+            convertView = getLayoutInflater().inflate(R.layout.customlistviewlayout, parent, false);
             TextView tv = convertView.findViewById(R.id.tv);
             TextView tv2 = convertView.findViewById(R.id.tv2);
             ImageView Iv = convertView.findViewById(R.id.iv1);
@@ -79,9 +76,9 @@ public class minor_ailments extends AppCompatActivity {
             ImageView Iv3 = convertView.findViewById(R.id.iv3);
 
             tv.setText(Names[position]);
-            Iv.setImageResource(Images1[position]);
-            Iv2.setImageResource(Images2[position]);
-            Iv3.setImageResource(Images3[position]);
+            Iv.setImageResource(Images1[0]);
+            Iv2.setImageResource(Images1[1]);
+            Iv3.setImageResource(Images1[2]);
             tv2.setText(Desc[position]);
 
             return convertView;

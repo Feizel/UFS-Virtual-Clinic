@@ -35,7 +35,7 @@ public class ViewPagerAdapter extends PagerAdapter {
     public Object instantiateItem(ViewGroup container, final int position) {
 
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = layoutInflater.inflate(R.layout.custom_carousel_layout, null);
+        View view = layoutInflater.inflate(R.layout.custom_carousel_layout, null, false);
 
         TextView txtCaraousel = (TextView) view.findViewById(R.id.txtCarousel);
         ImageView imgCarousel = (ImageView) view.findViewById(R.id.imgCarousel);

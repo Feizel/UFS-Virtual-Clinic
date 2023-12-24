@@ -112,20 +112,12 @@
             android:padding="16dp"
             android:drawableEnd="@drawable/arrow_skip_tour"
             android:drawablePadding="16dp"
- Onboarding
             android:backgroundTint="@color/md_onPrimaryContainer"
-
-            android:backgroundTint="@color/blue"
-     master
             android:text="@string/skip_tour"
             android:textAlignment="center"
-            android:textColor="@color/blue"
+            android:textColor="@color/white"
             android:textSize="16sp"
- Onboarding
             android:letterSpacing="0.2"/>
-
-            android:textStyle="bold" />
- master
 
         <Button
             android:id="@+id/btnNext"
@@ -139,12 +131,8 @@
             android:textAlignment="textEnd"
             android:textColor="@color/blue"
             android:textSize="16sp"
- Onboarding
             android:textAllCaps="true"
             android:letterSpacing="0.2"/>
-
-            android:textStyle="bold" />
- master
 
     </RelativeLayout>
 

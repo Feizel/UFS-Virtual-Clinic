@@ -106,13 +106,6 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(goToScreenings);
             }
         });
-        medicineCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent goToMedicine = new Intent(Dashboard.this, chronic_medication.class);
-                startActivity(goToMedicine);
-            }
-        });
         women_healthCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -262,8 +255,8 @@ public class Dashboard extends AppCompatActivity {
                 dialog.dismiss();
                 Toast.makeText(Dashboard.this,"Select available date & time slot",Toast.LENGTH_SHORT).show();
 
-                Intent booNewAppointment = new Intent(Dashboard.this, BookAppointment.class);
-                startActivity(booNewAppointment);
+                Intent bookNewAppointment = new Intent(Dashboard.this, BookAppointment.class);
+                startActivity(bookNewAppointment);
 
             }
         });
