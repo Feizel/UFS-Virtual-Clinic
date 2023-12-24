@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18sp"
+    tools:context=".Campaigns">
+
+    <LinearLayout
+        android:id="@+id/layoutBackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_back"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:padding="18dp"
+            android:backgroundTint="@color/white"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/camp1" />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/camp2" />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/camp3" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Campaigns in March &amp; April"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Material3.CardView.Elevated"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mens Mental Health Awareness Month"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="8dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="For all football player, please join us on 12 July 2019 at 09 AM and bring your couple."
+                        android:textSize="18sp"
+                        />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Material3.CardView.Elevated"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Exam Distress"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="8dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="We are going to learn about data science class with Mr. John Doe from Indonesia"
+                        android:textSize="18sp"
+                        />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Material3.CardView.Elevated"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sexual Health Week"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="8dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bootcamp for all students who want to learn Linux deeper. This is free but do not forget to bring your..."
+                        android:textSize="18sp"
+                        />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Material3.CardView.Elevated"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Together Against GBV"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="8dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="For all football player, please join us on 12 July 2019 at 09 AM and bring your couple."
+                        android:textSize="18sp"
+                        />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

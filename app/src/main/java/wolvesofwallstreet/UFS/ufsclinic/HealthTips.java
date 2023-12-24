@@ -21,7 +21,7 @@ import org.w3c.dom.Text;
 
 import java.util.Calendar;
 
-public class BookAppointment extends AppCompatActivity {
+public class HealthTips extends AppCompatActivity {
     Calendar myCalendar;
     DatePickerDialog DateSelector;
     NotificationManager NM;
@@ -78,7 +78,7 @@ public class BookAppointment extends AppCompatActivity {
 
 
 
-                DateSelector= new DatePickerDialog(BookAppointment.this, new DatePickerDialog.OnDateSetListener() {
+                DateSelector= new DatePickerDialog(HealthTips.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker datePicker, int myear, int mMonth, int mDay) {
 
@@ -198,7 +198,7 @@ public class BookAppointment extends AppCompatActivity {
 
                 }
 
-                Intent Form = new Intent(BookAppointment.this,FormDisplay.class);
+                Intent Form = new Intent(HealthTips.this,FormDisplay.class);
                 Form.putExtra("username",PName.getText().toString());
                 Form.putExtra("Email",PEmail.getText().toString());
                 Form.putExtra("AppointmentTime",ApTime);

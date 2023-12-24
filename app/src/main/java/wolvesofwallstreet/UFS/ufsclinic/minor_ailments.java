@@ -68,7 +68,7 @@ public class minor_ailments extends AppCompatActivity {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            convertView = getLayoutInflater().inflate(R.layout.customlistviewlayout, parent);
+            convertView = getLayoutInflater().inflate(R.layout.customlistviewlayout, parent, false);
             TextView tv = convertView.findViewById(R.id.tv);
             TextView tv2 = convertView.findViewById(R.id.tv2);
             ImageView Iv = convertView.findViewById(R.id.iv1);

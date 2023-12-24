@@ -18,6 +18,8 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import xyz.hasnat.sweettoast.SweetToast;
+
 public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth auth;
     private Button btnLogin, btnContinue, btnForgotPassword;
@@ -49,7 +51,8 @@ public class LoginActivity extends AppCompatActivity {
                                 .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                                     @Override
                                     public void onSuccess(AuthResult authResult) {
-                                        Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                                        SweetToast.success(LoginActivity.this, "Login Successful");
+//                                        Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                                         startActivity(new Intent(LoginActivity.this, Dashboard.class ));
                                         finish();
 
@@ -57,7 +60,8 @@ public class LoginActivity extends AppCompatActivity {
                                 }).addOnFailureListener(new OnFailureListener() {
                                     @Override
                                     public void onFailure(@NonNull Exception e) {
-                                        Toast.makeText(LoginActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
+                                        SweetToast.error(LoginActivity.this, "Login Failed. Enter corret credentials");
+//                                        Toast.makeText(LoginActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
                                     }
                                 });
                     } else {

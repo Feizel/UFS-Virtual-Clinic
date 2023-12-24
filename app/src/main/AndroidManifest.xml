@@ -12,6 +12,15 @@
         android:theme="@style/Base.Theme.Material3.Dark.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".FormDisplay"
+            android:exported="false" />
+        <activity
+            android:name=".Campaigns"
+            android:exported="false" />
+        <activity
+            android:name=".HealthTips"
+            android:exported="false" />
+        <activity
             android:name=".BookAppointment"
             android:exported="false" />
         <activity
