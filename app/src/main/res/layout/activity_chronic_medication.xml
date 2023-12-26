@@ -57,7 +57,7 @@
                 android:id="@+id/chronic_medsDesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Prescribed drugs and treatments designed for the long-term management of ongoing medical conditions. Management and dispensing of medications for chronic conditions, ensuring continuity of care."
+                android:text="@string/chronic_medication_desc"
                 android:textColor="@color/grey"
                 android:textSize="18sp"
                 android:gravity="center"
@@ -75,7 +75,7 @@
                 android:id="@+id/txtFooter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="We also offer expert care for issues affecting the ear, nose, and throat, as well as eye conditions, skin condtions &amp; sexually transmitted diseases."
+                android:text="@string/minor_ailments_plus"
                 android:textColor="@color/green"
                 android:textSize="18sp"
                 android:gravity="center"
@@ -87,7 +87,7 @@
                 android:id="@+id/ART"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Antiretroviral (ART) medication:"
+                android:text="@string/ART"
                 android:textSize="22sp"
                 android:gravity="start"
                 android:paddingStart="18dp"
@@ -114,7 +114,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="8dp"
-                    android:text="Antiretroviral medication is a specific category of chronic drugs used in the treatment of HIV (Human Immunodeficiency Virus) infection. ART works by suppressing the replication of the virus, slowing down the progression of HIV to AIDS (Acquired Immunodeficiency Syndrome), and helping individuals with HIV lead healthier and longer lives." />
+                    android:text="@string/ART_desc" />
 
             </LinearLayout>
 
@@ -123,7 +123,7 @@
                 android:id="@+id/PrEP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pre-exposure Prophylaxis (PrEP):"
+                android:text="@string/PrEP"
                 android:textSize="22sp"
                 android:gravity="start"
                 android:paddingStart="18dp"
@@ -150,7 +150,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Pre-exposure prophylaxis is a preventive medication strategy aimed at reducing the risk of contracting certain infections, primarily HIV, before potential exposure. In the context of HIV prevention, PrEP involves taking specific antiretroviral medications regularly to lower the chances of acquiring the virus, particularly for individuals at high risk of exposure. It is a proactive approach to safeguarding against infection."/>
+                    android:text="@string/PrEP_desc"/>
             </LinearLayout>
 
             <TextView
@@ -161,7 +161,7 @@
                 android:gravity="center"
                 android:textSize="14sp"
                 android:textColor="#1B1B1F"
-                android:text="Keep an eye out for our regular health campaigns that will provide you with the necessary information to keep you in good shape."
+                android:text="@string/keep_an_eye"
                 android:layout_below="@+id/layoutPrEP"/>
 
             <com.google.android.material.button.MaterialButton

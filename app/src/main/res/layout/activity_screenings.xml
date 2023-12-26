@@ -33,7 +33,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
 
             <TextView
@@ -57,7 +57,7 @@
                 android:id="@+id/screeningsDesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Prescribed drugs and treatments designed for the long-term management of ongoing medical conditions. Management and dispensing of medications for chronic conditions, ensuring continuity of care."
+                android:text="@string/screenings_desc"
                 android:textColor="@color/grey"
                 android:textSize="18sp"
                 android:gravity="center"
@@ -75,15 +75,16 @@
                 android:id="@+id/txtFooter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="We also offer expert care for issues affecting the ear, nose, and throat, as well as eye conditions, skin condtions &amp; sexually transmitted diseases."
+                android:text="@string/minor_ailments_plus"
                 android:textColor="@color/green"
                 android:textSize="18sp"
                 android:gravity="center"
                 android:layout_marginTop="12dp"
                 android:layout_below="@+id/listview"/>
 
-            <!--        Antiretroviral (ART) medication-->
+            <!--       -->
             <LinearLayout
+                android:id="@+id/layoutCholesterol"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -94,18 +95,20 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:gravity="center"
-                    android:textColor="#1B1B1F"
-                    android:textSize="24sp"
+                    android:textColor="@color/blue"
+                    android:textSize="22sp"
                     android:textStyle="bold"
-                    android:text="Cholesterol"/>
+                    android:text="@string/cholesterol"
+                    android:layout_marginTop="12dp"/>
                 <TextView
                     android:id="@+id/info_message"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
+                    android:layout_marginTop="0dp"
                     android:textColor="#1B1B1F"
                     android:textSize="18sp"
-                    android:text="Cholesterol is caused by fatty food"/>
+                    android:text="@string/cholesterol_desc"/>
             </LinearLayout>
 
 
@@ -117,19 +120,8 @@
                 android:gravity="center"
                 android:textSize="14sp"
                 android:textColor="#1B1B1F"
-                android:text="Keep an eye out for our regular health campaigns that will provide you with the necessary information to keep you in good shape."
-                android:layout_below="@+id/listview"/>
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnWomenHealth"
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                android:drawableLeft="@drawable/ic_backward"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/women_health"
-                android:gravity="center"
-                android:layout_marginTop="18dp"
-                android:layout_below="@+id/txtBottom"/>
+                android:text="@string/keep_an_eye"
+                android:layout_below="@+id/layoutCholesterol"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnChronicMeds"
@@ -141,6 +133,17 @@
                 android:gravity="center"
                 android:layout_marginTop="18dp"
                 android:layout_below="@+id/btnWomenHealth"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnWomenHealth"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:drawableLeft="@drawable/ic_backward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/women_health"
+                android:gravity="center"
+                android:layout_marginTop="18dp"
+                android:layout_below="@+id/txtBottom"/>
 
         </RelativeLayout>
     </ScrollView>

@@ -44,6 +44,44 @@
     <string name="campaign">Campaign</string>
     <string name="student_counselling">Student\n Counselling \n&amp; \nDevelopment</string>
 
+    //Services
+    <string name="service_description">Students and staff can make use of the following services that are available on campus:</string>
+
+    <string name="minor_ailments">Minor ailments</string>
+    <string name="minor_ailments_desc">Quick consultations for common health issues like headaches, minor injuries, or stomach troubles. Ideal for addressing small health concerns without a full doctor\'s appointment.</string>
+    <string name="minor_ailments_plus">We also offer expert care for issues affecting the ear, nose, and throat, as well as eye conditions, skin conditions &amp; sexually transmitted diseases.</string>
+    <string name="ear_nose_throat_conditions">Ear, Nose, and Throat Conditions:</string>
+    <string name="ear_nose_throat_desc">Expert care for issues affecting the ear, nose, and throat, such as ear infections, sinus problems, or sore throats.</string>
+    <string name="skin_conditions">Skin Conditions:</string>
+    <string name="skin_conditions_desc">Consultations and treatments for various skin concerns, from rashes and minor irritations to skin infections.</string>
+    <string name="STDs">Sexually Transmitted Infections:</string>
+    <string name="STDs_desc">Confidential testing, diagnosis, and treatment for sexually transmitted infections, ensuring privacy and comprehensive care.</string>
+    <string name="eye_conditions">Eye Conditions:</string>
+    <string name="eye_condition_desc">Services related to eye health, covering issues like red eyes, minor infections, or other non-severe eye conditions.</string>
+    <string name="keep_an_eye">Keep an eye out for our regular health campaigns that will provide you with the necessary information to keep you in good shape.</string>
+
+    <string name="chronic_medication">Chronic medication</string>
+    <string name="chronic_medication_desc">Prescribed drugs and treatments designed for the long-term management of ongoing medical conditions. Management and dispensing of medications for chronic conditions, ensuring continuity of care.</string>
+    <string name="ART">Antiretroviral (ART) medication:</string>
+    <string name="ART_desc">Antiretroviral medication is a specific category of chronic drugs used in the treatment of HIV (Human Immunodeficiency Virus) infection. ART works by suppressing the replication of the virus, slowing down the progression of HIV to AIDS (Acquired Immunodeficiency Syndrome), and helping individuals with HIV lead healthier and longer lives.</string>
+    <string name="PrEP">Pre-exposure Prophylaxis (PrEP):</string>
+    <string name="PrEP_desc">Pre-exposure prophylaxis is a preventive medication strategy aimed at reducing the risk of contracting certain infections, primarily HIV, before potential exposure. In the context of HIV prevention, PrEP involves taking specific antiretroviral medications regularly to lower the chances of acquiring the virus, particularly for individuals at high risk of exposure. It is a proactive approach to safeguarding against infection."</string>
+
+    <string name="screenings">Screenings</string>
+    <string name="screenings_desc">Prescribed drugs and treatments designed for the long-term management of ongoing medical conditions. Management and dispensing of medications for chronic conditions, ensuring continuity of care.</string>
+    <string name="cholesterol">Cholesterol</string>
+    <string name="cholesterol_desc">Cholesterol is a fatty substance in your blood. Monitoring cholesterol levels is vital for heart health. Knowing your cholesterol status can guide lifestyle choices and dietary habits, promoting a heart-friendly life.</string>
+    <string name="blood_pressure_desc">Screenings</string>
+    <string name="blood_glucose">Screenings</string>
+    <string name="BMI">Screenings</string>
+    <string name="weight">Screenings</string>
+
+    <string name="women_health">Women\’s health</string>
+    <string name="mens_health">Men\'s health</string>
+    <string name="helpline">Helpline</string>
+    <string name="clinic_staff">Clinic Staff</string>
+    <string name="support_ervices">Support Services</string>
+
     //Appointments
     <string name="upcomimg_appointments">Upcoming Appointments</string>
     <string name="appointments_history">Appointment History</string>
@@ -83,17 +121,6 @@
     <string name="sliderText3">UFS declares zero-tolerance against gender-based violence</string>
     <string name="sliderText4">UFS assists foreign-trained doctors to prepare for their OSCE board exams</string>
     <string name="sliderText5">16 Days of Activism: The role of universities in transcending from activism to action</string>
-
-    //Services
-    <string name="service_description">Students and staff can make use of the following services that are available on campus:</string>
-    <string name="minor_ailments">Minor ailments</string>
-    <string name="chronic_medication">Chronic medication</string>
-    <string name="screenings">Screenings</string>
-    <string name="women_health">Women\’s health</string>
-    <string name="mens_health">Men\'s health</string>
-    <string name="helpline">Helpline</string>
-    <string name="clinic_staff">Clinic Staff</string>
-    <string name="support_ervices">Support Services</string>
 
     //Navigation View
     <string name="app_name">Navigation Drawer</string>

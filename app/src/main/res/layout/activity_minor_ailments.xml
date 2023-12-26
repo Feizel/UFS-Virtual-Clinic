@@ -57,7 +57,7 @@
                 android:id="@+id/minor_ailmentsDesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Quick consultations for common health issues like headaches, minor injuries, or stomach troubles. Ideal for addressing small health concerns without a full doctor's appointment."
+                android:text="@string/minor_ailments_desc"
                 android:textColor="@color/grey"
                 android:textSize="18sp"
                 android:gravity="center"
@@ -75,7 +75,7 @@
                 android:id="@+id/txtFooter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="We also offer expert care for issues affecting the ear, nose, and throat, as well as eye conditions, skin condtions &amp; sexually transmitted diseases."
+                android:text="@string/minor_ailments_plus"
                 android:textColor="@color/green"
                 android:textSize="18sp"
                 android:gravity="center"
@@ -87,7 +87,7 @@
                 android:id="@+id/EarNose"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ear, Nose, and Throat Conditions:"
+                android:text="@string/ear_nose_throat_conditions"
                 android:textSize="22sp"
                 android:gravity="start"
                 android:paddingStart="18dp"
@@ -112,7 +112,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Expert care for issues affecting the ear, nose, and throat, such as ear infections, sinus problems, or sore throats." />
+                    android:text="@string/ear_nose_throat_desc" />
 
             </LinearLayout>
 
@@ -121,7 +121,7 @@
                 android:id="@+id/SkinConditions"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Skin Conditions:"
+                android:text="@string/skin_conditions"
                 android:textSize="22sp"
                 android:gravity="start"
                 android:paddingStart="18dp"
@@ -146,16 +146,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Consultations and treatments for various skin concerns, from rashes and minor irritations to skin infections."/>
+                    android:text="@string/skin_conditions_desc"/>
             </LinearLayout>
 
             <!--        Sexual Diseases-->
-            <!--        Eye Conditions-->
             <TextView
                 android:id="@+id/STDs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sexually Transmitted Infections:"
+                android:text="@string/STDs"
                 android:textSize="22sp"
                 android:gravity="start"
                 android:paddingStart="18dp"
@@ -180,7 +179,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Confidential testing, diagnosis, and treatment for sexually transmitted infections, ensuring privacy and comprehensive care."
+                    android:text="@string/STDs_desc"
                     android:layout_marginBottom="8dp"/>
             </LinearLayout>
 
@@ -189,7 +188,7 @@
                 android:id="@+id/EyeConditions"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Eye Conditions:"
+                android:text="@string/eye_conditions"
                 android:textSize="22sp"
                 android:gravity="start"
                 android:paddingStart="18dp"
@@ -214,7 +213,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Services related to eye health, covering issues like red eyes, minor infections, or other non-severe eye conditions."
+                    android:text="@string/eye_condition_desc"
                     android:layout_marginBottom="8dp"/>
             </LinearLayout>
 
@@ -226,7 +225,7 @@
                 android:gravity="center"
                 android:textSize="14sp"
                 android:textColor="#1B1B1F"
-                android:text="Keep an eye out for our regular health campaigns that will provide you with the necessary information to keep you in good shape."
+                android:text="@string/keep_an_eye"
                 android:layout_below="@+id/layoutEye"/>
 
             <com.google.android.material.button.MaterialButton
