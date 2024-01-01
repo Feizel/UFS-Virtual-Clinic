@@ -62,16 +62,20 @@
 
     <string name="chronic_medication">Chronic medication</string>
     <string name="chronic_medication_desc">Prescribed drugs and treatments designed for the long-term management of ongoing medical conditions. Management and dispensing of medications for chronic conditions, ensuring continuity of care.</string>
-    <string name="ART">Antiretroviral (ART) medication:</string>
-    <string name="ART_desc">Antiretroviral medication is a specific category of chronic drugs used in the treatment of HIV (Human Immunodeficiency Virus) infection. ART works by suppressing the replication of the virus, slowing down the progression of HIV to AIDS (Acquired Immunodeficiency Syndrome), and helping individuals with HIV lead healthier and longer lives.</string>
+    <string name="ART">Anti-retroviral (ART) medication:</string>
+    <string name="ART_desc">Anti-retroviral medication is a specific category of chronic drugs used in the treatment of HIV (Human Immunodeficiency Virus) infection. ART works by suppressing the replication of the virus, slowing down
+        the progression of HIV to AIDS (Acquired Immunodeficiency Syndrome), and helping individuals with HIV lead healthier and longer lives.</string>
     <string name="PrEP">Pre-exposure Prophylaxis (PrEP):</string>
-    <string name="PrEP_desc">Pre-exposure prophylaxis is a preventive medication strategy aimed at reducing the risk of contracting certain infections, primarily HIV, before potential exposure. In the context of HIV prevention, PrEP involves taking specific antiretroviral medications regularly to lower the chances of acquiring the virus, particularly for individuals at high risk of exposure. It is a proactive approach to safeguarding against infection."</string>
+    <string name="PrEP_desc">Pre-exposure prophylaxis is a preventive medication strategy aimed at reducing the risk of contracting certain infections, primarily HIV, before potential exposure. In the context of HIV prevention,
+        PrEP involves taking specific antiretroviral medications regularly to lower the chances of acquiring the virus, particularly for
+        individuals at high risk of exposure. It is a proactive approach to safeguarding against infection."</string>
 
     <string name="screenings">Screenings</string>
     <string name="screenings_desc">Prescribed drugs and treatments designed for the long-term management of ongoing medical conditions. Management and dispensing of medications for chronic conditions, ensuring continuity of care.</string>
     <string name="cholesterol">Cholesterol</string>
     <string name="cholesterol_desc">Cholesterol is a fatty substance in your blood. Monitoring cholesterol levels is vital for heart health. Knowing your cholesterol status can guide lifestyle choices and dietary habits, promoting a heart-friendly life.</string>
-    <string name="blood_pressure_desc">Screenings</string>
+    <string name="blood_pressure_desc">Blood pressure measures the force of blood against your artery walls. It\'s an essential indicator of heart health. High blood pressure can lead to various health issues, so regular checks help ensure your heart
+        is happy and healthy.</string>
     <string name="blood_glucose">Screenings</string>
     <string name="BMI">Screenings</string>
     <string name="weight">Screenings</string>

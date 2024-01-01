@@ -82,7 +82,7 @@
                 android:layout_marginTop="12dp"
                 android:layout_below="@+id/listview"/>
 
-            <!--       -->
+            <!--Cholesterol-->
             <LinearLayout
                 android:id="@+id/layoutCholesterol"
                 android:layout_width="match_parent"
@@ -109,6 +109,41 @@
                     android:textColor="#1B1B1F"
                     android:textSize="18sp"
                     android:text="@string/cholesterol_desc"/>
+            </LinearLayout>
+
+            <!--Blood Pressure-->
+            <LinearLayout
+                android:id="@+id/layoutBloodPressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/layoutCholesterol">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/blue"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:text="@string/blood_pressure"
+                    android:layout_marginTop="12dp"/>
+
+                <ImageView
+                    android:id="@+id/screeningsImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/screeningsTitle"
+                    android:src="@drawable/blood_drops"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="0dp"
+                    android:textColor="#1B1B1F"
+                    android:textSize="18sp"
+                    android:text="@string/blood_pressure_desc"/>
             </LinearLayout>
 
 
