@@ -53,6 +53,27 @@
 
             <!-- Add your other views here -->
 
+            <TextView
+                android:id="@+id/screeningsDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/screenings_desc"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/screeningsImage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                app:layout_constraintTop_toBottomOf="@id/screeningsDesc"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+            </ListView>
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnChronicMeds"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
@@ -60,7 +81,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/chronic_medication"
-                app:layout_constraintTop_toBottomOf="@id/screeningsImage"
+                app:layout_constraintTop_toBottomOf="@id/listview"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="18dp"/>
