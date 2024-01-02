@@ -1,40 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:padding="18dp"
     tools:context=".screenings">
 
-    <LinearLayout
-        android:id="@+id/layoutBackButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageButton
-            android:id="@+id/btnBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/arrow_back"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_gravity="center"
-            android:padding="18dp"
-            android:backgroundTint="@color/white"/>
-    </LinearLayout>
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="18dp"
+        android:backgroundTint="@color/white"/>
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:scrollbars="none"
-        android:layout_below="@+id/layoutBackButton">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
 
             <TextView
                 android:id="@+id/screeningsTitle"
@@ -43,120 +36,22 @@
                 android:text="@string/screenings"
                 android:textSize="36sp"
                 android:textColor="@color/green"
-                android:layout_centerHorizontal="true"/>
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
 
             <ImageView
                 android:id="@+id/screeningsImage"
                 android:layout_width="300dp"
                 android:layout_height="300dp"
-                android:layout_below="@id/screeningsTitle"
                 android:src="@drawable/screenings"
-                android:layout_centerHorizontal="true"/>
+                app:layout_constraintTop_toBottomOf="@id/screeningsTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
 
-            <TextView
-                android:id="@+id/screeningsDesc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/screenings_desc"
-                android:textColor="@color/grey"
-                android:textSize="18sp"
-                android:gravity="center"
-                android:layout_below="@+id/screeningsImage"/>
-
-            <ListView
-                android:id="@+id/listview"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/screeningsDesc"
-                android:scrollbars="none">
-            </ListView>
-
-            <TextView
-                android:id="@+id/txtFooter"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/minor_ailments_plus"
-                android:textColor="@color/green"
-                android:textSize="18sp"
-                android:gravity="center"
-                android:layout_marginTop="12dp"
-                android:layout_below="@+id/listview"/>
-
-            <!--Cholesterol-->
-            <LinearLayout
-                android:id="@+id/layoutCholesterol"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_below="@+id/txtFooter">
-                <TextView
-                    android:id="@+id/info_title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:gravity="center"
-                    android:textColor="@color/blue"
-                    android:textSize="22sp"
-                    android:textStyle="bold"
-                    android:text="@string/cholesterol"
-                    android:layout_marginTop="12dp"/>
-                <TextView
-                    android:id="@+id/info_message"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:layout_marginTop="0dp"
-                    android:textColor="#1B1B1F"
-                    android:textSize="18sp"
-                    android:text="@string/cholesterol_desc"/>
-            </LinearLayout>
-
-            <!--Blood Pressure-->
-            <LinearLayout
-                android:id="@+id/layoutBloodPressure"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_below="@+id/layoutCholesterol">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:gravity="center"
-                    android:textColor="@color/blue"
-                    android:textSize="22sp"
-                    android:textStyle="bold"
-                    android:text="@string/blood_pressure"
-                    android:layout_marginTop="12dp"/>
-
-                <ImageView
-                    android:id="@+id/screeningsImage"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_below="@id/screeningsTitle"
-                    android:src="@drawable/blood_drops"
-                    android:layout_centerHorizontal="true"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:layout_marginTop="0dp"
-                    android:textColor="#1B1B1F"
-                    android:textSize="18sp"
-                    android:text="@string/blood_pressure_desc"/>
-            </LinearLayout>
-
-
-            <TextView
-                android:id="@+id/txtBottom"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="12dp"
-                android:gravity="center"
-                android:textSize="14sp"
-                android:textColor="#1B1B1F"
-                android:text="@string/keep_an_eye"
-                android:layout_below="@+id/layoutCholesterol"/>
+            <!-- Add your other views here -->
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnChronicMeds"
@@ -165,9 +60,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/chronic_medication"
-                android:gravity="center"
-                android:layout_marginTop="18dp"
-                android:layout_below="@+id/btnWomenHealth"/>
+                app:layout_constraintTop_toBottomOf="@id/screeningsImage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="18dp"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnWomenHealth"
@@ -176,11 +72,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/women_health"
-                android:gravity="center"
-                android:layout_marginTop="18dp"
-                android:layout_below="@+id/txtBottom"/>
-
-        </RelativeLayout>
+                app:layout_constraintTop_toBottomOf="@id/btnChronicMeds"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="18dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
