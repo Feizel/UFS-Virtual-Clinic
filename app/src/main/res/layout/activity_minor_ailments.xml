@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,7 +24,8 @@
         app:layout_constraintTop_toBottomOf="@+id/btnBack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scrollbars="none">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -68,7 +70,7 @@
 
             <ListView
                 android:id="@+id/listview"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/minor_ailmentsDesc"
                 app:layout_constraintStart_toStartOf="parent"
@@ -119,7 +121,7 @@
 
                 <TextView
                     android:id="@+id/EarNoseDesc"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/ear_nose_throat_desc"
@@ -132,7 +134,7 @@
             <!-- Skin Conditions -->
             <TextView
                 android:id="@+id/SkinConditions"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/skin_conditions"
                 android:textSize="22sp"
@@ -160,7 +162,7 @@
 
                 <TextView
                     android:id="@+id/SkinDesc"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/skin_conditions_desc"
@@ -172,7 +174,7 @@
             <!-- Sexual Diseases -->
             <TextView
                 android:id="@+id/STDs"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/STDs"
                 android:textSize="22sp"
@@ -200,7 +202,7 @@
 
                 <TextView
                     android:id="@+id/STDDesc"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/STDs_desc"
@@ -213,7 +215,7 @@
             <!-- Eye Conditions -->
             <TextView
                 android:id="@+id/EyeConditions"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/eye_conditions"
                 android:textSize="22sp"
@@ -241,7 +243,7 @@
 
                 <TextView
                     android:id="@+id/EyeDesc"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/eye_condition_desc"
