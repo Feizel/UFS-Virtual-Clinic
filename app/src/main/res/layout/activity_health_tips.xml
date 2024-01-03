@@ -1,168 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<!-- res/layout/activity_health_tips.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BookAppointment">
+    android:padding="16dp">
+
+    <!-- Quick Tips Section -->
+    <TextView
+        android:id="@+id/quickTipsTitle"
+        style="@style/TitleTextStyle"
+        android:text="@string/quick_tips" />
 
     <TextView
-        android:id="@+id/AppointmentLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/Logo"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/quickTipsContent"
+        style="@style/ContentTextStyle"
+        android:text="@string/quick_tips_content" />
 
-    <Button
-        android:id="@+id/buttonPickDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="@string/PickDate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.588"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewdocname" />
+    <!-- Stress Relief Hacks Section -->
+    <TextView
+        android:id="@+id/stressReliefTitle"
+        style="@style/TitleTextStyle"
+        android:text="@string/stress_relief_hacks"
+        android:layout_below="@+id/quickTipsContent"
+        android:layout_marginTop="16dp"/>
 
     <TextView
-        android:id="@+id/textViewDateDisplay"
-        android:layout_width="0dp"
-        android:layout_height="20dp"
-        android:autoText="true"
-        android:gravity="center"
-        android:hint="@string/DateFormat"
-        android:text="@string/DisplayDate"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonPickDate" />
+        android:id="@+id/stressReliefContent"
+        style="@style/ContentTextStyle"
+        android:text="@string/stress_relief_hacks_content"
+        android:layout_below="@+id/stressReliefTitle"/>
 
-    <Button
-        android:id="@+id/buttonBookA"
-        android:layout_width="310dp"
-        android:layout_height="52dp"
-        android:layout_marginBottom="56dp"
-        android:text="@string/BookA"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewEmail"
-        app:layout_constraintVertical_bias="0.945" />
-
-    <RadioGroup
-        android:id="@+id/RadioGroup"
-        android:layout_width="410dp"
-        android:layout_height="227dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonTimeSlot">
-
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/TimeSlot1"
-            android:visibility="invisible" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/TimeSlot2"
-            android:visibility="invisible" />
-
-        <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/TimeSlot3"
-            android:visibility="invisible" />
-
-        <RadioButton
-            android:id="@+id/radioButton4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/TimeSlot4"
-            android:visibility="invisible" />
-
-        <RadioButton
-            android:id="@+id/radioButton5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/TimeSlot5"
-            android:visibility="invisible" />
-
-        <RadioButton
-            android:id="@+id/radioButton6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/TimeSlot6"
-            android:visibility="invisible" />
-
-        <RadioButton
-            android:id="@+id/radioButton7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/TimeSlot7"
-            android:visibility="invisible" />
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/buttonTimeSlot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/TSlot"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.568"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDateDisplay" />
+    <!-- Nutrition Hacks Section -->
+    <!-- Nutrition Hacks Section -->
+    <TextView
+        android:id="@+id/nutritionHacksTitle"
+        style="@style/TitleTextStyle"
+        android:text="@string/nutrition_hacks"
+        android:layout_below="@+id/stressReliefContent"
+        android:layout_marginTop="16dp"/>
 
     <TextView
-        android:id="@+id/textViewdocTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="270dp"
-        android:text="@string/txtdoc"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AppointmentLogo" />
+        android:id="@+id/nutritionHacksContent"
+        style="@style/ContentTextStyle"
+        android:text="@string/nutrition_hacks_content"
+        android:layout_below="@+id/nutritionHacksTitle"/>
+
+    <!-- More Health Tips Section -->
+    <TextView
+        android:id="@+id/moreHealthTipsTitle"
+        style="@style/TitleTextStyle"
+        android:text="@string/more_health_tips"
+        android:layout_below="@+id/nutritionHacksContent"
+        android:layout_marginTop="16dp"/>
 
     <TextView
-        android:id="@+id/textViewdocname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintStart_toEndOf="@+id/textViewdocTitle"
-        app:layout_constraintTop_toBottomOf="@+id/AppointmentLogo" />
+        android:id="@+id/moreHealthTipsContent"
+        style="@style/ContentTextStyle"
+        android:text="@string/more_health_tips_content"
+        android:layout_below="@+id/moreHealthTipsTitle"/>
 
-    <TextView
-        android:id="@+id/textViewName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RadioGroup" />
-
-    <TextView
-        android:id="@+id/textViewEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

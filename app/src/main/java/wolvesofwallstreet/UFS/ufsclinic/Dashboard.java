@@ -128,6 +128,17 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
+        //Health Tips
+        LinearLayout healthTipsCard = findViewById(R.id.layoutHealthTips);
+        healthTipsCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToHealthTips = new Intent(Dashboard.this, HealthTips.class);
+                startActivity(goToHealthTips);
+                finish();
+            }
+        });
+
         setSupportActionBar(toolbar);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open_nav, R.string.close_nav);
         drawerLayout.addDrawerListener(toggle);

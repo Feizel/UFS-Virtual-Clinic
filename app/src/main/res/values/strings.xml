@@ -93,6 +93,25 @@
     <string name="clinic_staff">Clinic Staff</string>
     <string name="support_ervices">Support Services</string>
 
+    //Health Tips
+    <string name="health_tips_desc">Daily wellness &amp; wisdom! Get quick tips to help you stay healthy - stress relief,
+        nutrition hacks, and more for a healthier you.</string>
+    <string name="quick_tips">Quick Tips</string>
+    <string name="quick_tips_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</string>
+
+    <string name="stress_relief_hacks">Stress Relief Hacks</string>
+    <string name="stress_relief_hacks_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</string>
+
+    <string name="nutrition_hacks">Nutrition Hacks</string>
+    <string name="nutrition_hacks_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</string>
+
+    <string name="more_health_tips">More Health Tips</string>
+    <string name="more_health_tips_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</string>
+
+    //Campaigns
+    <string name="campaigns_desc">Join impactful initiatives! From GBV to Sexual &amp; Substance Abuse, Stay infomed &amp; champion health on campus.
+    Get involved now!</string>
+
     //Appointments
     <string name="upcomimg_appointments">Upcoming Appointments</string>
     <string name="appointments_history">Appointment History</string>

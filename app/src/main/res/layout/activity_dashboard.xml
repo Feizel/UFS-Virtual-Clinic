@@ -468,7 +468,7 @@
 
                 <!-- HEALTH TIPS-->
                 <LinearLayout
-                    android:id="@+id/btnHealthTips"
+                    android:id="@+id/layoutHealthTips"
                     android:layout_width="match_parent"
                     android:layout_height="140dp"
                     android:layout_gravity="center"
@@ -500,7 +500,7 @@
 
                 <!-- CAMPAIGN -->
                 <LinearLayout
-                    android:id="@+id/btnCampaign"
+                    android:id="@+id/layoutCampaign"
                     android:layout_width="match_parent"
                     android:layout_height="140dp"
                     android:layout_gravity="center"
