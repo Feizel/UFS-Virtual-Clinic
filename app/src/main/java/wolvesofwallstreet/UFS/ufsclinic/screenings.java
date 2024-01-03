@@ -47,9 +47,9 @@ public class screenings extends AppCompatActivity {
         screenings.CustomerAdapter ca = new screenings.CustomerAdapter();
         lv.setAdapter(ca);
 
-        //Women Health Meds Button
-        Button womenHealth = findViewById(R.id.btnWomenHealth);
-        womenHealth.setOnClickListener(new View.OnClickListener() {
+        //Sexual Health Button
+        Button sexualHealth = findViewById(R.id.btnSexualHealth);
+        sexualHealth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent goToWomensHealth = new Intent(screenings.this, women_health.class);

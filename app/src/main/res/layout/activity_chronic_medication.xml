@@ -107,7 +107,7 @@
 <!--                app:layout_constraintEnd_toEndOf="parent"/>-->
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnMinorAilements"
+                android:id="@+id/btnScreenings"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:drawableRight="@drawable/ic_forward"
                 android:layout_width="match_parent"
@@ -120,14 +120,14 @@
                 android:layout_marginTop="18dp"/>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnWomenHealth"
+                android:id="@+id/btnMinorAilments"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:drawableLeft="@drawable/ic_backward"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/minor_ailments"
                 android:gravity="center"
-                app:layout_constraintTop_toBottomOf="@id/btnMinorAilements"
+                app:layout_constraintTop_toBottomOf="@id/btnScreenings"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="18dp"/>
