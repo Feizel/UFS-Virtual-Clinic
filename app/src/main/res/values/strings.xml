@@ -80,7 +80,12 @@
     <string name="BMI">Screenings</string>
     <string name="weight">Screenings</string>
 
-    <string name="women_health">Women\’s health</string>
+    <string name="sexual_health1">Sexual health</string>
+    <string name="sexual_health1_desc">Comprehensive sexual health services, including various contraceptive options tailored to individual needs and preferences.</string>
+<!--    <string name="sexual_health">Sexual health</string>-->
+<!--    <string name="sexual_health">Sexual health</string>-->
+
+
     <string name="mens_health">Men\'s health</string>
     <string name="helpline">Helpline</string>
     <string name="clinic_staff">Clinic Staff</string>
