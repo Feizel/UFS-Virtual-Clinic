@@ -97,19 +97,20 @@
     <string name="health_tips_desc">Daily wellness &amp; wisdom! Get quick tips to help you stay healthy - stress relief,
         nutrition hacks, and more for a healthier you.</string>
     <string name="quick_tips">Quick Tips</string>
-    <string name="quick_tips_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</string>
+    <string name="quick_tips_content">Instant health boosts for your busy campus life.</string>
 
     <string name="stress_relief_hacks">Stress Relief Hacks</string>
-    <string name="stress_relief_hacks_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</string>
+    <string name="stress_relief_hacks_content">Discover practical and effective techniques for managing stress and finding calm.</string>
 
     <string name="nutrition_hacks">Nutrition Hacks</string>
-    <string name="nutrition_hacks_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</string>
+    <string name="nutrition_hacks_content">Explore smart and simple nutrition tricks for a balanced diet.</string>
 
     <string name="more_health_tips">More Health Tips</string>
-    <string name="more_health_tips_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</string>
+    <string name="more_health_tips_content">Delve into a variety of health-related insights. From general wellness advice to specific health concerns,
+        this section offers a diverse range of tips to enhance your overall well-being.</string>
 
     //Campaigns
-    <string name="campaigns_desc">Join impactful initiatives! From GBV to Sexual &amp; Substance Abuse, Stay infomed &amp; champion health on campus.
+    <string name="campaigns_desc">Join impactful initiatives! From GBV to Sexual &amp; Substance Abuse, Stay informed &amp; champion health on campus.
     Get involved now!</string>
 
     //Appointments
