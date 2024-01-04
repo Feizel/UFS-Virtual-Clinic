@@ -55,6 +55,3 @@ This project is licensed under the [MIT License](LICENSE.md) - see the LICENSE.m
 
 A special thanks to our contributors who have helped make the UFS KovsieHealth Clinic App a valuable resource for the UFS community.
 
----
-
-Feel free to customize it based on specific functionalities, contributions, or additional details you'd like to include!
