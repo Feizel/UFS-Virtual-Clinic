@@ -46,11 +46,14 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="16dp"/>
 
-            <ImageView
+            <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/heathTipsTitleImage"
                 android:layout_width="300dp"
                 android:layout_height="300dp"
-                android:src="@drawable/location"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="health_tips.json"
+                app:lottie_loop="true"
+                app:lottie_speed="1"
                 app:layout_constraintTop_toBottomOf="@id/heathTipsTitleTitle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -69,19 +72,21 @@
 
             <TextView
                 android:id="@+id/quickTipsContent"
+                style="@style/ContentTextStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/ContentTextStyle"
+                android:layout_marginEnd="42dp"
                 android:text="@string/quick_tips_content"
-                app:layout_constraintTop_toBottomOf="@+id/quickTipsTitle"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintTop_toBottomOf="@+id/quickTipsTitle" />
 
             <HorizontalScrollView
                 android:id="@+id/horizontal_scroll_viewQuickTips"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:scrollbars="none"
                 app:layout_constraintTop_toBottomOf="@+id/quickTipsContent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
@@ -93,9 +98,10 @@
                     android:orientation="horizontal">
 
                     <!-- Add your quick tips TextViews here -->
-                    <androidx.cardview.widget.CardView
+                    <com.google.android.material.card.MaterialCardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        style="@style/Widget.Material3.CardView.Outlined"
                         app:cardUseCompatPadding="true"
                         app:contentPadding="16dp">
 
@@ -144,11 +150,12 @@
 
                         </LinearLayout>
 
-                    </androidx.cardview.widget.CardView>
+                    </com.google.android.material.card.MaterialCardView>
 
-                    <androidx.cardview.widget.CardView
+                    <com.google.android.material.card.MaterialCardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        style="@style/Widget.Material3.CardView.Outlined"
                         app:cardUseCompatPadding="true"
                         app:contentPadding="16dp">
 
@@ -169,7 +176,6 @@
                                     android:src="@drawable/bed" />
 
                             </LinearLayout>
-
 
                             <LinearLayout
                                 android:layout_width="0dp"
@@ -197,9 +203,9 @@
 
                         </LinearLayout>
 
-                    </androidx.cardview.widget.CardView>
+                    </com.google.android.material.card.MaterialCardView>
 
-                    <androidx.cardview.widget.CardView
+                    <com.google.android.material.card.MaterialCardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:cardUseCompatPadding="true"
@@ -222,7 +228,6 @@
                                     android:src="@drawable/otoscope" />
 
                             </LinearLayout>
-
 
                             <LinearLayout
                                 android:layout_width="0dp"
@@ -250,7 +255,7 @@
 
                         </LinearLayout>
 
-                    </androidx.cardview.widget.CardView>
+                    </com.google.android.material.card.MaterialCardView>
 
                     <!-- Add more tips as needed -->
                 </LinearLayout>
