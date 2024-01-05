@@ -1,24 +1,35 @@
-# UFS KovsieHealth Clinic App 🌡️💊
+![image](https://github.com/Feizel/UFS-Virtual-Clinic/assets/71074138/22c38db9-985a-4227-ae01-22b75f08baab)# UFS KovsieHealth Clinic App 🌡️💊
 
 Welcome to the UFS KovsieHealth Clinic App, your dedicated health companion for students and staff at the University of the Free State. 
-This app aims to simplify your healthcare experience, providing essential information and convenient services at your fingertips.
+This app is designed to provide essential health services and information to students and staff on the University of the Free State (UFS) campus. Keep yourself informed and take control of your well-being with our diverse features.
 
 ## Features 🚀
 
-### 1. **Appointment Scheduling**
+### 1. Dashboard
+
+- **Headlines & Campus News:** Stay updated with key campus news and health-related headlines.
+- **Upcoming Appointments:** View and manage your upcoming health appointments conveniently.
+
+### 2. **Appointment Scheduling**
 Effortlessly book clinic appointments from your device. Say goodbye to long queues and waiting times.
 
-### 2. **Minor Ailments Guidance**
-Get quick advice for common health issues, from respiratory conditions to skin ailments. Learn about symptoms and recommended actions.
+### 3. Services
 
-### 3. **Screening Services**
-Access vital health screenings, including blood pressure, weight, body mass index (BMI), blood glucose, and cholesterol. Stay informed about your well-being.
+- **Minor Ailments to Chronic Conditions:** Find a range of health services from quick consultations to managing chronic conditions.
+- **Screenings:** Get insights into your health with screenings for blood pressure, weight, BMI, blood glucose, and cholesterol.
+- **Health Tips:** Access quick tips, stress relief hacks, nutrition tips, and more for a healthier lifestyle.
+- **Campaigns:** Stay engaged with health campaigns such as mental health awareness and gender-based violence prevention.
+- **Student Counseling & Development:** Book appointments for mental health support with our qualified therapists.
+- **Helpline:** Emergency contacts for immediate assistance.
 
-### 4. **Medication Management**
-Keep track of your chronic medications, including Antiretroviral (ART) and Pre-exposure Prophylaxis (PrEP). Receive reminders for timely doses.
+### 3. Added Services
 
-### 5. **Health Tips and FAQs**
-Explore a wealth of health tips, FAQs, and information to empower yourself with knowledge about your well-being.
+- **Health Reminders:** Set personalized health reminders for medications or appointments.
+- **Medication Tracker:** Keep track of your medications effortlessly.
+- **Feedback & Suggestions:** Share your thoughts to help us improve.
+
+### 5. **Additional Health Tips and FAQs**
+Explore a wealth of additional health tips, FAQs, and information to empower yourself with knowledge about your well-being.
 
 ## How to Use 📘
 
@@ -43,13 +54,19 @@ Explore a wealth of health tips, FAQs, and information to empower yourself with 
    - Discover valuable health insights in the "Health Tips" section.
    - Access Frequently Asked Questions for quick answers.
 
-## Contributions 🤝
+## How to Contribute
 
-Contributions to the UFS Clinic App are welcome! Whether it's reporting a bug, suggesting a feature, or enhancing the codebase, your input is valued. Please follow our [Contribution Guidelines](CONTRIBUTING.md) to get started.
+We welcome contributions to make this app even better! If you have ideas, bug reports, or want to contribute code, please follow our [Contribution Guidelines](CONTRIBUTING.md).
 
-## License 📜
+## Getting Started
 
-This project is licensed under the [MIT License](LICENSE.md) - see the LICENSE.md file for details.
+To get started with the Kovsie Health Clinic App, follow the [Installation Guide](INSTALLATION.md) for detailed instructions.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.md).
+
+Feel free to reach out if you have questions or suggestions. Happy coding! 🚀
 
 ## Acknowledgments 🙌
 
