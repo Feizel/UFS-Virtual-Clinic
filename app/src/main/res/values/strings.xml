@@ -96,8 +96,21 @@
     //Health Tips
     <string name="health_tips_desc">Daily wellness &amp; wisdom! Get quick tips to help you stay healthy - stress relief,
         nutrition hacks, and more for a healthier you.</string>
+
+    //Quick Tips
     <string name="quick_tips">Quick Tips</string>
     <string name="quick_tips_content">Instant health boosts for your busy campus life.</string>
+    <string name="quick_tip_1">Take the stairs for a mini workout.</string>
+    <string name="quick_tip_2">Get sunlight for a mood lift.</string>
+    <string name="quick_tip_3">Deep breathing for stress relief.</string>
+    <string name="quick_tip_4">Keep healthy snacks in your bag.</string>
+    <string name="quick_tip_5">Use a study timer for focus.</string>
+    <string name="quick_tip_6">Stay hydrated with water breaks.</string>
+    <string name="quick_tip_7">Prioritize tasks with to-do lists.</string>
+    <string name="quick_tip_8">Stand or stretch every hour.</string>
+    <string name="quick_tip_9">Connect with friends daily.</string>
+    <string name="quick_tip_10">Quality sleep is non-negotiable.</string>
+
 
     <string name="stress_relief_hacks">Stress Relief Hacks</string>
     <string name="stress_relief_hacks_content">Discover practical and effective techniques for managing stress and finding calm.</string>
