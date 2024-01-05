@@ -24,7 +24,8 @@
         app:layout_constraintTop_toBottomOf="@+id/btnBack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scrollbars="none">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -90,18 +91,166 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-                    <!-- Add your quick tips TextViews here -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        style="@style/ContentTextStyle"
-                        android:text="Tip 1" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <!-- Add your quick tips TextViews here -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        style="@style/ContentTextStyle"
-                        android:text="Tip 2" />
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="28">
+
+                                <ImageView
+                                    android:layout_width="72dp"
+                                    android:layout_height="72dp"
+                                    android:src="@drawable/ambulance" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="72"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="6dp"
+                                    android:text="@string/quick_tip_1"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Find out more... "
+                                    android:textColor="#3691ea"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="28">
+
+                                <ImageView
+                                    android:layout_width="72dp"
+                                    android:layout_height="72dp"
+                                    android:src="@drawable/bed" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="72"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="6dp"
+                                    android:text="@string/quick_tip_2"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Find out more... "
+                                    android:textColor="#3691ea"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="28">
+
+                                <ImageView
+                                    android:layout_width="72dp"
+                                    android:layout_height="72dp"
+                                    android:src="@drawable/otoscope" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="72"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="6dp"
+                                    android:text="@string/quick_tip_3"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Find out more... "
+                                    android:textColor="#3691ea"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
 
                     <!-- Add more tips as needed -->
                 </LinearLayout>
