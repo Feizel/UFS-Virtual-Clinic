@@ -1,4 +1,4 @@
-![image](https://github.com/Feizel/UFS-Virtual-Clinic/assets/71074138/22c38db9-985a-4227-ae01-22b75f08baab)# UFS KovsieHealth Clinic App 🌡️💊
+# UFS KovsieHealth Clinic App 🌡️💊
 
 Welcome to the UFS KovsieHealth Clinic App, your dedicated health companion for students and staff at the University of the Free State. 
 This app is designed to provide essential health services and information to students and staff on the University of the Free State (UFS) campus. Keep yourself informed and take control of your well-being with our diverse features.
