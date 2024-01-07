@@ -1,9 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="TitleTextStyle">
+    <style name="quick_tips">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#8a4dff</item>
+        <!-- Add other styling attributes as needed -->
+    </style>
+
+    <style name="health_and_wellness">
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/green</item>
+        <!-- Add other styling attributes as needed -->
+    </style>
+
+    <style name="stress_management">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffa31a</item>
+        <!-- Add other styling attributes as needed -->
+    </style>
+
+    <style name="healthy_eating">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#00e0fc</item>
+        <!-- Add other styling attributes as needed -->
+    </style>
+
+    <style name="sleep_hygiene">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff99cc</item>
+        <!-- Add other styling attributes as needed -->
+    </style>
+
+    <style name="exercise_and_fitness">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff5b5b</item>
+        <!-- Add other styling attributes as needed -->
+    </style>
+
+    <style name="campus_safety">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#007bff</item>
+        <!-- Add other styling attributes as needed -->
+    </style>
+
+    <style name="sexual_health_education">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fe5e51</item>
+        <!-- Add other styling attributes as needed -->
+    </style>
+
+    <style name="mental_health_support">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#00390F</item>
         <!-- Add other styling attributes as needed -->
     </style>
 
@@ -12,4 +68,15 @@
         <item name="android:textColor">@color/black</item>
         <!-- Add other styling attributes as needed -->
     </style>
+
+    <style name="FooterTextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_margin">16dp</item>
+        <!-- Add other styling attributes as needed -->
+    </style>
+
 </resources>

@@ -19,9 +19,14 @@
     <color name="grey">#858585</color>
     <color name="settings">#001842</color>
 
-    //Material Design
+    <!-- Colors -->
+    <color name="colorPrimary">#0F204B</color>
+    <color name="colorPrimaryDark">#B42438</color>
+    <color name="colorAccent">#006E24</color>
+    <color name="colorBackground">#FFFFFF</color>
+
+<!--    Material Design-->
     <color name="seed">#0F204B</color>
- Onboarding
     <color name="md_primary">#3E5AA9</color>
     <color name="md_onPrimary">#FFFFFF</color>
     <color name="md_primaryContainer">#DBE1FF</color>
@@ -47,7 +52,6 @@
     <color name="md_theme_light_onTertiary">#FFFFFF</color>
     <color name="md_theme_light_tertiaryContainer">#70FF82</color>
     <color name="md_theme_light_onTertiaryContainer">#002106</color>
- master
     <color name="md_theme_light_error">#BA1A1A</color>
     <color name="md_theme_light_errorContainer">#FFDAD6</color>
     <color name="md_theme_light_onError">#FFFFFF</color>

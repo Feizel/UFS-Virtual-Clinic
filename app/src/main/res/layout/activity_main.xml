@@ -15,6 +15,7 @@
         android:layout_marginStart="145dp"
         android:layout_marginTop="39dp"
         android:text="@string/top_header_main"
+        android:textAllCaps="false"
         android:textColor="@color/blue"
         android:textSize="20sp"
         android:textStyle="bold"/>
@@ -26,11 +27,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="71dp"
         android:text="@string/below_header_main"
+        android:textAllCaps="true"
         android:textColor="@color/blue"
         android:textSize="30sp"
         android:textStyle="bold"/>
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -39,10 +41,11 @@
         android:src="@drawable/logo3"
         android:contentDescription="@string/ufs_logo"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnLogInMain"
         android:layout_width="327dp"
         android:layout_height="42dp"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="143dp"
@@ -50,7 +53,7 @@
         android:text="@string/login_btn"
         android:textColor="@color/white"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnStuffLogin"
         android:layout_width="327dp"
         android:layout_height="42dp"
@@ -68,7 +71,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:backgroundTint="@color/white"
-        android:text="Splash Screen"
+        android:text="Dashboard"
         android:textColor="@color/red"/>
 
 </RelativeLayout>
