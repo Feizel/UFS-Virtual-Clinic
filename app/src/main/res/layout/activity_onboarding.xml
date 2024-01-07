@@ -103,8 +103,9 @@
         android:padding="16dp">
 
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSkipTour"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -119,8 +120,9 @@
             android:textSize="16sp"
             android:letterSpacing="0.2"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnNext"
+            style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"

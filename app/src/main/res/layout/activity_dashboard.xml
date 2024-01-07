@@ -623,6 +623,7 @@
         </com.google.android.material.bottomappbar.BottomAppBar>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
@@ -630,7 +631,6 @@
             android:contentDescription="add button"
             app:layout_anchor="@id/bottomAppBar"
             app:maxImageSize="40dp"
-            android:id="@+id/fab"
             app:tint="@color/green" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

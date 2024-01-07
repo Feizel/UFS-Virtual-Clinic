@@ -9,7 +9,7 @@
         android:icon="@drawable/logo3"
         android:label="Kovsie Health"
         android:supportsRtl="true"
-        android:theme="@style/Base.Theme.Material3.Dark.NoActionBar"
+        android:theme="@style/Theme.UFSCLINIC"
         tools:targetApi="31">
         <activity
             android:name=".FormDisplay"
