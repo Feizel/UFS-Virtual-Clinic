@@ -93,7 +93,7 @@
 
             <!-- Stress Management Hacks Section -->
             <include
-                android:id="@+id/stressReliefSection"
+                android:id="@+id/stressManagementSection"
                 layout="@layout/section_stress_management"
                 app:layout_constraintTop_toBottomOf="@+id/healthWellnessSection" />
 
@@ -101,7 +101,7 @@
             <include
                 android:id="@+id/healthyEatingSection"
                 layout="@layout/section_healthy_eating"
-                app:layout_constraintTop_toBottomOf="@+id/stressReliefSection" />
+                app:layout_constraintTop_toBottomOf="@+id/stressManagementSection" />
 
             <!-- Sleep Hygiene Section -->
             <include
