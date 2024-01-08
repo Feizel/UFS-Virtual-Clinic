@@ -8,6 +8,7 @@
     android:padding="16dp"
     tools:context=".HealthTips">
 
+    <!-- Back Button -->
     <ImageButton
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
@@ -18,6 +19,7 @@
         android:padding="18dp"
         android:backgroundTint="@color/white"/>
 
+    <!-- Main Content ScrollView -->
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="0dp"
@@ -34,8 +36,9 @@
             android:layout_margin="8dp"
             android:layout_marginTop="16dp">
 
+            <!-- Health Tips Title -->
             <TextView
-                android:id="@+id/heathTipsTitleTitle"
+                android:id="@+id/healthTipsTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/health_tips"
@@ -48,393 +51,87 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="16dp"/>
 
+            <!-- Health Tips Animation -->
             <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/heathTipsTitleImage"
+                android:id="@+id/healthTipsAnimation"
                 android:layout_width="300dp"
                 android:layout_height="300dp"
                 app:lottie_autoPlay="true"
                 app:lottie_fileName="health_tips.json"
                 app:lottie_loop="true"
-                app:lottie_speed="1"
-                app:layout_constraintTop_toBottomOf="@id/heathTipsTitleTitle"
+                app:lottie_speed="0.3"
+                app:layout_constraintTop_toBottomOf="@id/healthTipsTitle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="16dp"/>
 
+            <!-- Health Tips Description -->
             <TextView
-                android:id="@+id/health_tipsDesc"
-                android:layout_width="0dp"
+                android:id="@+id/healthTipsDesc"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/health_tips_content"
                 android:textColor="@color/grey"
                 android:textSize="18sp"
                 android:gravity="center"
-                app:layout_constraintTop_toBottomOf="@id/heathTipsTitleImage"
+                app:layout_constraintTop_toBottomOf="@id/healthTipsAnimation"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="8dp"/>
 
             <!-- Quick Tips Section -->
-            <TextView
-                android:id="@+id/quickTipsTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/quick_tips"
-                android:text="@string/quick_tips"
-                app:layout_constraintTop_toBottomOf="@+id/health_tipsDesc"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="16dp"/>
-            <TextView
-                android:id="@+id/quickTipsContent"
-                style="@style/ContentTextStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="22dp"
-                android:text="@string/quick_tips_content"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/quickTipsTitle" />
-
-            <HorizontalScrollView
-                android:id="@+id/horizontal_scroll_viewQuickTips"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:scrollbars="none"
-                app:layout_constraintTop_toBottomOf="@+id/quickTipsContent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
-
-                <LinearLayout
-                    android:id="@+id/quickTipsContainer"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <!-- Add your quick tips TextViews here -->
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        style="@style/Widget.Material3.CardView.Elevated"
-                        app:cardUseCompatPadding="true"
-                        app:contentPadding="16dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:weightSum="100">
-
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="28">
-
-                                <ImageView
-                                    android:layout_width="72dp"
-                                    android:layout_height="72dp"
-                                    android:src="@drawable/ambulance" />
-
-                            </LinearLayout>
-
-
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="72"
-                                android:orientation="vertical">
-
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="6dp"
-                                    android:text="@string/quick_tip_1"
-                                    android:textColor="#000000"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Find out more... "
-                                    android:textColor="#3691ea"
-                                    android:textSize="12sp" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        style="@style/Widget.Material3.CardView.Elevated"
-                        app:cardUseCompatPadding="true"
-                        app:contentPadding="16dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:weightSum="100">
-
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="28">
-
-                                <ImageView
-                                    android:layout_width="72dp"
-                                    android:layout_height="72dp"
-                                    android:src="@drawable/bed" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="72"
-                                android:orientation="vertical">
-
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="6dp"
-                                    android:text="@string/quick_tip_2"
-                                    android:textColor="#000000"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Find out more... "
-                                    android:textColor="#3691ea"
-                                    android:textSize="12sp" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        style="@style/Widget.Material3.CardView.Elevated"
-                        app:cardUseCompatPadding="true"
-                        app:contentPadding="16dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:weightSum="100">
-
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="28">
-
-                                <ImageView
-                                    android:layout_width="72dp"
-                                    android:layout_height="72dp"
-                                    android:src="@drawable/otoscope" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="72"
-                                android:orientation="vertical">
-
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="6dp"
-                                    android:text="@string/quick_tip_3"
-                                    android:textColor="#000000"
-                                    android:textSize="16sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Find out more... "
-                                    android:textColor="#3691ea"
-                                    android:textSize="12sp" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <!-- Add more tips as needed -->
-                </LinearLayout>
-            </HorizontalScrollView>
+            <include
+                android:id="@+id/quickTipsSection"
+                layout="@layout/section_quick_tips"
+                app:layout_constraintTop_toBottomOf="@id/healthTipsDesc"/>
 
             <!-- Health & Wellness Section -->
-            <TextView
-                android:id="@+id/health_and_wellnessTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/health_and_wellness"
-                android:text="@string/health_and_wellness"
-                app:layout_constraintTop_toBottomOf="@+id/horizontal_scroll_viewQuickTips"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="16dp"/>
-            <TextView
-                android:id="@+id/health_wellnessContent"
-                style="@style/ContentTextStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/stress_relief_hacks_content"
-                app:layout_constraintTop_toBottomOf="@+id/health_and_wellnessTitle"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+            <include
+                android:id="@+id/healthWellnessSection"
+                layout="@layout/section_health_and_wellness"
+                app:layout_constraintTop_toBottomOf="@+id/quickTipsSection" />
 
             <!-- Stress Management Hacks Section -->
-            <TextView
-                android:id="@+id/stressReliefTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/stress_management"
-                android:text="@string/stress_management"
-                app:layout_constraintTop_toBottomOf="@+id/health_wellnessContent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="16dp"/>
-            <TextView
-                android:id="@+id/stressReliefContent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/ContentTextStyle"
-                android:text="@string/stress_relief_hacks_content"
-                app:layout_constraintTop_toBottomOf="@+id/stressReliefTitle"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+            <include
+                android:id="@+id/stressReliefSection"
+                layout="@layout/section_stress_management"
+                app:layout_constraintTop_toBottomOf="@+id/healthWellnessSection" />
 
             <!-- Healthy Eating Section -->
-            <TextView
-                android:id="@+id/healthy_eatingTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/healthy_eating"
-                android:text="@string/healthy_eating"
-                app:layout_constraintTop_toBottomOf="@+id/stressReliefContent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="16dp"/>
-            <TextView
-                android:id="@+id/healthy_eatingContent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/ContentTextStyle"
-                android:text="@string/healthy_eating_content"
-                app:layout_constraintTop_toBottomOf="@+id/healthy_eatingTitle"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+            <include
+                android:id="@+id/healthyEatingSection"
+                layout="@layout/section_healthy_eating"
+                app:layout_constraintTop_toBottomOf="@+id/stressReliefSection" />
 
             <!-- Sleep Hygiene Section -->
-            <TextView
-                android:id="@+id/sleepHygieneTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/sleep_hygiene"
-                android:text="@string/sleep_hygiene"
-                app:layout_constraintTop_toBottomOf="@+id/healthy_eatingContent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="16dp"/>
-            <TextView
-                android:id="@+id/sleepHygieneContent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/ContentTextStyle"
-                android:text="@string/stress_relief_hacks_content"
-                app:layout_constraintTop_toBottomOf="@+id/sleepHygieneTitle"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+            <include
+                android:id="@+id/sleepHygieneSection"
+                layout="@layout/section_sleep_hygiene"
+                app:layout_constraintTop_toBottomOf="@+id/healthyEatingSection" />
 
-            <!-- Exercise & Fitness Section -->
-            <TextView
-                android:id="@+id/exerciseTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/exercise_and_fitness"
-                android:text="@string/exercise_and_fitness"
-                app:layout_constraintTop_toBottomOf="@+id/sleepHygieneContent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="16dp"/>
-            <TextView
-                android:id="@+id/exerciseContent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/ContentTextStyle"
-                android:text="@string/stress_relief_hacks_content"
-                app:layout_constraintTop_toBottomOf="@+id/exerciseTitle"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+            <!-- Exercise and Fitness Section -->
+            <include
+                android:id="@+id/exerciseFitnessSection"
+                layout="@layout/section_exercise_and_fitness"
+                app:layout_constraintTop_toBottomOf="@+id/sleepHygieneSection" />
 
             <!-- Campus Safety Section -->
-            <TextView
-                android:id="@+id/campusSafetyTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/campus_safety"
-                android:text="@string/campus_safety"
-                app:layout_constraintTop_toBottomOf="@+id/exerciseContent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="16dp"/>
-            <TextView
-                android:id="@+id/campusSafetyContent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/ContentTextStyle"
-                android:text="@string/stress_relief_hacks_content"
-                app:layout_constraintTop_toBottomOf="@+id/campusSafetyTitle"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+            <include
+                android:id="@+id/campusSafetySection"
+                layout="@layout/section_campus_safety"
+                app:layout_constraintTop_toBottomOf="@+id/exerciseFitnessSection" />
 
             <!-- Sexual Health Education Section -->
-            <TextView
-                android:id="@+id/sexualHealthTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/sexual_health_education"
-                android:text="@string/sexual_health"
-                app:layout_constraintTop_toBottomOf="@+id/campusSafetyContent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="16dp"/>
-            <TextView
-                android:id="@+id/sexualHealthContent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/ContentTextStyle"
-                android:text="@string/stress_relief_hacks_content"
-                app:layout_constraintTop_toBottomOf="@+id/sexualHealthTitle"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+            <include
+                android:id="@+id/sexualHealthSection"
+                layout="@layout/section_sexual_health_education"
+                app:layout_constraintTop_toBottomOf="@+id/campusSafetySection" />
 
-            <!-- Mental Health Support Section -->
-            <TextView
-                android:id="@+id/mentalHealthTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/mental_health_support"
-                android:text="@string/mental_health_support"
-                app:layout_constraintTop_toBottomOf="@+id/sexualHealthContent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="16dp"/>
-            <TextView
-                android:id="@+id/mentalHealthContent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/ContentTextStyle"
-                android:text="@string/stress_relief_hacks_content"
-                app:layout_constraintTop_toBottomOf="@+id/mentalHealthTitle"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+            <!-- Mental Health Section -->
+            <include
+                android:id="@+id/mentalHealthSection"
+                layout="@layout/section_mental_health_support"
+                app:layout_constraintTop_toBottomOf="@+id/sexualHealthSection" />
 
             <!-- More Health Tips Section -->
             <TextView
@@ -443,11 +140,10 @@
                 android:layout_height="wrap_content"
                 android:text="@string/more_health_tips_content"
                 style="@style/FooterTextStyle"
-                app:layout_constraintTop_toBottomOf="@+id/mentalHealthContent"
+                app:layout_constraintTop_toBottomOf="@+id/mentalHealthSection"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
