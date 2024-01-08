@@ -139,6 +139,17 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
+        //Campaigns
+        LinearLayout campaignsCard = findViewById(R.id.layoutCampaign);
+        campaignsCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToCampaigns = new Intent(Dashboard.this, Campaigns.class);
+                startActivity(goToCampaigns);
+                finish();
+            }
+        });
+
         setSupportActionBar(toolbar);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open_nav, R.string.close_nav);
         drawerLayout.addDrawerListener(toggle);

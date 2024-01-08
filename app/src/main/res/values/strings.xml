@@ -113,7 +113,7 @@
 
 <!--    -->
     <string name="health_and_wellness">Health &amp; Wellness</string>
-    <string name="health_and_wellness_content">Health &amp; Wellness</string>
+    <string name="health_and_wellness_content">Explore tips and activities to enhance your overall wellness, fostering a balanced and fulfilling lifestyle.</string>
 
     <string name="stress_management">Stress Management</string>
     <string name="stress_relief_hacks_content">Discover practical and effective techniques for managing stress and finding calm.</string>
@@ -122,18 +122,25 @@
     <string name="healthy_eating_content">Explore smart and simple nutrition tricks for a balanced diet.</string>
 
     <string name="sleep_hygiene">Sleep Hygiene</string>
+    <string name="sleep_hygiene_content">Learn about habits that contribute to good sleep hygiene for better sleep quality.</string>
 
-    <string name="exercise_and_fitness">Exercise &amp; Wellness</string>
+    <string name="exercise_and_fitness">Exercise &amp; Fitness</string>
+    <string name="exercise_and_fitness_content">Discover the benefits of exercise and fitness practices to enhance physical health and overall well-being.</string>
 
     <string name="campus_safety">Campus Safety</string>
+    <string name="campus_safety_content">Gain insights and tips on maintaining personal safety and security within the campus</string>
 
     <string name="sexual_health_education">Sexual Health Education</string>
+    <string name="sexual_health_education_content">Explore educational content to make informed decisions regarding sexual well-being, reproductive health, and relationships.</string>
 
     <string name="mental_health_support">Mental Health Support</string>
+    <string name="mental_health_support_content">Discover support systems, coping strategies, and information to foster a positive mental health environment.</string>
 
     <string name="study_techniques">Stress Relief Hacks</string>
+    <string name="study_techniques_content"></string>
 
     <string name="managing_relationships">Managing Relationships</string>
+    <string name="managing_relationships_content"></string>
 
     <string name="more_health_tips_content">For More Health Tips, Visit Our Website</string>
     <string name="health_tips_content">Delve into a variety of health-related insights. From general wellness advice to specific health concerns,

@@ -23,6 +23,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/ContentTextStyle"
-        android:text="@string/stress_relief_hacks_content"/>
+        android:text="@string/campus_safety_content"/>
 
 </LinearLayout>

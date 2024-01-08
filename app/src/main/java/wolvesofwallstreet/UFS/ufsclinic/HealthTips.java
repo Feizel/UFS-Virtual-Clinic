@@ -16,53 +16,52 @@ public class HealthTips extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_health_tips);
 
-        // For Quick Tips Section
-        LinearLayout quickTipsSection = findViewById(R.id.quickTipsSection);
-        View quickTipsView = LayoutInflater.from(this).inflate(R.layout.section_quick_tips, quickTipsSection, false);
-        quickTipsSection.addView(quickTipsView);
+//        // For Quick Tips Section
+//        LinearLayout quickTipsSection = findViewById(R.id.quickTipsSection);
+//        View quickTipsView = LayoutInflater.from(this).inflate(R.layout.section_quick_tips, quickTipsSection, false);
+//        quickTipsSection.addView(quickTipsView);
+//
+//        // For Health & Wellness Section
+//        LinearLayout healthWellnessSection = findViewById(R.id.healthWellnessSection);
+//        View healthWellnessView = LayoutInflater.from(this).inflate(R.layout.section_health_and_wellness, healthWellnessSection, false);
+//        healthWellnessSection.addView(healthWellnessView);
+//
+//        // For Stress Management Section
+//        LinearLayout stressManagementSection = findViewById(R.id.stressManagementSection);
+//        View stressManagementView = LayoutInflater.from(this).inflate(R.layout.section_stress_management, stressManagementSection, false);
+//        stressManagementSection.addView(stressManagementView);
+//
+//        // For Healthy Eating Section
+//        LinearLayout healthyEatingSection = findViewById(R.id.healthyEatingSection);
+//        View healthyEatingView = LayoutInflater.from(this).inflate(R.layout.section_healthy_eating, healthyEatingSection, false);
+//        healthyEatingSection.addView(healthyEatingView);
+//
+//        // For Sleep Hygiene Section
+//        LinearLayout sleepHygieneSection = findViewById(R.id.sleepHygieneSection);
+//        View sleepHygieneSecView = LayoutInflater.from(this).inflate(R.layout.section_sleep_hygiene, sleepHygieneSection, false);
+//        sleepHygieneSection.addView(sleepHygieneSecView);
+//
+//        // For Exercise & Fitness Section
+//        LinearLayout exerciseFitnessSection = findViewById(R.id.exerciseFitnessSection);
+//        View exerciseFitnessView = LayoutInflater.from(this).inflate(R.layout.section_exercise_and_fitness, exerciseFitnessSection, false);
+//        exerciseFitnessSection.addView(exerciseFitnessView);
+//
+//        // For Campus Safety Section
+//        LinearLayout campusSafetySection = findViewById(R.id.campusSafetySection);
+//        View campusSafetyView = LayoutInflater.from(this).inflate(R.layout.section_campus_safety, campusSafetySection, false);
+//        campusSafetySection.addView(campusSafetyView);
+//
+//        // For Sexual Health Education Section
+//        LinearLayout sexualHealthSection = findViewById(R.id.sexualHealthSection);
+//        View sexualHealthView = LayoutInflater.from(this).inflate(R.layout.section_sexual_health_education, sexualHealthSection, false);
+//        sexualHealthSection.addView(sexualHealthView);
+//
+//        // For Mental Health Support Section
+//        LinearLayout mentalHealthSection = findViewById(R.id.mentalHealthSection);
+//        View mentalHealthView = LayoutInflater.from(this).inflate(R.layout.section_mental_health_support, mentalHealthSection, false);
+//        mentalHealthSection.addView(mentalHealthView);
 
-        // For Health & Wellness Section
-        LinearLayout healthWellnessSection = findViewById(R.id.healthWellnessSection);
-        View healthWellnessView = LayoutInflater.from(this).inflate(R.layout.section_health_and_wellness, healthWellnessSection, false);
-        healthWellnessSection.addView(healthWellnessView);
-
-        // For Stress Management Section
-        LinearLayout stressManagementSection = findViewById(R.id.stressManagementSection);
-        View stressManagementView = LayoutInflater.from(this).inflate(R.layout.section_stress_management, stressManagementSection, false);
-        healthWellnessSection.addView(stressManagementView);
-
-        // For Healthy Eating Section
-        LinearLayout healthyEatingSection = findViewById(R.id.healthWellnessSection);
-        View healthyEatingView = LayoutInflater.from(this).inflate(R.layout.section_healthy_eating, healthyEatingSection, false);
-        healthWellnessSection.addView(healthyEatingView);
-
-        // For Sleep Hygiene Section
-        LinearLayout sleepHygieneSection = findViewById(R.id.sleepHygieneSection);
-        View sleepHygieneSecView = LayoutInflater.from(this).inflate(R.layout.section_sleep_hygiene, sleepHygieneSection, false);
-        healthWellnessSection.addView(sleepHygieneSecView);
-
-        // For Exercise & Fitness Section
-        LinearLayout exerciseFitnessSection = findViewById(R.id.exerciseFitnessSection);
-        View exerciseFitnessView = LayoutInflater.from(this).inflate(R.layout.section_exercise_and_fitness, exerciseFitnessSection, false);
-        healthWellnessSection.addView(exerciseFitnessView);
-
-        // For Campus Safety Section
-        LinearLayout campusSafetySection = findViewById(R.id.campusSafetySection);
-        View campusSafetyView = LayoutInflater.from(this).inflate(R.layout.section_campus_safety, campusSafetySection, false);
-        healthWellnessSection.addView(campusSafetyView);
-
-        // For Sexual Health Education Section
-        LinearLayout sexualHealthSection = findViewById(R.id.sexualHealthSection);
-        View sexualHealthView = LayoutInflater.from(this).inflate(R.layout.section_sexual_health_education, sexualHealthSection, false);
-        healthWellnessSection.addView(sexualHealthView);
-
-        // For Mental Health Support Section
-        LinearLayout mentalHealthSection = findViewById(R.id.mentalHealthSection);
-        View mentalHealthView = LayoutInflater.from(this).inflate(R.layout.section_mental_health_support, mentalHealthSection, false);
-        healthWellnessSection.addView(mentalHealthView);
-
-
-        //Back Button
+        // Back Button
         ImageButton btnBack = findViewById(R.id.btnBack);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +72,7 @@ public class HealthTips extends AppCompatActivity {
             }
         });
 
-        //Add tips to the Quick Tips section
+        // Add tips to the Quick Tips section
         LinearLayout quickTipsContainer = findViewById(R.id.quickTipsContainer);
         addTip(quickTipsContainer, "Take the stairs for a mini workout.");
         addTip(quickTipsContainer, "Get sunlight for a mood lift.");
@@ -86,8 +85,6 @@ public class HealthTips extends AppCompatActivity {
         addTip(quickTipsContainer, "Connect with friends daily.");
         addTip(quickTipsContainer, "Quality sleep is non-negotiable.");
         // Add more tips as needed
-
-        // Similar approach for other sections
     }
 
     private void addTip(LinearLayout container, String tip) {

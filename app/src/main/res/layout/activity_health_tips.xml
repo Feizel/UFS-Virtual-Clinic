@@ -93,7 +93,7 @@
 
             <!-- Stress Management Hacks Section -->
             <include
-                android:id="@+id/stressReliefSection"
+                android:id="@+id/stressManagementSection"
                 layout="@layout/section_stress_management"
                 app:layout_constraintTop_toBottomOf="@+id/healthWellnessSection" />
 
@@ -101,7 +101,7 @@
             <include
                 android:id="@+id/healthyEatingSection"
                 layout="@layout/section_healthy_eating"
-                app:layout_constraintTop_toBottomOf="@+id/stressReliefSection" />
+                app:layout_constraintTop_toBottomOf="@+id/stressManagementSection" />
 
             <!-- Sleep Hygiene Section -->
             <include
@@ -141,6 +141,15 @@
                 android:text="@string/more_health_tips_content"
                 style="@style/FooterTextStyle"
                 app:layout_constraintTop_toBottomOf="@+id/mentalHealthSection"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/tips"
+                app:layout_constraintTop_toBottomOf="@+id/moreHealthTipsContent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
