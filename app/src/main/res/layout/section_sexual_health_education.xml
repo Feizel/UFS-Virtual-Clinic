@@ -16,13 +16,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/sexual_health_education"
-        android:text="@string/sexual_health"
+        android:text="@string/sexual_health_education"
         android:layout_marginTop="16dp"/>
     <TextView
         android:id="@+id/sexualHealthContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/ContentTextStyle"
-        android:text="@string/stress_relief_hacks_content"/>
+        android:text="@string/sexual_health_education_content"/>
 
 </LinearLayout>
