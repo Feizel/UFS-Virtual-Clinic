@@ -27,7 +27,10 @@ public class HealthTips extends AppCompatActivity {
         List<QuickTipItem> quickTipItems = new ArrayList<>();
         quickTipItems.add(new QuickTipItem(R.drawable.ambulance, getString(R.string.quick_tip_1), getString(R.string.find_more)));
         quickTipItems.add(new QuickTipItem(R.drawable.bed, getString(R.string.quick_tip_2), getString(R.string.find_more)));
-        quickTipItems.add(new QuickTipItem(R.drawable.otoscope, getString(R.string.quick_tip_3), getString(R.string.find_more)));
+        quickTipItems.add(new QuickTipItem(R.drawable.otoscope, getString(R.string.quick_tip_4), getString(R.string.find_more)));
+        quickTipItems.add(new QuickTipItem(R.drawable.mens_health, getString(R.string.quick_tip_5), getString(R.string.find_more)));
+        quickTipItems.add(new QuickTipItem(R.drawable.broken_bone, getString(R.string.quick_tip_6), getString(R.string.find_more)));
+        quickTipItems.add(new QuickTipItem(R.drawable.tooth, getString(R.string.quick_tip_7), getString(R.string.find_more)));
 
         QuickTipsAdapter adapter = new QuickTipsAdapter(this, quickTipItems);
         recyclerView.setAdapter(adapter);
