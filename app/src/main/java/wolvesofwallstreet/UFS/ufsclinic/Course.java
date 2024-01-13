@@ -2,12 +2,12 @@ package wolvesofwallstreet.UFS.ufsclinic;
 
 public class Course {
 
-    int id, category;
+    int id;
     String img, title, date, level, colour, text;
 
 
 
-    public Course(int id, String img, String title, String date, String level, String colour, String text, int category) {
+    public Course(int id, String img, String title, String date, String level, String colour, String text) {
         this.id = id;
         this.img = img;
         this.title = title;
@@ -15,15 +15,6 @@ public class Course {
         this.level = level;
         this.colour = colour;
         this.text= text;
-        this.category=category;
-    }
-
-    public int getCategory() {
-        return category;
-    }
-
-    public void setCategory(int category) {
-        this.category = category;
     }
 
     public String getText() {

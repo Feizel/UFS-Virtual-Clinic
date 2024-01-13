@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     android:id="@+id/coursePageBg"
+    android:padding="16dp"
     tools:context=".CoursePage">
 
     <ScrollView
@@ -14,26 +16,28 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="56dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <!-- Course Image -->
             <ImageView
                 android:id="@+id/coursePageImage"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/app_name"
                 android:scaleType="fitXY"
-
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/tomatoforpage" />
 
+            <!-- Course Title -->
             <TextView
                 android:id="@+id/coursePageTitle"
                 android:layout_width="wrap_content"
@@ -48,10 +52,10 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/coursePageImage" />
 
-
+            <!-- Course Details CardView -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/courseBg"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="20dp"
@@ -67,63 +71,68 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <TextView
-                            android:layout_width="90dp"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:gravity="center"
-                            android:text="@string/course_start_date"
-                            android:textColor="@color/blue"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="25dp"
-                            android:layout_marginTop="10dp"
-                            android:gravity="center"
-                            android:text="@string/course_level"
-                            android:textColor="@color/blue"
-                            android:textSize="14sp" />
-
-                    </LinearLayout>
-
+                    <!-- Course Details Layout -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
+                        <!-- Cooking Time -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:gravity="start"
+                            android:text="@string/cook_time"
+                            android:textColor="@color/green"
+                            android:textSize="14sp" />
+
                         <TextView
                             android:id="@+id/coursePageDate"
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:layout_margin="10dp"
                             android:text="@string/app_name"
-                            android:textColor="@color/blue"
+                            android:textColor="@color/green"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                    <!-- Course Date and Level -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!-- Difficulty Level -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:gravity="start"
+                            android:text="@string/cook_difficulty"
+                            android:textColor="@color/green"
                             android:textSize="14sp" />
 
                         <TextView
                             android:id="@+id/coursePageLevel"
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
                             android:text="@string/app_name"
-                            android:textColor="@color/blue"
+                            android:textColor="@color/green"
                             android:textSize="14sp" />
 
                     </LinearLayout>
 
                 </LinearLayout>
 
-
             </androidx.cardview.widget.CardView>
 
-
+            <!-- Course Description -->
             <TextView
                 android:id="@+id/coursePageText"
                 android:layout_width="match_parent"
@@ -132,35 +141,20 @@
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="10dp"
                 android:text="@string/course_desc"
-                android:textColor="@color/blue"
+                android:textColor="@color/black"
                 android:textSize="14sp" />
 
-<!--            <ImageButton-->
-<!--                android:id="@+id/addToCart"-->
-<!--                android:layout_width="126dp"-->
-<!--                android:layout_height="48dp"-->
-<!--                android:layout_gravity="center"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                android:background="@android:color/transparent"-->
-<!--                android:contentDescription="@string/app_name"-->
-<!--                android:onClick="addToCart"-->
-<!--                app:layout_constraintBottom_toTopOf="@+id/constraintLayout"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:srcCompat="@drawable/shop"-->
-<!--                tools:ignore="DuplicateSpeakableTextCheck" />-->
         </LinearLayout>
     </ScrollView>
 
+    <!-- Like Button -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="55dp"
         android:background="@color/apps_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageButton
@@ -168,13 +162,11 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            android:onClick="fromCoursePagetoLikepage"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="parent"
-            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/heart" />
-
+            app:srcCompat="@drawable/favourite" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

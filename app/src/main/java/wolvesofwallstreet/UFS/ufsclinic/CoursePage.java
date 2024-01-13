@@ -1,22 +1,12 @@
 package wolvesofwallstreet.UFS.ufsclinic;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
-
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class CoursePage extends AppCompatActivity {
 
@@ -25,6 +15,7 @@ public class CoursePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_course_page);
 
+        // Find views
         ConstraintLayout courseBg = findViewById(R.id.coursePageBg);
         ImageView courseImage = findViewById(R.id.coursePageImage);
         TextView courseTitle = findViewById(R.id.coursePageTitle);
@@ -32,20 +23,24 @@ public class CoursePage extends AppCompatActivity {
         TextView courseLevel = findViewById(R.id.coursePageLevel);
         TextView courseText = findViewById(R.id.coursePageText);
 
-        courseBg.setBackgroundColor(getIntent().getIntExtra("courseBg",0));
-        courseImage.setImageResource(getIntent().getIntExtra("courseImage",0));
+        // Set values from Intent extras
+        courseBg.setBackgroundColor(getIntent().getIntExtra("courseBg", 0));
+        courseImage.setImageResource(getIntent().getIntExtra("courseImage", 0));
         courseTitle.setText(getIntent().getStringExtra("courseTitle"));
         courseDate.setText(getIntent().getStringExtra("courseDate"));
         courseLevel.setText(getIntent().getStringExtra("courseLevel"));
         courseText.setText(getIntent().getStringExtra("courseText"));
-
-
-
-
     }
-    public void fromCoursePagetoMain(View view){
+
+    // Navigate to the main page
+    public void fromCoursePagetoMain(View view) {
         Intent intent = new Intent(this, Dashboard.class);
         HealthTips.courseList.clear();
         startActivity(intent);
     }
+//    public void fromCoursePagetoFavPage(View view){
+//        Intent intent = new Intent(this, OrderPage.class);
+//        HealthTips.courseList.clear();
+//        startActivity(intent);
+//    }
 }

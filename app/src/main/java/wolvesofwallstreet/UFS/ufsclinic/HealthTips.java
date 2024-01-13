@@ -38,7 +38,7 @@ public class HealthTips extends AppCompatActivity {
 
         //Quick Tips
         RecyclerView quickTipsRecycler = findViewById(R.id.quickTipsRecyclerView);
-        quickTipsRecycler.setLayoutManager(new LinearLayoutManager(this));
+        quickTipsRecycler.setLayoutManager(new LinearLayoutManager(this, quickTipsRecycler.HORIZONTAL, false));
 
         List<QuickTipItem> quickTipItems = new ArrayList<>();
         quickTipItems.add(new QuickTipItem(R.drawable.ambulance, getString(R.string.quick_tip_1), getString(R.string.find_more)));
@@ -85,7 +85,8 @@ public class HealthTips extends AppCompatActivity {
                         "\n5. Purée:\n" +
                         "Remove the bay leaves. Use an immersion blender or upright blender to roughly purée the soup (about half of the soup, leave some chunky bits).\n" +
                         "" +
-                        "Garnish with freshly grated Parmesan and chopped fresh basil or parsley.\n",1));
+                        "Garnish with freshly grated Parmesan and chopped fresh basil or parsley.\n"));
+
         //kfc
         courseList.add(new Course(2, "kfc","KFC chicken\nstrips","~ 40\nminutes        ","Average\ndifficulty","#9FA52D",
                 "INGREDIENTS\n" +
@@ -122,11 +123,9 @@ public class HealthTips extends AppCompatActivity {
                         "7.Add canola oil in a dutch oven, around 3 inches deep, and heat it to 350°F.\n" +
                         "8.Place the chicken tenders in the heated oil and fry until golden brown, or 5 to 7 minutes.\n" +
                         "9.It’s best to fry in small batches.\n" +
-                        "10.Serve and enjoy\n"
-                ,3));
-        // courseList.add(new Course(n, "tomato", "Italian tomato\nsoup", "~ 30\nminutes        ","Average\ndifficulty","#C81818","",1));
+                        "10.Serve and enjoy\n"));
 
-        //борщ
+        //
         courseList.add(new Course(3, "borsh", "Russian soup\nborsch", "~ 50\nminutes        ","Average\ndifficulty","#A52B2B",
                 "INGREDIENTS\n" +
                         "For the soup:\n" +
@@ -159,10 +158,9 @@ public class HealthTips extends AppCompatActivity {
                         "\n"+
                         "7. When the potatoes are cooked, stir the meat back into the pot, along with the grated beets and carrots. Turn off the heat, and let cool— the pot will take a few hours to cool enough to go in the refrigerator, and the vegetables will cook in the residual heat. Refrigerate overnight. The next day, discard the hardened fat from off the top. Reheat before serving.\n" +
                         "\n"+
-                        "8. Ladle the borsch into bowls, and garnish with a dollop of the sour cream and sprinkling of the scallions and dill. Serve with slices of dark bread and spicy mustard. If you want the full Russian approach, try stirring some of the spicy mustard directly into your soup—to me, it’s not borsch without this finishing touch.\n"
-                , 1));
+                        "8. Ladle the borsch into bowls, and garnish with a dollop of the sour cream and sprinkling of the scallions and dill. Serve with slices of dark bread and spicy mustard. If you want the full Russian approach, try stirring some of the spicy mustard directly into your soup—to me, it’s not borsch without this finishing touch.\n"));
 
-        // луковый суп
+        //
         courseList.add(new Course(4, "onionsoup", "French onion\nsoup", "~ 1 hour 30\nminutes      ","Difficult\ncomplexity","#CB8D16",
                 "Ingredients\n" +
                         "\n"+
@@ -189,8 +187,8 @@ public class HealthTips extends AppCompatActivity {
                         "\n"+
                         "2. Preheat the oven to 450°F and line a baking sheet with parchment paper. Place the baguette slices, topped with cheese, on the baking sheet and bake until the slices are toasted and the cheese is melted, 8 to 10 minutes.\n" +
                         "\n"+
-                        "3. Ladle the soup into ramekins or bowls and top each with a toasted baguette piece, fresh thyme, and a pinch of red pepper flakes, if desired\n.",
-                1));
+                        "3. Ladle the soup into ramekins or bowls and top each with a toasted baguette piece, fresh thyme, and a pinch of red pepper flakes, if desired\n."));
+
         //The Best Parmesan Chicken Bake
         courseList.add(new Course(5, "parmesanchicken", "Parmesan Chicken\nBake", "~ 30\nminutes        ","a bit\ndifficult","#DEAD00",
                 "Ingredients\n" +
@@ -220,9 +218,8 @@ public class HealthTips extends AppCompatActivity {
                         "\n" +
                         "Step 3. Arrange chicken breasts in the bottom of the dish, and pour marinara sauce over chicken. Sprinkle basil over marinara sauce, and top with 1/2 of the mozzarella cheese, followed by 1/2 of the Parmesan cheese. Sprinkle on croutons, then top with remaining mozzarella cheese and remaining Parmesan cheese.\n" +
                         "\n" +
-                        "Step 4. Bake in the preheated oven until cheese and croutons are golden brown and the chicken is no longer pink inside, about 35 minutes to an hour, depending on the shape and thickness of your chicken breasts. An instant-read thermometer inserted into the thickest part of a chicken breast should read at least 160 degrees F (70 degrees C)."
+                        "Step 4. Bake in the preheated oven until cheese and croutons are golden brown and the chicken is no longer pink inside, about 35 minutes to an hour, depending on the shape and thickness of your chicken breasts. An instant-read thermometer inserted into the thickest part of a chicken breast should read at least 160 degrees F (70 degrees C)."));
 
-                ,2));
         //Fast food 2 burger
         courseList.add(new Course(6, "burger", "Olly's 'thank you'\nFinest burgers", "~ 50\nminutes        ","Average\ndifficulty","#EEA83E",
                 "IngredientsIngredient Checklist\n" +
@@ -266,9 +263,8 @@ public class HealthTips extends AppCompatActivity {
                         "Lay buns, cut side down, on grill and cook until lightly toasted, 30 seconds to 1 minute.\n" +
                         "\n" +
                         "Step 4\n" +
-                        "Spread mayonnaise and ketchup on bun bottoms. Add lettuce, tomato, burger, onion, and salt and pepper to taste. Set bun tops in place.\n"
+                        "Spread mayonnaise and ketchup on bun bottoms. Add lettuce, tomato, burger, onion, and salt and pepper to taste. Set bun tops in place.\n"));
 
-                ,3));
         //4. Pasty
         courseList.add(new Course(7, "cornishpasty", "Cornish\npasty", "~ 1 h\n20 min        ","Average\ndifficulty","#FF7070",
                 "Ingredients\n" +
@@ -292,9 +288,7 @@ public class HealthTips extends AppCompatActivity {
                         "Heat oven to 220C/fan 200C/gas 7. Mix together the filling ingredients with 1 tsp salt. Roll out each piece of dough on a lightly floured surface until large enough to make a round about 23cm across – use a plate to trim it to shape. Firmly pack a quarter of the filling along the centre of each round, leaving a margin at each end. Brush the pastry all the way round the edge with beaten egg, carefully draw up both sides so that they meet at the top, then pinch them together to seal. Lift onto a non-stick baking tray and brush with the remaining egg to glaze.\n" +
                         "\n" +
                         "STEP 3\n" +
-                        "Bake for 10 mins, then lower oven to 180C/fan 160C/gas 4 and cook for 45 mins more until golden. Great served warm.\n"
-
-                ,4));
+                        "Bake for 10 mins, then lower oven to 180C/fan 160C/gas 4 and cook for 45 mins more until golden. Great served warm.\n"));
 
         //5. Biscuits
         courseList.add(new Course(8, "purpose", "All-Purpose\nBiscuits", "~ 1\nhour              ","Average\ndifficulty","#945B38",
@@ -318,8 +312,7 @@ public class HealthTips extends AppCompatActivity {
                         "\n" +
                         "Turn dough out onto a lightly floured surface and knead dough briefly, 5 to 7 times. Roll dough out into a 1/2 inch thick sheet and cut out biscuits with a floured cookie cutter. Press together unused dough and repeat rolling and cutting procedure.\n" +
                         "\n" +
-                        "Place biscuits on ungreased baking sheets and bake in preheated oven until golden brown, about 10 minutes.\n"
-                ,5));
+                        "Place biscuits on ungreased baking sheets and bake in preheated oven until golden brown, about 10 minutes.\n"));
 
         //6. Cakes
         courseList.add(new Course(9, "vanillacake", "The Best Vanilla\nCake", "~ 4\nhour              ","a bit\ndifficult","#690004",
@@ -347,8 +340,7 @@ public class HealthTips extends AppCompatActivity {
                         "Make the frosting: In a large bowl using a hand-held mixer or stand mixer fitted with a whisk or paddle attachment, beat the butter on medium speed until creamy, about 2 minutes. Add confectioners’ sugar, milk, vanilla extract, and salt with the mixer running on low. Increase to high speed and beat for 2 minutes. Add more confectioners’ sugar if frosting is too thin, more milk if frosting is too thick, or an extra pinch of salt if frosting is too sweet.\n" +
                         "Assemble and decorate: Using a large serrated knife, slice a thin layer off the tops of the cakes to create a flat surface. Discard (or crumble over ice cream!). Place 1 cake layer on your cake stand, cake turntable, or serving plate. Evenly cover the top with about 1 and 1/2 cups of frosting. Top with 2nd cake layer and evenly cover the top with about 1 and 1/2 cups of frosting. Top with the third cake layer. Spread the remaining frosting all over the top and sides. I use and recommend an icing spatula to apply the frosting.\n" +
                         "Refrigerate cake for at least 1 hour before slicing. This helps the cake hold its shape when cutting.\n" +
-                        "Cover leftover cake tightly and store in the refrigerator for up to 5 days.\n"
-                ,6));
+                        "Cover leftover cake tightly and store in the refrigerator for up to 5 days.\n"));
 
         //7. Pizza
         courseList.add(new Course(10, "margarita", "Pizza\nMargherita", "~ 35\nminutes        ","Average\ndifficulty","#FC9211",
@@ -380,11 +372,7 @@ public class HealthTips extends AppCompatActivity {
                         "Roll out the dough: if you’ve let the dough rise, give it a quick knead, then split into two balls. On a floured surface, roll out the dough into large rounds, about 25cm across, using a rolling pin. The dough needs to be very thin as it will rise in the oven. Lift the rounds onto two floured baking sheets.\n" +
                         "\n" +
                         "STEP 4\n" +
-                        "Top and bake: heat the oven to 240C/220C fan/gas 8. Put another baking sheet or an upturned baking tray in the oven on the top shelf. Smooth sauce over bases with the back of a spoon. Scatter with cheese and tomatoes, drizzle with olive oil and season. Put one pizza, still on its baking sheet, on top of the preheated sheet or tray. Bake for 8-10 mins until crisp. Serve with a little more olive oil, and basil leaves if using. Repeat step for remaining pizza.\n"
-
-
-
-                ,7));
+                        "Top and bake: heat the oven to 240C/220C fan/gas 8. Put another baking sheet or an upturned baking tray in the oven on the top shelf. Smooth sauce over bases with the back of a spoon. Scatter with cheese and tomatoes, drizzle with olive oil and season. Put one pizza, still on its baking sheet, on top of the preheated sheet or tray. Bake for 8-10 mins until crisp. Serve with a little more olive oil, and basil leaves if using. Repeat step for remaining pizza.\n"));
 
         //8. Other
         courseList.add(new Course(11, "irish", "Irish Mashed\nPotatoes", "~ 35\nminutes        ","Average\ndifficulty","#717C08",
@@ -414,8 +402,7 @@ public class HealthTips extends AppCompatActivity {
                         "\n" +
                         "Use a fork or potato masher and mash the potatoes, mixing them up with the greens.\n" +
                         "\n" +
-                        "Add salt to taste and serve hot, with a knob of butter in the center.\n"
-                ,8));
+                        "Add salt to taste and serve hot, with a knob of butter in the center.\n"));
 
         //1. Soups
         courseList.add(new Course(12, "chicken", "Chicken\nsoup", "~ 50\nminutes        ","Average\ndifficulty","#D1AD19",
@@ -442,8 +429,7 @@ public class HealthTips extends AppCompatActivity {
                         "Bring soup to a boil, then stir in couscous. You’ll want the chicken to be covered by the broth so make sure you stir them down to the bottom. \n" +
                         "Reduce heat to medium low and simmer uncovered for 20-25 minutes or until chicken is fully cooked.\n" +
                         "\n" +
-                        "Once chicken is cooked, remove with a slotted spoon and transfer to a cutting board to shred with two forks. Add chicken back to pot then stir in frozen peas. If you find that you don't have enough broth, feel free to add in another cup. Everyone likes their soup differently. Taste and adjust seasonings, if necessary. Enjoy.\n"
-                ,1));
+                        "Once chicken is cooked, remove with a slotted spoon and transfer to a cutting board to shred with two forks. Add chicken back to pot then stir in frozen peas. If you find that you don't have enough broth, feel free to add in another cup. Everyone likes their soup differently. Taste and adjust seasonings, if necessary. Enjoy.\n"));
 
         //2. Main Dish
         courseList.add(new Course(13, "turkey", "Turkey\nà la King", "~ 25\nminutes        ","Average\ndifficulty","#0785AC",
@@ -469,8 +455,7 @@ public class HealthTips extends AppCompatActivity {
                         "\n" +
                         "Add mushrooms to the skillet and cook in browned butter, stirring occasionally, until tender. Stir in flour until smooth. Slowly whisk in chicken broth; cook until slightly thickened.\n" +
                         "\n" +
-                        "Stir in turkey, cream, and peas. Reduce heat to low; cook until thickened. Season with salt and pepper.\n"
-                ,2));
+                        "Stir in turkey, cream, and peas. Reduce heat to low; cook until thickened. Season with salt and pepper.\n"));
 
         //3. Fast
         courseList.add(new Course(14, "taco", "The Best\nHomemade Tacos", "~ 20\nminutes        ","Average\ndifficulty","#EFB269",
@@ -492,8 +477,7 @@ public class HealthTips extends AppCompatActivity {
                         "Add the beef to a large skillet over medium-high heat. Break the meat apart with a wooden spoon. Add the chili powder, cumin, salt, oregano, garlic powder, and pepper to the meat. Stir well. Cook until the meat is cooked through, about 6-8 minutes, stirring occasionally.\n" +
                         "Reduce the heat to medium. Add the tomato sauce and water. Stir to combine. Cook, stirring occasionally, for 7-8 minutes, until some of the liquid evaporates but the meat mixture is still a little saucy. Remove from the heat.\n" +
                         "Warm the taco shells according to their package directions.\n" +
-                        "Fill the taco shells with 2 heaping tablespoons of taco meat. Top with desired taco toppings: shredded cheese, shredded lettuce, chopped tomatoes, diced red onion, taco sauce, sour cream, guacamole, etc.\n"
-                ,3));
+                        "Fill the taco shells with 2 heaping tablespoons of taco meat. Top with desired taco toppings: shredded cheese, shredded lettuce, chopped tomatoes, diced red onion, taco sauce, sour cream, guacamole, etc.\n"));
 
         //4. Pasty
         courseList.add(new Course(15, "bakewell", "Mini bakewell\ntarts", "~ 40\nminutes        ","Average\ndifficulty","#BE3B3D",
@@ -518,8 +502,7 @@ public class HealthTips extends AppCompatActivity {
                         "Make the filling by beating together the butter and sugar until light and fluffy, then whisk in the egg, followed by the flour (the flour will prevent the mixture from splitting). Fold in the ground almonds. Spoon a level tsp of cherry jam into each of the pastry shells, followed by a tablespoon of the frangipane mixture. Bake for 20 mins, until the frangipane is golden and springy. Set aside to cool completely. Neaten the edges of the pastry with a small knife or scissors if you like.\n" +
                         "\n" +
                         "STEP 3\n" +
-                        "Mix the icing sugar with 2 tbsp water. Spread the icing over each of the tarts, top each with a glacé cherry, leave to set for 20 mins, then serve with tea.\n"
-                ,4));
+                        "Mix the icing sugar with 2 tbsp water. Spread the icing over each of the tarts, top each with a glacé cherry, leave to set for 20 mins, then serve with tea.\n"));
 
         //5. Biscuits
         courseList.add(new Course(16, "cookie", "Easy\nbiscuits", "~ 20\nminutes        ","Average\ndifficulty","#875411",
@@ -538,9 +521,7 @@ public class HealthTips extends AppCompatActivity {
                         "Sift over the flour and stir until the mixture is well combined – you might need to get your hands in at the end to give everything a really good mix and press the dough together.\n" +
                         "\n" +
                         "STEP 3\n" +
-                        "For basic vanilla biscuits: Pre-heat the oven to 180C/160C fan/gas 4. Chill the dough for 20 - 30minutes, roll out and cut out shapes as above. Bake on a non-stick baking tray for 10-12 minutes until pale golden. Carefully transfer to a wire rack to cool and crisp up.\n"
-
-                ,5));
+                        "For basic vanilla biscuits: Pre-heat the oven to 180C/160C fan/gas 4. Chill the dough for 20 - 30minutes, roll out and cut out shapes as above. Bake on a non-stick baking tray for 10-12 minutes until pale golden. Carefully transfer to a wire rack to cool and crisp up.\n"));
 
         //6. Cakes
         courseList.add(new Course(17, "napoleon", "Best Napoleon\nCake Ever", "~ 40\nminutes        ","Average\ndifficulty","#F3A56B",
@@ -584,9 +565,7 @@ public class HealthTips extends AppCompatActivity {
                         "\n" +
                         "Form into a dough: Pour the content of the food processor bowl onto a work surface and start gathering and pressing the dough together with your hands, trying to work it as little as possible. Form a ball and knead it for a couple of seconds until a dough forms.\n" +
                         "\n" +
-                        "Shape & Divide: Shape the dough into a log and then cut it into 12 equal pieces. Roll each piece into a ball, cover, and refrigerate for about an hour to allow the liquid to hydrate the flour. This will also make it easier to roll the dough out later.\n"
-
-                ,6));
+                        "Shape & Divide: Shape the dough into a log and then cut it into 12 equal pieces. Roll each piece into a ball, cover, and refrigerate for about an hour to allow the liquid to hydrate the flour. This will also make it easier to roll the dough out later.\n"));
 
         //7. Pizza
         courseList.add(new Course(18, "pepperoni", "Pepperoni\npizza", "~ 40\nminutes        ","Average\ndifficulty","#E26804",
@@ -644,9 +623,7 @@ public class HealthTips extends AppCompatActivity {
                         "\n" +
                         "Top dough with sauce, cheese, and pepperoni.\n" +
                         "\n" +
-                        "Bake in the preheated oven until crusts are browned and cheese is bubbly, 18 to 20 minutes. Rotate pizza pans between the top and bottom oven racks halfway through baking.\n"
-
-                ,7));
+                        "Bake in the preheated oven until crusts are browned and cheese is bubbly, 18 to 20 minutes. Rotate pizza pans between the top and bottom oven racks halfway through baking.\n"));
 
         //8. Other
         courseList.add(new Course(19, "ragu", "Wild boar ragù\nwith fresh pasta", "~ 2\nhours             ","Average\ndifficulty","#DB5205",
@@ -707,8 +684,7 @@ public class HealthTips extends AppCompatActivity {
                         "\n" +
                         "Before serving, add a little olive oil to a pan over a medium-high heat. Once smoking, add the halved mushrooms and sauté for 2-3 minutes.\n" +
                         "\n" +
-                        "To serve, tip the pasta into the finished ragù and serve in portions topped with freshly grated parmesan and fried mushrooms.\n"
-                ,8));
+                        "To serve, tip the pasta into the finished ragù and serve in portions topped with freshly grated parmesan and fried mushrooms.\n"));
 
 
         //2. Main Dish
@@ -729,8 +705,7 @@ public class HealthTips extends AppCompatActivity {
                         "Place the fingerling potatoes in a straight-sided sauté pan (at least 3 quarts in size) so that the potatoes can be accommodated in a single layer. Add the sliced shallot, garlic cloves, fresh rosemary, thyme, and dried bay leaves to the pan. Add the olive oil and toss to coat evenly. Pour in the chicken stock and season lightly with salt and pepper (the salt will concentrate as the potatoes cook, so avoid over-seasoning, especially if you are not using low-sodium chicken stock).\n" +
                         "Cover the pan and bring to a simmer over medium heat. Reduce the heat to a very low simmer and cook the potatoes, covered, for 10 minutes. Use a spoon to flip the potatoes, cover, and simmer for an additional 10 to 12 minutes, or until they are can be easily pierced with a sharp knife or skewer. There should still be a relatively substantial amount of braising liquid left in the pan.\n" +
                         "Remove the lid and bring over high heat ntil the braising liquid has come to a boil. Continue to cook over high heat, shaking the pan back and forth gently, until all of the braising liquid has evaporated and the potatoes begin to sizzle in any remaining oil in the pan. At this point, the shallots and garlic will have reduced to a buttery glaze, which should coat the potatoes evenly. Remove from the heat, discard the bay leaves and any tough remaining rosemary and thyme stems. Taste and season with salt and pepper, if necessary.\n" +
-                        "Place the potatoes in a serving platter and garnish with chopped fresh thyme leaves. Serve immediately.\n"
-                ,2));
+                        "Place the potatoes in a serving platter and garnish with chopped fresh thyme leaves. Serve immediately.\n"));
 
 
         //3. Fast
@@ -753,9 +728,7 @@ public class HealthTips extends AppCompatActivity {
                         "Place flour on a plate. Season with salt and pepper. Whisk egg and milk in a shallow bowl.\n" +
                         "Toss 1 piece of chicken in flour to coat. Dip in the egg mixture, then toss in breadcrumbs, pressing to secure. Place onto a plate. Repeat with remaining chicken. Refrigerate for 10 minutes.\n" +
                         "Preheat the oven to 200C/180C fan-forced. Line an oven tray with baking paper.\n" +
-                        "Arrange chicken in a single layer on prepared tray. Spray all over with oil spray. Bake, turning once, for 45 minutes or until golden and chicken is cooked through. Serve chicken sprinkled with thyme leaves.\n"
-
-                ,3));
+                        "Arrange chicken in a single layer on prepared tray. Spray all over with oil spray. Bake, turning once, for 45 minutes or until golden and chicken is cooked through. Serve chicken sprinkled with thyme leaves.\n"));
 
         //4. Pasty
         courseList.add(new Course(22, "chocolatechip", "Chocolate Chip\nBlondies", "~ 20\nminutes        ","Average\ndifficulty","#3D1D13",
@@ -772,8 +745,7 @@ public class HealthTips extends AppCompatActivity {
                         "Preheat oven to 350°F. Line an 8-inch square pan with parchment paper and spray lightly with nonstick cooking spray.\n" +
                         "In a large bowl, stir together butter and brown sugar until smooth. Add egg and vanilla and stir to combine. Stir in flour and salt, just until combined.\n" +
                         "Stir in chocolate chips, reserving a couple of tablespoons to sprinkle on top if desired.\n" +
-                        "Spread batter into prepared pan. Bake for 25 to 28 minutes or until a toothpick inserted in the middle comes out with moist crumbs. The blondies will be slightly browned around the edges. Cool for at least 20 minutes in the pan before lifting the blondies out by the parchment paper. Set on a wire rack to finish cooling before slicing and storing in an airtight container.\n"
-                ,4));
+                        "Spread batter into prepared pan. Bake for 25 to 28 minutes or until a toothpick inserted in the middle comes out with moist crumbs. The blondies will be slightly browned around the edges. Cool for at least 20 minutes in the pan before lifting the blondies out by the parchment paper. Set on a wire rack to finish cooling before slicing and storing in an airtight container.\n"));
 
         //5. Biscuits
         courseList.add(new Course(23, "basicbis", "Basic butter\nbiscuit dough", "~ 40\nminutes        ","Average\ndifficulty","#D1A3A8",
@@ -803,8 +775,7 @@ public class HealthTips extends AppCompatActivity {
                         "Step 3\n" +
                         "Using 1 heaped tablespoon of mixture at a time, roll mixture into balls. Place on baking trays lined with baking paper. Using the heel of your hand, flatten biscuits slightly (allow room for spreading).\n" +
                         "Step 4\n" +
-                        "Bake for 15 to 18 minutes, swapping trays over in oven after 10 minutes, or until light golden. Allow biscuits to cool on trays for 5 minutes. Transfer to wire racks to cool completely. Serve.\n"
-                ,5));
+                        "Bake for 15 to 18 minutes, swapping trays over in oven after 10 minutes, or until light golden. Allow biscuits to cool on trays for 5 minutes. Transfer to wire racks to cool completely. Serve.\n"));
 
         //6. Cakes
         courseList.add(new Course(24, "sponge", "Sponge\ncake", "~ 30\nminutes        ","Average\ndifficulty","#AA5B2A",
@@ -827,9 +798,7 @@ public class HealthTips extends AppCompatActivity {
                         "Using an electric whisk beat the butter and sugar together until pale and fluffy. Crack the eggs in one at a time and whisk well, scraping down the sides of the bowl after each addition. Add the lemon zest, vanilla, flour, milk and a pinch of salt. Whisk until just combined then divide the mixture between the two tins.\n" +
                         "\n" +
                         "STEP 3\n" +
-                        "Bake in the centre of the oven for 25-30 mins until a skewer inserted into the middle of each cake comes out clean. After 10 mins remove the cakes from their tins and leave to cool completely on a wire rack. Fill how you like. My personal favourite is a good dollop of lemon curd and some fresh cream, then dust the top with icing sugar. Will keep for 3 days.\n"
-
-                ,6));
+                        "Bake in the centre of the oven for 25-30 mins until a skewer inserted into the middle of each cake comes out clean. After 10 mins remove the cakes from their tins and leave to cool completely on a wire rack. Fill how you like. My personal favourite is a good dollop of lemon curd and some fresh cream, then dust the top with icing sugar. Will keep for 3 days.\n"));
 
         //7. Pizza
         courseList.add(new Course(25, "rpizza", "Pizza\nDough", "~ 2 hrs 30\nminutes        ","Average\ndifficulty","#E1734C",
@@ -854,8 +823,7 @@ public class HealthTips extends AppCompatActivity {
                         "Transfer dough to a parchment paper lined pizza pan and either pinch the edges or fold them over to form a crust.\n" +
                         "Drizzle additional olive oil (about a Tablespoon) over the top of the pizza and use your pastry brush to brush the entire surface of the pizza (including the crust) with olive oil. \n" +
                         "Use a fork to poke holes all over the center of the pizza to keep the dough from bubbling up in the oven.\n" +
-                        "Add desired toppings (see the notes for a link to my favorite, 5-minute pizza sauce recipe!) and bake in a 425F (215C) preheated oven for 13-15 minutes or until toppings are golden brown. Slice and serve."
-                ,7));
+                        "Add desired toppings (see the notes for a link to my favorite, 5-minute pizza sauce recipe!) and bake in a 425F (215C) preheated oven for 13-15 minutes or until toppings are golden brown. Slice and serve."));
 
         //8. Other
         courseList.add(new Course(26, "irishend", "Irish Beef\nStew", "~ 2 hrs 15\nminutes        ","Average\ndifficulty","#9F610A",
@@ -897,71 +865,13 @@ public class HealthTips extends AppCompatActivity {
                         "Add onions, carrots, potatoes to beef stew, simmer:\n" +
                         "Add the onions, carrots, and the potatoes to the beef stew. Add black pepper and two teaspoons of salt. Simmer uncovered until vegetables and beef are very tender, about 40 minutes. Discard the bay leaves. Tilt pan and spoon off any excess fat.\n" +
                         "\n" +
-                        "Transfer stew to serving bowls. Add more salt and pepper to taste. Sprinkle with parsley and serve.\n"
-                ,8));
+                        "Transfer stew to serving bowls. Add more salt and pepper to taste. Sprinkle with parsley and serve.\n"));
 
 
         fullcoursesList.addAll(courseList);
 
         setCourseRecycler(courseList);
 
-//        // For Quick Tips Section
-//        LinearLayout quickTipsSection = findViewById(R.id.quickTipsSection);
-//        View quickTipsView = LayoutInflater.from(this).inflate(R.layout.section_quick_tips, quickTipsSection, false);
-//        quickTipsSection.addView(quickTipsView);
-//
-//        // For Health & Wellness Section
-//        LinearLayout healthWellnessSection = findViewById(R.id.healthWellnessSection);
-//        View healthWellnessView = LayoutInflater.from(this).inflate(R.layout.section_health_and_wellness, healthWellnessSection, false);
-//        healthWellnessSection.addView(healthWellnessView);
-//
-//        // For Stress Management Section
-//        LinearLayout stressManagementSection = findViewById(R.id.stressManagementSection);
-//        View stressManagementView = LayoutInflater.from(this).inflate(R.layout.section_stress_management, stressManagementSection, false);
-//        stressManagementSection.addView(stressManagementView);
-//
-//        // For Healthy Eating Section
-//        LinearLayout healthyEatingSection = findViewById(R.id.healthyEatingSection);
-//        View healthyEatingView = LayoutInflater.from(this).inflate(R.layout.section_healthy_eating, healthyEatingSection, false);
-//        healthyEatingSection.addView(healthyEatingView);
-//
-//        // For Sleep Hygiene Section
-//        LinearLayout sleepHygieneSection = findViewById(R.id.sleepHygieneSection);
-//        View sleepHygieneSecView = LayoutInflater.from(this).inflate(R.layout.section_sleep_hygiene, sleepHygieneSection, false);
-//        sleepHygieneSection.addView(sleepHygieneSecView);
-//
-//        // For Exercise & Fitness Section
-//        LinearLayout exerciseFitnessSection = findViewById(R.id.exerciseFitnessSection);
-//        View exerciseFitnessView = LayoutInflater.from(this).inflate(R.layout.section_exercise_and_fitness, exerciseFitnessSection, false);
-//        exerciseFitnessSection.addView(exerciseFitnessView);
-//
-//        // For Campus Safety Section
-//        LinearLayout campusSafetySection = findViewById(R.id.campusSafetySection);
-//        View campusSafetyView = LayoutInflater.from(this).inflate(R.layout.section_campus_safety, campusSafetySection, false);
-//        campusSafetySection.addView(campusSafetyView);
-//
-//        // For Sexual Health Education Section
-//        LinearLayout sexualHealthSection = findViewById(R.id.sexualHealthSection);
-//        View sexualHealthView = LayoutInflater.from(this).inflate(R.layout.section_sexual_health_education, sexualHealthSection, false);
-//        sexualHealthSection.addView(sexualHealthView);
-//
-//        // For Mental Health Support Section
-//        LinearLayout mentalHealthSection = findViewById(R.id.mentalHealthSection);
-//        View mentalHealthView = LayoutInflater.from(this).inflate(R.layout.section_mental_health_support, mentalHealthSection, false);
-//        mentalHealthSection.addView(mentalHealthView);
-
-        // Add tips to the Quick Tips section
-//        LinearLayout quickTipsContainer = findViewById(R.id.quickTipsContainer);
-//        addTip(quickTipsContainer, "Take the stairs for a mini workout.");
-//        addTip(quickTipsContainer, "Get sunlight for a mood lift.");
-//        addTip(quickTipsContainer, "Deep breathing for stress relief.");
-//        addTip(quickTipsContainer, "Keep healthy snacks in your bag.");
-//        addTip(quickTipsContainer, "Use a study timer for focus.");
-//        addTip(quickTipsContainer, "Stay hydrated with water breaks.");
-//        addTip(quickTipsContainer, "Prioritize tasks with to-do lists.");
-//        addTip(quickTipsContainer, "Stand or stretch every hour.");
-//        addTip(quickTipsContainer, "Connect with friends daily.");
-//        addTip(quickTipsContainer, "Quality sleep is non-negotiable.");
         // Add more tips as needed
     }
 

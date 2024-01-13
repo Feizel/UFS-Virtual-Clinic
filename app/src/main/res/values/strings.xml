@@ -130,10 +130,21 @@
     <string name="filter_icon">Filter</string>
     <string name="menuhome_btn">MenuHome_btn</string>
     <string name="menulike_btn">MenuLike_btn</string>
-    <string name="course_start_date">Сooking time:</string>
-    <string name="course_level">Difficulty of cooking:</string>
-    <string name="course_desc">Portion quantity:dsfdsfsdfdsfdsfdsafsadfsadfsadfgddfgdfgsadgsadfsadfsadfsadfsadfsadfsadf\n gdfgdfgdfgdsfgdsf\n
-        fghdfghdfghdfgh\n fghfdghfgdh\n fghfdghdfgh\n fghdfghdfghdfg\n fghdfhfdghfgh\n fghfdghfgh\n fghfghfhgdfdgh\n fghdfhdfghfgdh\n 4 servings\nIngredients required: Potatoes - 2 pieces\nOnions - 1 piece\nTomatoes - 2 pieces\nTomatoes in their own juice - 350 grams\nWater - 350 milliliters\nOil - 2 tablespoons</string>
+    <string name="cook_time">Сooking time:</string>
+    <string name="cook_difficulty">Cooking Difficulty:</string>
+    <string name="course_desc">This delicious meal is perfect for 3 dinners. \n\nIt produces 4 servings and requires the following ingredients:\n
+        - Potatoes: 2 pieces \n- Onions: 1 piece \n- Tomatoes: 2 pieces \n- Tomatoes in their own juice: 350 grams \n- Water: 350 milliliters \n- Oil: 2 tablespoons
+
+        \n\nTo prepare this meal, follow these simple steps:
+
+        \n\n1. Peel and chop the potatoes, onions, and tomatoes.
+        \n2. In a pan, heat 2 tablespoons of oil.
+        \n3. Add the chopped onions and fry until golden brown.
+        \n4. Add the potatoes and tomatoes, cooking until they are slightly tender.
+        \n5. Pour in 350 milliliters of water and add the tomatoes in their own juice.
+        \n6. Allow the mixture to simmer until the potatoes are fully cooked.
+        \n7. Serve hot and enjoy this wholesome and flavorful dish!</string>
+
 
     <string name="sleep_hygiene">Sleep Hygiene</string>
     <string name="sleep_hygiene_content">Learn about habits that contribute to good sleep hygiene for better sleep quality.</string>

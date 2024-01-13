@@ -62,8 +62,6 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.CourseView
                 intent.putExtra("courseText", courses.get(position).getText());
                 intent.putExtra("courseId", courses.get(position).getId());
 
-
-
                 context.startActivity(intent);
             }
         });
@@ -80,7 +78,7 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.CourseView
         ImageView courseImage;
         TextView courseTitle, courseDate, courseLevel;
 
-        public CourseViewHolder(@NonNull View itemView) {
+        public CourseViewHolder(View itemView) {
             super(itemView);
 
             courseBg = itemView.findViewById(R.id.courseBg);
