@@ -82,8 +82,8 @@
 
     <string name="sexual_health1">Sexual health</string>
     <string name="sexual_health1_desc">Comprehensive sexual health services, including various contraceptive options tailored to individual needs and preferences.</string>
-<!--    <string name="sexual_health">Sexual health</string>-->
-<!--    <string name="sexual_health">Sexual health</string>-->
+    <!--    <string name="sexual_health">Sexual health</string>-->
+    <!--    <string name="sexual_health">Sexual health</string>-->
 
 
     <string name="mens_health">Men\'s health</string>
@@ -112,7 +112,7 @@
     <string name="quick_tip_10">Quality sleep is non-negotiable.</string>
     <string name="find_more">Find Out More...</string>
 
-<!--    -->
+    <!--    -->
     <string name="health_and_wellness">Health &amp; Wellness</string>
     <string name="health_and_wellness_content">Explore tips and activities to enhance your overall wellness, fostering a balanced and fulfilling lifestyle.</string>
 
@@ -121,6 +121,19 @@
 
     <string name="healthy_eating">Healthy Eating</string>
     <string name="healthy_eating_content">Explore smart and simple nutrition tricks for a balanced diet.</string>
+    <string name="home_icon">Home</string>
+    <string name="like_icon">Like</string>
+    <string name="favorite_icon">Favorite</string>
+    <string name="logo_of_app_1">Recipe</string>
+    <string name="logo_of_app_2">App</string>
+    <string name="logo_of_app_3">RecipeRead</string>
+    <string name="filter_icon">Filter</string>
+    <string name="menuhome_btn">MenuHome_btn</string>
+    <string name="menulike_btn">MenuLike_btn</string>
+    <string name="course_start_date">Сooking time:</string>
+    <string name="course_level">Difficulty of cooking:</string>
+    <string name="course_desc">Portion quantity:dsfdsfsdfdsfdsfdsafsadfsadfsadfgddfgdfgsadgsadfsadfsadfsadfsadfsadfsadf\n gdfgdfgdfgdsfgdsf\n
+        fghdfghdfghdfgh\n fghfdghfgdh\n fghfdghdfgh\n fghdfghdfghdfg\n fghdfhfdghfgh\n fghfdghfgh\n fghfghfhgdfdgh\n fghdfhdfghfgdh\n 4 servings\nIngredients required: Potatoes - 2 pieces\nOnions - 1 piece\nTomatoes - 2 pieces\nTomatoes in their own juice - 350 grams\nWater - 350 milliliters\nOil - 2 tablespoons</string>
 
     <string name="sleep_hygiene">Sleep Hygiene</string>
     <string name="sleep_hygiene_content">Learn about habits that contribute to good sleep hygiene for better sleep quality.</string>
