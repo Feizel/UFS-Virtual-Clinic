@@ -43,8 +43,10 @@
             android:textColor="#322e47"
             android:textSize="16dp" />
 
-        <TextView
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/seeAll"
             android:layout_width="0dp"
+            style="@style/Widget.Material3.Button.TextButton"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="30"

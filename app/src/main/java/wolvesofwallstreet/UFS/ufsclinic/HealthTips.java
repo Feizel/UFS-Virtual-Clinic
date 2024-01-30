@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -52,6 +53,14 @@ public class HealthTips extends AppCompatActivity {
         quickTipsRecycler.setAdapter(adapter);
 
         //Healthy Eating
+        Button seeAll = findViewById(R.id.seeAll);
+        seeAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent seeAllRecipes = new Intent(HealthTips.this, CoursePage.class);
+                startActivity(seeAllRecipes);
+            }
+        });
         //italian soup
         courseList.add(new Course(1, "tomato", "Italian tomato\nsoup", "~ 30\nminutes        ","Average\ndifficulty","#C81818",
                 "Ingredients\n" +
