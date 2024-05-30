@@ -1,6 +1,6 @@
 ![Website](https://github.com/Feizel/UFS-Virtual-Clinic/assets/71074138/b28d6682-9b74-497e-a8fb-b1f3c8762037)
 
-<video src="https://drive.google.com/uc?export=view&id=1Hadby_JpH8S1bfM7fVliHS--JBhi1-nS" width="640" height="360"></video>
+<video src="https://drive.google.com/uc?export=view&id=1Hadby_JpH8S1bfM7fVliHS--JBhi1-nS" width="640" height="360" controls></video>
 
 
 # UFS KovsieHealth Clinic App 🌡️💊
